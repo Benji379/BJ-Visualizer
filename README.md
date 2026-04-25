@@ -8,15 +8,24 @@ Este documento detalla la organización de los archivos y carpetas del proyecto 
 
 El proyecto está organizado para separar la lógica de visualización (HTML/JS) de los datos geográficos (JSON).
 
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3b4b4de5-7419-4e86-9d13-3275a5913f8e" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0b279d5d-0959-4f81-beb6-edb1188ab065" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b6e8e01e-27e6-44b8-8a03-ca4547822096" />
+<div align="center">
+  <img width="800" alt="Vista Global" src="https://github.com/user-attachments/assets/3b4b4de5-7419-4e86-9d13-3275a5913f8e" />
+  <img width="800" alt="Vista Perú" src="https://github.com/user-attachments/assets/0b279d5d-0959-4f81-beb6-edb1188ab065" />
+  <img width="800" alt="Vista Detalle" src="https://github.com/user-attachments/assets/b6e8e01e-27e6-44b8-8a03-ca4547822096" />
+</div>
 
+### 🚀 Cómo Ejecutar
 
+Para que la aplicación funcione correctamente y pueda cargar los archivos GeoJSON, **debes ejecutarla a través de un servidor local**. Abrir el archivo `index.html` directamente en el navegador causará errores de **CORS** (Cross-Origin Resource Sharing).
+
+**Opciones recomendadas:**
+- **VS Code**: Usa la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+- **Python**: Ejecuta `python -m http.server` en la carpeta del proyecto.
+- **Node.js**: Usa `npx serve .`
 
 ### 📍 Directorio Raíz
 - **index.html**: El corazón de la aplicación. Contiene la estructura, los estilos (CSS) y la lógica (JavaScript) para renderizar los mapas usando Leaflet.
-- **DOCUMENTACION.md**: Este archivo explicativo.
+- **README.md**: Este archivo explicativo.
 
 ---
 
