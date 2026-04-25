@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJ Visualizer</title>
+    <link rel="icon" type="image/x-icon" href="GLOBAL/favicon.ico">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #0055aa;
+            --accent-color: #00aaff;
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --border-color: #e1e4e8;
+            --highlight-color: #ff9900;
+            --map-bg: #ffffff;
+            --dot-color: #d1d5db;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+        header {
+            background: #ffffff;
+            padding: 8px 24px;
+            color: var(--primary-color);
+            display: grid;
+            grid-template-columns: 200px 1fr 150px;
+            align-items: center;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            z-index: 1000;
+            height: 64px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo-group { display: flex; align-items: center; gap: 12px; }
+        .logo-img { width: 28px; height: 28px; object-fit: contain; }
+        .logo-text { font-weight: 700; font-size: 1.15rem; color: var(--primary-color); letter-spacing: -0.5px; }
+
+        .nav-controls { display: flex; gap: 10px; align-items: center; justify-content: center; }
+        
+        select {
+            appearance: none;
+            padding: 10px 36px 10px 16px; 
+            border-radius: 12px; 
+            border: 1px solid #e5e7eb;
+            background: #f8fafc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") no-repeat right 12px center;
+            background-size: 16px;
+            color: #4b5563; 
+            font-family: inherit; 
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer; 
+            outline: none; 
+            transition: all 0.2s;
+            min-width: 140px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        select:hover { border-color: var(--secondary-color); background-color: #ffffff; }
+
+        .dropdown-group { display: flex; gap: 8px; align-items: center; }
+
+        .actions { display: flex; justify-content: flex-end; }
+        .btn-clear {
+            padding: 10px 20px; border-radius: 12px; border: 1.5px solid var(--secondary-color);
+            background: transparent; color: var(--secondary-color); font-weight: 700;
+            cursor: pointer; transition: all 0.2s; font-size: 0.8rem;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .btn-clear:hover { background: var(--secondary-color); color: white; }
+
+        main { flex: 1; position: relative; display: flex; flex-direction: column; overflow: hidden; }
+        
+        #map { 
+            flex: 1; 
+            width: 100%; 
+            background-color: var(--map-bg);
+            background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        .loading-overlay {
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255, 255, 255, 0.95); display: none; flex-direction: column;
+            justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px);
+        }
+        .spinner { width: 50px; height: 50px; border: 5px solid rgba(0, 51, 102, 0.05); border-left-color: var(--primary-color); border-radius: 50%; animation: spin 0.8s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+        .loading-text { margin-top: 15px; font-weight: 600; color: var(--primary-color); font-size: 0.9rem; letter-spacing: 1px; }
+
+        .breadcrumb {
+            position: absolute; top: 20px; left: 60px; z-index: 1000;
+            background: rgba(255,255,255,0.95); padding: 10px 20px; border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; gap: 10px;
+            font-size: 0.85rem; font-weight: 600; color: var(--primary-color); border: 1px solid var(--border-color);
+        }
+        .breadcrumb-item { cursor: pointer; color: var(--secondary-color); }
+        .breadcrumb-item:hover { color: var(--accent-color); }
+        .breadcrumb-item.active { color: var(--text-color); cursor: default; }
+
+        /* Estilo para los tooltips */
+        .leaflet-tooltip {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid var(--primary-color);
+            border-radius: 6px;
+            padding: 4px 8px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .leaflet-control-attribution { display: none !important; }
+        .hidden { display: none !important; }
+
+        .leaflet-top { top: 80px !important; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ELIMINAR EL BORDE NEGRO RECTANGULAR */
+        .leaflet-container,
+        .leaflet-container *,
+        .leaflet-interactive,
+        path,
+        svg,
+        g,
+        div:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        *:focus {
+            outline: none !important;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="https://benjicode.com" target="_blank" class="logo-group" style="text-decoration: none;">
+            <img src="GLOBAL/favicon.ico" alt="Logo" class="logo-img">
+            <div class="logo-text">BJ Visualizer</div>
+        </a>
+
+        <div class="nav-controls">
+            <select id="select-view">
+                <option value="TODOS">TODOS</option>
+                <option value="PERU">PERÚ</option>
+            </select>
+
+            <div id="peru-controls" class="dropdown-group hidden">
+                <select id="select-region"><option value="">REGIÓN</option></select>
+                <select id="select-province"><option value="">PROVINCIA</option></select>
+                <select id="select-district"><option value="">DISTRITO</option></select>
+            </div>
+
+            <div id="extranjero-controls" class="dropdown-group hidden">
+                <select id="select-continent"><option value="">CONTINENTE</option></select>
+                <select id="select-country"><option value="">PAÍS</option></select>
+                <select id="select-city"><option value="">CIUDAD</option></select>
+            </div>
+        </div>
+
+        <div class="actions">
+            <button class="btn-clear" id="btn-clear">LIMPIAR</button>
+        </div>
+    </header>
+
+    <main>
+        <div id="breadcrumb" class="breadcrumb hidden"></div>
+        <div id="map"></div>
+        <div id="loading" class="loading-overlay">
+            <div class="spinner"></div>
+            <div class="loading-text">CARGANDO...</div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const state = {
+            mapping: null,
+            geoData: {}, 
+            currentLayer: null,
+            view: 'TODOS',
+            hierarchy: []
+        };
+
+        const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([20, 0], 2);
+
+        const styles = {
+            default: { fillColor: '#5b92cb', weight: 1.2, opacity: 1, color: 'white', fillOpacity: 1.0 },
+            highlight: { fillColor: '#00aaff', weight: 1.8, opacity: 1, color: 'white', fillOpacity: 1.0 },
+            selected: { fillColor: '#ff9900', weight: 2, opacity: 1, color: 'white', fillOpacity: 1.0 }
+        };
+
+        function normalize(str) { 
+            if (!str) return "";
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-zA-Z0-9]/g, " ").trim().toUpperCase(); 
+        }
+
+        async function safeFetch(url) {
+            if (state.geoData[url]) return state.geoData[url];
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                const data = await response.json();
+                state.geoData[url] = data;
+                return data;
+            } catch (e) { console.error(`Error fetching ${url}:`, e); return null; }
+        }
+
+        function showLoading(show) { 
+            document.getElementById('loading').style.display = show ? 'flex' : 'none'; 
+        }
+
+        async function init() {
+            state.mapping = await safeFetch('GLOBAL/mapeo_general_ubicaciones.json');
+            handleViewChange('TODOS');
+        }
+
+        async function handleViewChange(view) {
+            state.view = view;
+            state.hierarchy = [];
+            
+            document.getElementById('select-view').value = view === 'EXTRANJERO' ? 'TODOS' : view;
+            document.getElementById('peru-controls').classList.toggle('hidden', view !== 'PERU');
+            document.getElementById('extranjero-controls').classList.toggle('hidden', view !== 'EXTRANJERO');
+            
+            if (view === 'TODOS' || view === 'EXTRANJERO') {
+                await loadLayer('GLOBAL/mundo.json', (f, l) => {
+                    const name = f.properties.name || f.id;
+                    l.bindTooltip(name, { sticky: true, direction: 'top' });
+                    l.on('click', () => detectAndSwitch(name));
+                });
+                if (view === 'EXTRANJERO') populateContinents();
+                map.flyTo([20, 0], 2, { animate: true, duration: 0.8 });
+            } else if (view === 'PERU') {
+                showLoading(true);
+                await loadLayer('GLOBAL/peruLow.json', (f, l) => {
+                    const name = f.properties.name || f.id;
+                    l.bindTooltip(name, { sticky: true, direction: 'top' });
+                    l.on('click', () => drillDownPeru(name, 'region'));
+                });
+                populateRegions();
+                setTimeout(() => showLoading(false), 300);
+            }
+            updateBreadcrumb();
+        }
+
+        async function detectAndSwitch(name) {
+            const normName = normalize(name);
+            console.log("Detecting Click:", name, "->", normName);
+            
+            if (normName === 'PERU') {
+                handleViewChange('PERU');
+            } else {
+                const ext = state.mapping["EXTRANJERO"];
+                let found = false;
+                for (let cont in ext) {
+                    for (let country in ext[cont]) {
+                        if (normalize(country) === normName || normName.includes(normalize(country)) || normalize(country).includes(normName)) {
+                            await switchToExtranjero(cont, country);
+                            found = true; break;
+                        }
+                    }
+                    if (found) break;
+                }
+                if (!found && ext[name.toUpperCase()]) drillDownExtranjero(name);
+            }
+        }
+
+        async function switchToExtranjero(continent, country) {
+            state.view = 'EXTRANJERO';
+            document.getElementById('extranjero-controls').classList.remove('hidden');
+            document.getElementById('peru-controls').classList.add('hidden');
+            populateContinents();
+            await drillDownExtranjero(continent);
+            selectCountry(continent, country);
+        }
+
+        async function loadLayer(url, onEachFeature) {
+            showLoading(true);
+            const geo = await safeFetch(url);
+            if (state.currentLayer) map.removeLayer(state.currentLayer);
+            if (geo) {
+                state.currentLayer = L.geoJSON(geo, {
+                    style: styles.default,
+                    onEachFeature: (f, l) => {
+                        l.on({
+                            mouseover: () => { if(l.options.fillColor !== styles.selected.fillColor) l.setStyle(styles.highlight); },
+                            mouseout: () => { if(l.options.fillColor !== styles.selected.fillColor) l.setStyle(styles.default); }
+                        });
+                        if (onEachFeature) onEachFeature(f, l);
+                    }
+                }).addTo(map);
+                map.flyToBounds(state.currentLayer.getBounds(), { padding: [20, 20], duration: 0.8 });
+            }
+            showLoading(false);
+        }
+
+        function updateBreadcrumb() {
+            const container = document.getElementById('breadcrumb');
+            if (state.view === 'TODOS' && state.hierarchy.length === 0) { container.classList.add('hidden'); return; }
+            container.classList.remove('hidden');
+            
+            let html = `<span class="breadcrumb-item" onclick="handleViewChange('TODOS')">MUNDO</span>`;
+            if (state.view !== 'TODOS' && state.hierarchy.length === 0) {
+                 html += ` <span class="separator">></span> <span class="breadcrumb-item active">${state.view}</span>`;
+            }
+
+            state.hierarchy.forEach((item, index) => {
+                const isActive = index === state.hierarchy.length - 1;
+                html += ` <span class="separator">></span> <span class="breadcrumb-item ${isActive ? 'active' : ''}" onclick="${isActive ? '' : `goBack(${index})`}">${item.name}</span>`;
+            });
+            container.innerHTML = html;
+        }
+
+        function goBack(index) {
+            const item = state.hierarchy[index];
+            state.hierarchy = state.hierarchy.slice(0, index);
+            if (item.type === 'region') drillDownPeru(item.name, 'region');
+            else if (item.type === 'province') drillDownPeru(item.name, 'province', state.hierarchy[index-1].name);
+            else if (item.type === 'continent') drillDownExtranjero(item.name);
+            updateBreadcrumb();
+        }
+
+        function populateRegions() {
+            const select = document.getElementById('select-region');
+            select.innerHTML = '<option value="">REGIÓN</option>';
+            const key = Object.keys(state.mapping).find(k => k.includes('PER'));
+            Object.keys(state.mapping[key]).sort().forEach(r => {
+                const o = document.createElement('option'); o.value = r; o.textContent = r;
+                select.appendChild(o);
+            });
+        }
+
+        function findInMapping(obj, name) {
+            const normName = normalize(name);
+            const foundKey = Object.keys(obj).find(k => normalize(k) === normName);
+            return foundKey ? obj[foundKey] : null;
+        }
+
+        async function drillDownPeru(name, type, parentName = null) {
+            const key = Object.keys(state.mapping).find(k => k.includes('PER'));
+            if (type === 'region') {
+                const regData = findInMapping(state.mapping[key], name);
+                if (!regData) return;
+                
+                state.hierarchy = [{ name: name.toUpperCase(), type: 'region' }];
+                let path = null;
+                for (let k in regData) { if (regData[k].codigo_json && regData[k].codigo_json.endsWith('0000.json')) { path = regData[k].ruta_archivo_local; break; } }
+                if (!path) path = Object.values(regData)[0].ruta_archivo_local;
+                
+                const finalPath = path.replace(/\\/g, '/').split('Resultados_ONPE/').pop();
+                await loadLayer(finalPath, (f, l) => { 
+                    const provName = f.properties.PROVINCIA || f.properties.name || f.id;
+                    l.bindTooltip(provName, { sticky: true, direction: 'top' });
+                    l.on('click', () => drillDownPeru(provName, 'province', name)); 
+                });
+                populateProvinces(name);
+                document.getElementById('select-region').value = Object.keys(state.mapping[key]).find(k => normalize(k) === normalize(name));
+            } else if (type === 'province') {
+                const regData = findInMapping(state.mapping[key], parentName);
+                const provData = findInMapping(regData, name);
+                if (!provData) return;
+                
+                state.hierarchy = [state.hierarchy[0], { name: name.toUpperCase(), type: 'province' }];
+                const finalPath = provData.ruta_archivo_local.replace(/\\/g, '/').split('Resultados_ONPE/').pop();
+                await loadLayer(finalPath, (f, l) => {
+                    const distName = f.properties.DISTRITO || f.properties.name || f.id;
+                    l.bindTooltip(distName, { sticky: true, direction: 'top' });
+                    l.on('click', () => {
+                        state.currentLayer.eachLayer(il => il.setStyle(styles.default));
+                        l.setStyle(styles.selected);
+                        document.getElementById('select-district').value = distName;
+                    });
+                });
+                populateDistrictsFromGeo();
+                document.getElementById('select-province').value = Object.keys(regData).find(k => normalize(k) === normalize(name));
+            }
+            updateBreadcrumb();
+        }
+
+        function populateProvinces(regionName) {
+            const select = document.getElementById('select-province');
+            select.innerHTML = '<option value="">PROVINCIA</option>';
+            const key = Object.keys(state.mapping).find(k => k.includes('PER'));
+            const regData = findInMapping(state.mapping[key], regionName);
+            if (regData) {
+                Object.keys(regData).sort().forEach(p => { if (p !== "Sin_Provincia") { const o = document.createElement('option'); o.value = p; o.textContent = p; select.appendChild(o); } });
+            }
+            document.getElementById('select-district').innerHTML = '<option value="">DISTRITO</option>';
+        }
+
+        function populateDistrictsFromGeo() {
+            const select = document.getElementById('select-district');
+            select.innerHTML = '<option value="">DISTRITO</option>';
+            const dists = [...new Set(state.currentLayer.getLayers().map(l => l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id))].sort();
+            dists.forEach(d => { if(d) { const o = document.createElement('option'); o.value = d; o.textContent = d; select.appendChild(o); } });
+        }
+
+        function populateContinents() {
+            const select = document.getElementById('select-continent');
+            select.innerHTML = '<option value="">CONTINENTE</option>';
+            Object.keys(state.mapping["EXTRANJERO"]).sort().forEach(c => {
+                const o = document.createElement('option'); o.value = c; o.textContent = c;
+                select.appendChild(o);
+            });
+        }
+
+        async function drillDownExtranjero(name) {
+            const ext = state.mapping["EXTRANJERO"];
+            const contData = findInMapping(ext, name);
+            if (contData) {
+                state.hierarchy = [{ name: name.toUpperCase(), type: 'continent' }];
+                const firstCountry = Object.values(contData)[0];
+                const finalPath = firstCountry.ruta_archivo_local.replace(/\\/g, '/').split('Resultados_ONPE/').pop();
+                await loadLayer(finalPath, (f, l) => { 
+                    const cName = f.properties.name || f.id;
+                    l.bindTooltip(cName, { sticky: true, direction: 'top' });
+                    l.on('click', () => detectAndSwitch(cName)); 
+                });
+                populateCountries(name);
+                document.getElementById('select-continent').value = Object.keys(ext).find(k => normalize(k) === normalize(name));
+            } else {
+                await detectAndSwitch(name);
+            }
+            updateBreadcrumb();
+        }
+
+        function populateCountries(continent) {
+            const select = document.getElementById('select-country');
+            select.innerHTML = '<option value="">PAÍS</option>';
+            const contData = findInMapping(state.mapping["EXTRANJERO"], continent);
+            if (contData) {
+                Object.keys(contData).sort().forEach(c => {
+                    const o = document.createElement('option'); o.value = c; o.textContent = c;
+                    select.appendChild(o);
+                });
+            }
+            document.getElementById('select-city').innerHTML = '<option value="">CIUDAD</option>';
+        }
+
+        function selectCountry(continent, country) {
+            const normC = normalize(country);
+            let foundLayer = null;
+            state.currentLayer.eachLayer(l => {
+                const layerName = normalize(l.feature.properties.name || l.feature.id);
+                if (layerName === normC || normC.includes(layerName) || layerName.includes(normC)) {
+                    l.setStyle(styles.selected); foundLayer = l;
+                } else l.setStyle(styles.default);
+            });
+            if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
+
+            const contData = findInMapping(state.mapping["EXTRANJERO"], continent);
+            if (contData) {
+                document.getElementById('select-country').value = Object.keys(contData).find(k => normalize(k) === normalize(country));
+                populateCities(continent, country);
+            }
+        }
+
+        function populateCities(continent, country) {
+            const select = document.getElementById('select-city');
+            select.innerHTML = '<option value="">CIUDAD</option>';
+            const contData = findInMapping(state.mapping["EXTRANJERO"], continent);
+            const countryData = findInMapping(contData, country);
+            if (countryData && countryData.sub_ubicaciones) {
+                countryData.sub_ubicaciones.sort().forEach(city => {
+                    const o = document.createElement('option'); o.value = city; o.textContent = city;
+                    select.appendChild(o);
+                });
+            }
+        }
+
+        document.getElementById('select-view').addEventListener('change', (e) => handleViewChange(e.target.value));
+        document.getElementById('select-region').addEventListener('change', (e) => { if(e.target.value) drillDownPeru(e.target.value, 'region'); });
+        document.getElementById('select-province').addEventListener('change', (e) => { if(e.target.value) drillDownPeru(e.target.value, 'province', state.hierarchy[0].name); });
+        document.getElementById('select-district').addEventListener('change', (e) => {
+            const normD = normalize(e.target.value);
+            let foundLayer = null;
+            state.currentLayer.eachLayer(l => {
+                if (normalize(l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id) === normD) {
+                    l.setStyle(styles.selected); foundLayer = l;
+                } else l.setStyle(styles.default);
+            });
+            if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
+        });
+        document.getElementById('select-continent').addEventListener('change', (e) => { if(e.target.value) drillDownExtranjero(e.target.value); });
+        document.getElementById('select-country').addEventListener('change', (e) => { if(e.target.value) selectCountry(state.hierarchy[0].name, e.target.value); });
+        document.getElementById('btn-clear').addEventListener('click', () => handleViewChange(state.view));
+
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,4265 @@
+{
+    "PERÚ": {
+        "AMAZONAS": {
+            "Sin_Provincia": {
+                "codigo_json": "010000.json",
+                "nombre_ubicacion": "Sin_Provincia",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\Sin_Provincia\\010000.json"
+            },
+            "BAGUA": {
+                "codigo_json": "010200.json",
+                "nombre_ubicacion": "BAGUA",
+                "sub_ubicaciones": [
+                    "ARAMANGO",
+                    "BAGUA",
+                    "COPALLIN",
+                    "EL PARCO",
+                    "IMAZA",
+                    "LA PECA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\BAGUA\\010200.json"
+            },
+            "BONGARÁ": {
+                "codigo_json": "010300.json",
+                "nombre_ubicacion": "BONGARÁ",
+                "sub_ubicaciones": [
+                    "CHISQUILLA",
+                    "CHURUJA",
+                    "COROSHA",
+                    "CUISPES",
+                    "FLORIDA",
+                    "JAZAN",
+                    "JUMBILLA",
+                    "RECTA",
+                    "SAN CARLOS",
+                    "SHIPASBAMBA",
+                    "VALERA",
+                    "YAMBRASBAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\BONGARÁ\\010300.json"
+            },
+            "CHACHAPOYAS": {
+                "codigo_json": "010100.json",
+                "nombre_ubicacion": "CHACHAPOYAS",
+                "sub_ubicaciones": [
+                    "ASUNCIÓN",
+                    "BALSAS",
+                    "CHACHAPOYAS",
+                    "CHETO",
+                    "CHILIQUIN",
+                    "CHUQUIBAMBA",
+                    "GRANADA",
+                    "HUANCAS",
+                    "LA JALCA",
+                    "LEIMEBAMBA",
+                    "LEVANTO",
+                    "MAGDALENA",
+                    "MARISCAL CASTILLA",
+                    "MOLINOPAMPA",
+                    "MONTEVIDEO",
+                    "OLLEROS",
+                    "QUINJALCA",
+                    "SAN FRANCISCO DE DAGUAS",
+                    "SAN ISIDRO DE MAINO",
+                    "SOLOCO",
+                    "SONCHE"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\CHACHAPOYAS\\010100.json"
+            },
+            "CONDORCANQUI": {
+                "codigo_json": "010600.json",
+                "nombre_ubicacion": "CONDORCANQUI",
+                "sub_ubicaciones": [
+                    "EL CENEPA",
+                    "NIEVA",
+                    "RÍO SANTIAGO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\CONDORCANQUI\\010600.json"
+            },
+            "LUYA": {
+                "codigo_json": "010400.json",
+                "nombre_ubicacion": "LUYA",
+                "sub_ubicaciones": [
+                    "CAMPORREDONDO",
+                    "COCABAMBA",
+                    "COLCAMAR",
+                    "CONILA",
+                    "INGUILPATA",
+                    "LAMUD",
+                    "LONGUITA",
+                    "LONYA CHICO",
+                    "LUYA",
+                    "LUYA VIEJO",
+                    "MARÍA",
+                    "OCALLI",
+                    "OCUMAL",
+                    "PISUQUIA",
+                    "PROVIDENCIA",
+                    "SAN CRISTÓBAL",
+                    "SAN FRANCISCO DEL YESO",
+                    "SAN JERÓNIMO",
+                    "SAN JUAN DE LOPECANCHA",
+                    "SANTA CATALINA",
+                    "SANTO TOMÁS",
+                    "TINGO",
+                    "TRITA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\LUYA\\010400.json"
+            },
+            "RODRÍGUEZ DE MENDOZA": {
+                "codigo_json": "010500.json",
+                "nombre_ubicacion": "RODRÍGUEZ DE MENDOZA",
+                "sub_ubicaciones": [
+                    "CHIRIMOTO",
+                    "COCHAMAL",
+                    "HUAMBO",
+                    "LIMABAMBA",
+                    "LONGAR",
+                    "MARISCAL BENAVIDES",
+                    "MILPUCC",
+                    "OMIA",
+                    "SAN NICOLÁS",
+                    "SANTA ROSA",
+                    "TOTORA",
+                    "VISTA ALEGRE"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\RODRÍGUEZ DE MENDOZA\\010500.json"
+            },
+            "UTCUBAMBA": {
+                "codigo_json": "010700.json",
+                "nombre_ubicacion": "UTCUBAMBA",
+                "sub_ubicaciones": [
+                    "BAGUA GRANDE",
+                    "CAJARURO",
+                    "CUMBA",
+                    "EL MILAGRO",
+                    "JAMALCA",
+                    "LONYA GRANDE",
+                    "YAMON"
+                ],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\UTCUBAMBA\\010700.json"
+            },
+            "NUEVA ZELANDA": {
+                "codigo_json": "010000.json",
+                "nombre_ubicacion": "NUEVA ZELANDA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\AMAZONAS\\NUEVA ZELANDA\\010000.json"
+            }
+        },
+        "ÁNCASH": {
+            "UTCUBAMBA": {
+                "codigo_json": "020000.json",
+                "nombre_ubicacion": "UTCUBAMBA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\UTCUBAMBA\\020000.json"
+            },
+            "AIJA": {
+                "codigo_json": "020200.json",
+                "nombre_ubicacion": "AIJA",
+                "sub_ubicaciones": [
+                    "AIJA",
+                    "CORIS",
+                    "HUACLLAN",
+                    "LA MERCED",
+                    "SUCCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\AIJA\\020200.json"
+            },
+            "ANTONIO RAIMONDI": {
+                "codigo_json": "021600.json",
+                "nombre_ubicacion": "ANTONIO RAIMONDI",
+                "sub_ubicaciones": [
+                    "ACZO",
+                    "CHACCHO",
+                    "CHINGAS",
+                    "LLAMELLIN",
+                    "MIRGAS",
+                    "SAN JUAN DE RONTOY"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\ANTONIO RAIMONDI\\021600.json"
+            },
+            "ASUNCIÓN": {
+                "codigo_json": "021800.json",
+                "nombre_ubicacion": "ASUNCIÓN",
+                "sub_ubicaciones": [
+                    "ACOCHACA",
+                    "CHACAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\ASUNCIÓN\\021800.json"
+            },
+            "BOLOGNESI": {
+                "codigo_json": "020300.json",
+                "nombre_ubicacion": "BOLOGNESI",
+                "sub_ubicaciones": [
+                    "ABELARDO PARDO LEZAMETA",
+                    "ANTONIO RAYMONDI",
+                    "AQUIA",
+                    "CAJACAY",
+                    "CANIS",
+                    "CHIQUIAN",
+                    "COLQUIOC",
+                    "HUALLANCA",
+                    "HUASTA",
+                    "HUAYLLACAYAN",
+                    "LA PRIMAVERA",
+                    "MANGAS",
+                    "PACLLON",
+                    "SAN MIGUEL DE CORPANQUI",
+                    "TICLLOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\BOLOGNESI\\020300.json"
+            },
+            "CARHUAZ": {
+                "codigo_json": "020400.json",
+                "nombre_ubicacion": "CARHUAZ",
+                "sub_ubicaciones": [
+                    "ACOPAMPA",
+                    "AMASHCA",
+                    "ANTA",
+                    "ATAQUERO",
+                    "CARHUAZ",
+                    "MARCARA",
+                    "PARIAHUANCA",
+                    "SAN MIGUEL DE ACO",
+                    "SHILLA",
+                    "TINCO",
+                    "YUNGAR"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\CARHUAZ\\020400.json"
+            },
+            "CARLOS FERMÍN FITZCARRALD": {
+                "codigo_json": "021700.json",
+                "nombre_ubicacion": "CARLOS FERMÍN FITZCARRALD",
+                "sub_ubicaciones": [
+                    "SAN LUIS",
+                    "SAN NICOLÁS",
+                    "YAUYA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\CARLOS FERMÍN FITZCARRALD\\021700.json"
+            },
+            "CASMA": {
+                "codigo_json": "020500.json",
+                "nombre_ubicacion": "CASMA",
+                "sub_ubicaciones": [
+                    "BUENA VISTA ALTA",
+                    "CASMA",
+                    "COMANDANTE NOEL",
+                    "YAUTAN"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\CASMA\\020500.json"
+            },
+            "CORONGO": {
+                "codigo_json": "020600.json",
+                "nombre_ubicacion": "CORONGO",
+                "sub_ubicaciones": [
+                    "ACO",
+                    "BAMBAS",
+                    "CORONGO",
+                    "CUSCA",
+                    "LA PAMPA",
+                    "YANAC",
+                    "YUPAN"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\CORONGO\\020600.json"
+            },
+            "HUARAZ": {
+                "codigo_json": "020100.json",
+                "nombre_ubicacion": "HUARAZ",
+                "sub_ubicaciones": [
+                    "COCHABAMBA",
+                    "COLCABAMBA",
+                    "HUANCHAY",
+                    "HUARAZ",
+                    "INDEPENDENCIA",
+                    "JANGAS",
+                    "LA LIBERTAD",
+                    "OLLEROS",
+                    "PAMPAS GRANDE",
+                    "PARIACOTO",
+                    "PIRA",
+                    "TARICA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\HUARAZ\\020100.json"
+            },
+            "HUARI": {
+                "codigo_json": "020800.json",
+                "nombre_ubicacion": "HUARI",
+                "sub_ubicaciones": [
+                    "ANRA",
+                    "CAJAY",
+                    "CHAVÍN DE HUÁNTAR",
+                    "HUACACHI",
+                    "HUACCHIS",
+                    "HUACHIS",
+                    "HUANTAR",
+                    "HUARI",
+                    "MASIN",
+                    "PAUCAS",
+                    "PONTO",
+                    "RAHUAPAMPA",
+                    "RAPAYAN",
+                    "SAN MARCOS",
+                    "SAN PEDRO DE CHANA",
+                    "UCO"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\HUARI\\020800.json"
+            },
+            "HUARMEY": {
+                "codigo_json": "021900.json",
+                "nombre_ubicacion": "HUARMEY",
+                "sub_ubicaciones": [
+                    "COCHAPETI",
+                    "CULEBRAS",
+                    "HUARMEY",
+                    "HUAYAN",
+                    "MALVAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\HUARMEY\\021900.json"
+            },
+            "HUAYLAS": {
+                "codigo_json": "020700.json",
+                "nombre_ubicacion": "HUAYLAS",
+                "sub_ubicaciones": [
+                    "CARAZ",
+                    "HUALLANCA",
+                    "HUATA",
+                    "HUAYLAS",
+                    "MATO",
+                    "PAMPAROMAS",
+                    "PUEBLO LIBRE",
+                    "SANTA CRUZ",
+                    "SANTO TORIBIO",
+                    "YURACMARCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\HUAYLAS\\020700.json"
+            },
+            "MARISCAL LUZURIAGA": {
+                "codigo_json": "020900.json",
+                "nombre_ubicacion": "MARISCAL LUZURIAGA",
+                "sub_ubicaciones": [
+                    "CASCA",
+                    "ELEAZAR GUZMÁN BARRÓN",
+                    "FIDEL OLIVAS ESCUDERO",
+                    "LLAMA",
+                    "LLUMPA",
+                    "LUCMA",
+                    "MUSGA",
+                    "PISCOBAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\MARISCAL LUZURIAGA\\020900.json"
+            },
+            "OCROS": {
+                "codigo_json": "022000.json",
+                "nombre_ubicacion": "OCROS",
+                "sub_ubicaciones": [
+                    "ACAS",
+                    "CAJAMARQUILLA",
+                    "CARHUAPAMPA",
+                    "COCHAS",
+                    "CONGAS",
+                    "LLIPA",
+                    "OCROS",
+                    "SAN CRISTÓBAL DE RAJAN",
+                    "SAN PEDRO",
+                    "SANTIAGO DE CHILCAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\OCROS\\022000.json"
+            },
+            "PALLASCA": {
+                "codigo_json": "021000.json",
+                "nombre_ubicacion": "PALLASCA",
+                "sub_ubicaciones": [
+                    "BOLOGNESI",
+                    "CABANA",
+                    "CONCHUCOS",
+                    "HUACASCHUQUE",
+                    "HUANDOVAL",
+                    "LACABAMBA",
+                    "LLAPO",
+                    "PALLASCA",
+                    "PAMPAS",
+                    "SANTA ROSA",
+                    "TAUCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\PALLASCA\\021000.json"
+            },
+            "POMABAMBA": {
+                "codigo_json": "021100.json",
+                "nombre_ubicacion": "POMABAMBA",
+                "sub_ubicaciones": [
+                    "HUAYLLAN",
+                    "PAROBAMBA",
+                    "POMABAMBA",
+                    "QUINUABAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\POMABAMBA\\021100.json"
+            },
+            "RECUAY": {
+                "codigo_json": "021200.json",
+                "nombre_ubicacion": "RECUAY",
+                "sub_ubicaciones": [
+                    "CATAC",
+                    "COTAPARACO",
+                    "HUAYLLAPAMPA",
+                    "LLACLLIN",
+                    "MARCA",
+                    "PAMPAS CHICO",
+                    "PARARIN",
+                    "RECUAY",
+                    "TAPACOCHA",
+                    "TICAPAMPA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\RECUAY\\021200.json"
+            },
+            "SANTA": {
+                "codigo_json": "021300.json",
+                "nombre_ubicacion": "SANTA",
+                "sub_ubicaciones": [
+                    "CACERES DEL PERÚ",
+                    "CHIMBOTE",
+                    "COISHCO",
+                    "MACATE",
+                    "MORO",
+                    "NEPEÑA",
+                    "NUEVO CHIMBOTE",
+                    "SAMANCO",
+                    "SANTA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\SANTA\\021300.json"
+            },
+            "SIHUAS": {
+                "codigo_json": "021400.json",
+                "nombre_ubicacion": "SIHUAS",
+                "sub_ubicaciones": [
+                    "ACOBAMBA",
+                    "ALFONSO UGARTE",
+                    "CASHAPAMPA",
+                    "CHINGALPO",
+                    "HUAYLLABAMBA",
+                    "QUICHES",
+                    "RAGASH",
+                    "SAN JUAN",
+                    "SICSIBAMBA",
+                    "SIHUAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\SIHUAS\\021400.json"
+            },
+            "YUNGAY": {
+                "codigo_json": "021500.json",
+                "nombre_ubicacion": "YUNGAY",
+                "sub_ubicaciones": [
+                    "CASCAPARA",
+                    "MANCOS",
+                    "MATACOTO",
+                    "QUILLO",
+                    "RANRAHIRCA",
+                    "SHUPLUY",
+                    "YANAMA",
+                    "YUNGAY"
+                ],
+                "ruta_archivo_local": "PERÚ\\ÁNCASH\\YUNGAY\\021500.json"
+            }
+        },
+        "APURÍMAC": {
+            "YUNGAY": {
+                "codigo_json": "030000.json",
+                "nombre_ubicacion": "YUNGAY",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\YUNGAY\\030000.json"
+            },
+            "ABANCAY": {
+                "codigo_json": "030100.json",
+                "nombre_ubicacion": "ABANCAY",
+                "sub_ubicaciones": [
+                    "ABANCAY",
+                    "CHACOCHE",
+                    "CIRCA",
+                    "CURAHUASI",
+                    "HUANIPACA",
+                    "LAMBRAMA",
+                    "PICHIRHUA",
+                    "SAN PEDRO DE CACHORA",
+                    "TAMBURCO"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\ABANCAY\\030100.json"
+            },
+            "ANDAHUAYLAS": {
+                "codigo_json": "030300.json",
+                "nombre_ubicacion": "ANDAHUAYLAS",
+                "sub_ubicaciones": [
+                    "ANDAHUAYLAS",
+                    "ANDARAPA",
+                    "CHIARA",
+                    "HUANCARAMA",
+                    "HUANCARAY",
+                    "HUAYANA",
+                    "JOSÉ MARIA ARGUEDAS",
+                    "KAQUIABAMBA",
+                    "KISHUARA",
+                    "PACOBAMBA",
+                    "PACUCHA",
+                    "PAMPACHIRI",
+                    "POMACOCHA",
+                    "SAN ANTONIO DE CACHI",
+                    "SAN JERÓNIMO",
+                    "SAN MIGUEL DE CHACCRAMPA",
+                    "SANTA MARÍA DE CHICMO",
+                    "TALAVERA",
+                    "TUMAY HUARACA",
+                    "TURPO"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\ANDAHUAYLAS\\030300.json"
+            },
+            "ANTABAMBA": {
+                "codigo_json": "030400.json",
+                "nombre_ubicacion": "ANTABAMBA",
+                "sub_ubicaciones": [
+                    "ANTABAMBA",
+                    "EL ORO",
+                    "HUAQUIRCA",
+                    "JUAN ESPINOZA MEDRANO",
+                    "OROPESA",
+                    "PACHACONAS",
+                    "SABAINO"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\ANTABAMBA\\030400.json"
+            },
+            "AYMARAES": {
+                "codigo_json": "030200.json",
+                "nombre_ubicacion": "AYMARAES",
+                "sub_ubicaciones": [
+                    "CAPAYA",
+                    "CARAYBAMBA",
+                    "CHALHUANCA",
+                    "CHAPIMARCA",
+                    "COLCABAMBA",
+                    "COTARUSE",
+                    "IHUAYLLO",
+                    "JUSTO APU SAHUARAURA",
+                    "LUCRE",
+                    "POCOHUANCA",
+                    "SAN JUAN DE CHACÑA",
+                    "SAÑAYCA",
+                    "SORAYA",
+                    "TAPAIRIHUA",
+                    "TINTAY",
+                    "TORAYA",
+                    "YANACA"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\AYMARAES\\030200.json"
+            },
+            "CHINCHEROS": {
+                "codigo_json": "030700.json",
+                "nombre_ubicacion": "CHINCHEROS",
+                "sub_ubicaciones": [
+                    "AHUAYRO",
+                    "ANCO HUALLO",
+                    "CHINCHEROS",
+                    "COCHARCAS",
+                    "EL PORVENIR",
+                    "HUACCANA",
+                    "LOS CHANKAS",
+                    "OCOBAMBA",
+                    "ONGOY",
+                    "RANRACANCHA",
+                    "ROCCHACC",
+                    "URANMARCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\CHINCHEROS\\030700.json"
+            },
+            "COTABAMBAS": {
+                "codigo_json": "030500.json",
+                "nombre_ubicacion": "COTABAMBAS",
+                "sub_ubicaciones": [
+                    "CHALLHUAHUACHO",
+                    "COTABAMBAS",
+                    "COYLLURQUI",
+                    "HAQUIRA",
+                    "MARA",
+                    "TAMBOBAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\COTABAMBAS\\030500.json"
+            },
+            "GRAU": {
+                "codigo_json": "030600.json",
+                "nombre_ubicacion": "GRAU",
+                "sub_ubicaciones": [
+                    "CHUQUIBAMBILLA",
+                    "CURASCO",
+                    "CURPAHUASI",
+                    "GAMARRA",
+                    "HUAYLLATI",
+                    "MAMARA",
+                    "MICAELA BASTIDAS",
+                    "PATAYPAMPA",
+                    "PROGRESO",
+                    "SAN ANTONIO",
+                    "SANTA ROSA",
+                    "TURPAY",
+                    "VILCABAMBA",
+                    "VIRUNDO"
+                ],
+                "ruta_archivo_local": "PERÚ\\APURÍMAC\\GRAU\\030600.json"
+            }
+        },
+        "AREQUIPA": {
+            "GRAU": {
+                "codigo_json": "040000.json",
+                "nombre_ubicacion": "GRAU",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\GRAU\\040000.json"
+            },
+            "AREQUIPA": {
+                "codigo_json": "040100.json",
+                "nombre_ubicacion": "AREQUIPA",
+                "sub_ubicaciones": [
+                    "ALTO SELVA ALEGRE",
+                    "AREQUIPA",
+                    "CAYMA",
+                    "CERRO COLORADO",
+                    "CHARACATO",
+                    "CHIGUATA",
+                    "JACOBO HUNTER",
+                    "JOSÉ LUIS BUSTAMANTE Y RIVERO",
+                    "LA JOYA",
+                    "MARIANO MELGAR",
+                    "MIRAFLORES",
+                    "MOLLEBAYA",
+                    "PAUCARPATA",
+                    "POCSI",
+                    "POLOBAYA",
+                    "QUEQUEÑA",
+                    "SABANDIA",
+                    "SACHACA",
+                    "SAN JUAN DE SIGUAS",
+                    "SAN JUAN DE TARUCANI",
+                    "SANTA ISABEL DE SIGUAS",
+                    "SANTA RITA DE SIHUAS",
+                    "SOCABAYA",
+                    "TIABAYA",
+                    "UCHUMAYO",
+                    "VITOR",
+                    "YANAHUARA",
+                    "YARABAMBA",
+                    "YURA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\AREQUIPA\\040100.json"
+            },
+            "CAMANÁ": {
+                "codigo_json": "040300.json",
+                "nombre_ubicacion": "CAMANÁ",
+                "sub_ubicaciones": [
+                    "CAMANÁ",
+                    "JOSÉ MARIA QUIMPER",
+                    "MARIANO NICOLÁS VALCARCEL",
+                    "MARISCAL CÁCERES",
+                    "NICOLÁS DE PIEROLA",
+                    "OCOÑA",
+                    "QUILCA",
+                    "SAMUEL PASTOR"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\CAMANÁ\\040300.json"
+            },
+            "CARAVELÍ": {
+                "codigo_json": "040400.json",
+                "nombre_ubicacion": "CARAVELÍ",
+                "sub_ubicaciones": [
+                    "ACARI",
+                    "ATICO",
+                    "ATIQUIPA",
+                    "BELLA UNIÓN",
+                    "CAHUACHO",
+                    "CARAVELÍ",
+                    "CHALA",
+                    "CHAPARRA",
+                    "HUANUHUANU",
+                    "JAQUI",
+                    "LOMAS",
+                    "QUICACHA",
+                    "YAUCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\CARAVELÍ\\040400.json"
+            },
+            "CASTILLA": {
+                "codigo_json": "040500.json",
+                "nombre_ubicacion": "CASTILLA",
+                "sub_ubicaciones": [
+                    "ANDAGUA",
+                    "APLAO",
+                    "AYO",
+                    "CHACHAS",
+                    "CHILCAYMARCA",
+                    "CHOCO",
+                    "HUANCARQUI",
+                    "MACHAGUAY",
+                    "ORCOPAMPA",
+                    "PAMPACOLCA",
+                    "TIPAN",
+                    "UÑON",
+                    "URACA",
+                    "VIRACO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\CASTILLA\\040500.json"
+            },
+            "CAYLLOMA": {
+                "codigo_json": "040200.json",
+                "nombre_ubicacion": "CAYLLOMA",
+                "sub_ubicaciones": [
+                    "ACHOMA",
+                    "CABANACONDE",
+                    "CALLALLI",
+                    "CAYLLOMA",
+                    "CHIVAY",
+                    "COPORAQUE",
+                    "HUAMBO",
+                    "HUANCA",
+                    "ICHUPAMPA",
+                    "LARI",
+                    "LLUTA",
+                    "MACA",
+                    "MADRIGAL",
+                    "MAJES",
+                    "SAN ANTONIO DE CHUCA",
+                    "SIBAYO",
+                    "TAPAY",
+                    "TISCO",
+                    "TUTI",
+                    "YANQUE"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\CAYLLOMA\\040200.json"
+            },
+            "CONDESUYOS": {
+                "codigo_json": "040600.json",
+                "nombre_ubicacion": "CONDESUYOS",
+                "sub_ubicaciones": [
+                    "ANDARAY",
+                    "CAYARANI",
+                    "CHICHAS",
+                    "CHUQUIBAMBA",
+                    "IRAY",
+                    "RÍO GRANDE",
+                    "SALAMANCA",
+                    "YANAQUIHUA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\CONDESUYOS\\040600.json"
+            },
+            "ISLAY": {
+                "codigo_json": "040700.json",
+                "nombre_ubicacion": "ISLAY",
+                "sub_ubicaciones": [
+                    "COCACHACRA",
+                    "DEÁN VALDIVIA",
+                    "ISLAY",
+                    "MEJÍA",
+                    "MOLLENDO",
+                    "PUNTA DE BOMBÓN"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\ISLAY\\040700.json"
+            },
+            "LA UNIÓN": {
+                "codigo_json": "040800.json",
+                "nombre_ubicacion": "LA UNIÓN",
+                "sub_ubicaciones": [
+                    "ALCA",
+                    "CHARCANA",
+                    "COTAHUASI",
+                    "HUAYNACOTAS",
+                    "PAMPAMARCA",
+                    "PUYCA",
+                    "QUECHUALLA",
+                    "SAYLA",
+                    "TAURIA",
+                    "TOMEPAMPA",
+                    "TORO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AREQUIPA\\LA UNIÓN\\040800.json"
+            }
+        },
+        "AYACUCHO": {
+            "LA UNIÓN": {
+                "codigo_json": "050000.json",
+                "nombre_ubicacion": "LA UNIÓN",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\LA UNIÓN\\050000.json"
+            },
+            "CANGALLO": {
+                "codigo_json": "050200.json",
+                "nombre_ubicacion": "CANGALLO",
+                "sub_ubicaciones": [
+                    "CANGALLO",
+                    "CHUSCHI",
+                    "LOS MOROCHUCOS",
+                    "MARÍA PARADO DE BELLIDO",
+                    "PARAS",
+                    "TOTOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\CANGALLO\\050200.json"
+            },
+            "HUAMANGA": {
+                "codigo_json": "050100.json",
+                "nombre_ubicacion": "HUAMANGA",
+                "sub_ubicaciones": [
+                    "ACOCRO",
+                    "ACOS VINCHOS",
+                    "ANDRÉS AVELINO CÁCERES DORREGARAY",
+                    "AYACUCHO",
+                    "CARMEN ALTO",
+                    "CHIARA",
+                    "JESÚS NAZARENO",
+                    "OCROS",
+                    "PACAYCASA",
+                    "QUINUA",
+                    "SAN JOSÉ DE TICLLAS",
+                    "SAN JUAN BAUTISTA",
+                    "SANTIAGO DE PISCHA",
+                    "SOCOS",
+                    "TAMBILLO",
+                    "VINCHOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\HUAMANGA\\050100.json"
+            },
+            "HUANCA SANCOS": {
+                "codigo_json": "050800.json",
+                "nombre_ubicacion": "HUANCA SANCOS",
+                "sub_ubicaciones": [
+                    "CARAPO",
+                    "SACSAMARCA",
+                    "SANCOS",
+                    "SANTIAGO DE LUCANAMARCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\HUANCA SANCOS\\050800.json"
+            },
+            "HUANTA": {
+                "codigo_json": "050300.json",
+                "nombre_ubicacion": "HUANTA",
+                "sub_ubicaciones": [
+                    "AYAHUANCO",
+                    "CANAYRE",
+                    "CHACA",
+                    "HUAMANGUILLA",
+                    "HUANTA",
+                    "IGUAIN",
+                    "LLOCHEGUA",
+                    "LURICOCHA",
+                    "PUCACOLPA",
+                    "PUTIS",
+                    "SANTILLANA",
+                    "SIVIA",
+                    "UCHURACCAY"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\HUANTA\\050300.json"
+            },
+            "LA MAR": {
+                "codigo_json": "050400.json",
+                "nombre_ubicacion": "LA MAR",
+                "sub_ubicaciones": [
+                    "ANCHIHUAY",
+                    "ANCO",
+                    "AYNA",
+                    "CHILCAS",
+                    "CHUNGUI",
+                    "LUIS CARRANZA",
+                    "NINABAMBA",
+                    "ORONCCOY",
+                    "PATIBAMBA",
+                    "RÍO MAGDALENA",
+                    "SAMUGARI",
+                    "SAN MIGUEL",
+                    "SANTA ROSA",
+                    "TAMBO",
+                    "UNIÓN PROGRESO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\LA MAR\\050400.json"
+            },
+            "LUCANAS": {
+                "codigo_json": "050500.json",
+                "nombre_ubicacion": "LUCANAS",
+                "sub_ubicaciones": [
+                    "AUCARA",
+                    "CABANA",
+                    "CARMEN SALCEDO",
+                    "CHAVIÑA",
+                    "CHIPAO",
+                    "HUAC-HUAS",
+                    "LARAMATE",
+                    "LEONCIO PRADO",
+                    "LLAUTA",
+                    "LUCANAS",
+                    "OCAÑA",
+                    "OTOCA",
+                    "PUQUIO",
+                    "SAISA",
+                    "SANCOS",
+                    "SAN CRISTÓBAL",
+                    "SAN JUAN",
+                    "SAN PEDRO",
+                    "SAN PEDRO DE PALCO",
+                    "SANTA ANA DE HUAYCAHUACHO",
+                    "SANTA LUCÍA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\LUCANAS\\050500.json"
+            },
+            "PARINACOCHAS": {
+                "codigo_json": "050600.json",
+                "nombre_ubicacion": "PARINACOCHAS",
+                "sub_ubicaciones": [
+                    "CHUMPI",
+                    "CORACORA",
+                    "CORONEL CASTAÑEDA",
+                    "PACAPAUSA",
+                    "PULLO",
+                    "PUYUSCA",
+                    "SAN FRANCISCO DE RIVACAYCO",
+                    "UPAHUACHO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\PARINACOCHAS\\050600.json"
+            },
+            "PÁUCAR DEL SARA SARA": {
+                "codigo_json": "051000.json",
+                "nombre_ubicacion": "PÁUCAR DEL SARA SARA",
+                "sub_ubicaciones": [
+                    "COLTA",
+                    "CORCULLA",
+                    "LAMPA",
+                    "MARCABAMBA",
+                    "OYOLO",
+                    "PARARCA",
+                    "PAUSA",
+                    "SAN JAVIER DE ALPABAMBA",
+                    "SAN JOSÉ DE USHUA",
+                    "SARA SARA"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\PÁUCAR DEL SARA SARA\\051000.json"
+            },
+            "SUCRE": {
+                "codigo_json": "051100.json",
+                "nombre_ubicacion": "SUCRE",
+                "sub_ubicaciones": [
+                    "BELÉN",
+                    "CHALCOS",
+                    "CHILCAYOC",
+                    "HUACAÑA",
+                    "MORCOLLA",
+                    "PAICO",
+                    "QUEROBAMBA",
+                    "SAN PEDRO DE LARCAY",
+                    "SAN SALVADOR DE QUIJE",
+                    "SANTIAGO DE PAUCARAY",
+                    "SORAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\SUCRE\\051100.json"
+            },
+            "VÍCTOR FAJARDO": {
+                "codigo_json": "050700.json",
+                "nombre_ubicacion": "VÍCTOR FAJARDO",
+                "sub_ubicaciones": [
+                    "ALCAMENCA",
+                    "APONGO",
+                    "ASQUIPATA",
+                    "CANARIA",
+                    "CAYARA",
+                    "COLCA",
+                    "HUALLA",
+                    "HUAMANQUIQUIA",
+                    "HUANCAPI",
+                    "HUANCARAYLLA",
+                    "SARHUA",
+                    "VILCANCHOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\VÍCTOR FAJARDO\\050700.json"
+            },
+            "VILCAS HUAMÁN": {
+                "codigo_json": "050900.json",
+                "nombre_ubicacion": "VILCAS HUAMÁN",
+                "sub_ubicaciones": [
+                    "ACCOMARCA",
+                    "CARHUANCA",
+                    "CONCEPCIÓN",
+                    "HUAMBALPA",
+                    "INDEPENDENCIA",
+                    "SAURAMA",
+                    "VILCAS HUAMÁN",
+                    "VISCHONGO"
+                ],
+                "ruta_archivo_local": "PERÚ\\AYACUCHO\\VILCAS HUAMÁN\\050900.json"
+            }
+        },
+        "CAJAMARCA": {
+            "VILCAS HUAMÁN": {
+                "codigo_json": "060000.json",
+                "nombre_ubicacion": "VILCAS HUAMÁN",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\VILCAS HUAMÁN\\060000.json"
+            },
+            "CAJABAMBA": {
+                "codigo_json": "060200.json",
+                "nombre_ubicacion": "CAJABAMBA",
+                "sub_ubicaciones": [
+                    "CACHACHI",
+                    "CAJABAMBA",
+                    "CONDEBAMBA",
+                    "SITACOCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CAJABAMBA\\060200.json"
+            },
+            "CAJAMARCA": {
+                "codigo_json": "060100.json",
+                "nombre_ubicacion": "CAJAMARCA",
+                "sub_ubicaciones": [
+                    "ASUNCIÓN",
+                    "CAJAMARCA",
+                    "CHETILLA",
+                    "COSPAN",
+                    "ENCAÑADA",
+                    "JESÚS",
+                    "LLACANORA",
+                    "LOS BAÑOS DEL INCA",
+                    "MAGDALENA",
+                    "MATARA",
+                    "NAMORA",
+                    "SAN JUAN"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CAJAMARCA\\060100.json"
+            },
+            "CELENDÍN": {
+                "codigo_json": "060300.json",
+                "nombre_ubicacion": "CELENDÍN",
+                "sub_ubicaciones": [
+                    "CELENDÍN",
+                    "CHUMUCH",
+                    "CORTEGANA",
+                    "HUASMÍN",
+                    "JORGE CHÁVEZ",
+                    "JOSÉ GÁLVEZ",
+                    "LA LIBERTAD DE PALLÁN",
+                    "MIGUEL IGLESIAS",
+                    "OXAMARCA",
+                    "SOROCHUCO",
+                    "SUCRE",
+                    "UTCO"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CELENDÍN\\060300.json"
+            },
+            "CHOTA": {
+                "codigo_json": "060600.json",
+                "nombre_ubicacion": "CHOTA",
+                "sub_ubicaciones": [
+                    "ANGUÍA",
+                    "CHADÍN",
+                    "CHALAMARCA",
+                    "CHIGUIRIP",
+                    "CHIMBÁN",
+                    "CHOROPAMPA",
+                    "CHOTA",
+                    "COCHABAMBA",
+                    "CONCHÁN",
+                    "HUAMBOS",
+                    "LAJAS",
+                    "LLAMA",
+                    "MIRACOSTA",
+                    "PACCHA",
+                    "PIÓN",
+                    "QUEROCOTO",
+                    "SAN JUAN DE LICUPIS",
+                    "TACABAMBA",
+                    "TOCMOCHE"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CHOTA\\060600.json"
+            },
+            "CONTUMAZA": {
+                "codigo_json": "060400.json",
+                "nombre_ubicacion": "CONTUMAZA",
+                "sub_ubicaciones": [
+                    "CHILETE",
+                    "CONTUMAZA",
+                    "CUPISNIQUE",
+                    "GUZMANGO",
+                    "SAN BENITO",
+                    "SANTA CRUZ DE TOLED",
+                    "TANTARICA",
+                    "YONÁN"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CONTUMAZA\\060400.json"
+            },
+            "CUTERVO": {
+                "codigo_json": "060500.json",
+                "nombre_ubicacion": "CUTERVO",
+                "sub_ubicaciones": [
+                    "CALLAYUC",
+                    "CHOROS",
+                    "CUJILLO",
+                    "CUTERVO",
+                    "LA RAMADA",
+                    "PIMPINGOS",
+                    "QUEROCOTILLO",
+                    "SAN ANDRÉS DE CUTERVO",
+                    "SAN JUAN DE CUTERVO",
+                    "SAN LUIS DE LUCMA",
+                    "SANTA CRUZ",
+                    "SANTO DOMINGO DE LA CAPILLA",
+                    "SANTO TOMÁS",
+                    "SOCOTA",
+                    "TORIBIO CASANOVA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\CUTERVO\\060500.json"
+            },
+            "HUALGAYOC": {
+                "codigo_json": "060700.json",
+                "nombre_ubicacion": "HUALGAYOC",
+                "sub_ubicaciones": [
+                    "BAMBAMARCA",
+                    "CHUGUR",
+                    "HUALGAYOC"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\HUALGAYOC\\060700.json"
+            },
+            "JAÉN": {
+                "codigo_json": "060800.json",
+                "nombre_ubicacion": "JAÉN",
+                "sub_ubicaciones": [
+                    "BELLAVISTA",
+                    "CHONTALÍ",
+                    "COLASAY",
+                    "HUABAL",
+                    "JAÉN",
+                    "LAS PIRIAS",
+                    "POMAHUACA",
+                    "PUCARA",
+                    "SALLIQUE",
+                    "SAN FELIPE",
+                    "SAN JOSÉ DEL ALTO",
+                    "SANTA ROSA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\JAÉN\\060800.json"
+            },
+            "SAN IGNACIO": {
+                "codigo_json": "061100.json",
+                "nombre_ubicacion": "SAN IGNACIO",
+                "sub_ubicaciones": [
+                    "CHIRINOS",
+                    "HUARANGO",
+                    "LA COIPA",
+                    "NAMBALLE",
+                    "SAN IGNACIO",
+                    "SAN JOSÉ DE LOURDES",
+                    "TABACONAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\SAN IGNACIO\\061100.json"
+            },
+            "SAN MARCOS": {
+                "codigo_json": "061200.json",
+                "nombre_ubicacion": "SAN MARCOS",
+                "sub_ubicaciones": [
+                    "CHANCAY",
+                    "EDUARDO VILLANUEVA",
+                    "GREGORIO PITA",
+                    "ICHOCÁN",
+                    "JOSÉ MANUEL QUIRÓZ",
+                    "JOSÉ SABOGAL",
+                    "PEDRO GÁLVEZ"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\SAN MARCOS\\061200.json"
+            },
+            "SAN MIGUEL": {
+                "codigo_json": "061000.json",
+                "nombre_ubicacion": "SAN MIGUEL",
+                "sub_ubicaciones": [
+                    "BOLÍVAR",
+                    "CALQUIS",
+                    "CATILLUC",
+                    "EL PRADO",
+                    "LA FLORIDA",
+                    "LLAPA",
+                    "NANCHOC",
+                    "NIEPOS",
+                    "SAN GREGORIO",
+                    "SAN MIGUEL",
+                    "SAN SILVESTRE DE COCHAN",
+                    "TONGOD",
+                    "UNIÓN AGUA BLANCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\SAN MIGUEL\\061000.json"
+            },
+            "SAN PABLO": {
+                "codigo_json": "061300.json",
+                "nombre_ubicacion": "SAN PABLO",
+                "sub_ubicaciones": [
+                    "SAN BERNARDINO",
+                    "SAN LUIS",
+                    "SAN PABLO",
+                    "TUMBADÉN"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\SAN PABLO\\061300.json"
+            },
+            "SANTA CRUZ": {
+                "codigo_json": "060900.json",
+                "nombre_ubicacion": "SANTA CRUZ",
+                "sub_ubicaciones": [
+                    "ANDABAMBA",
+                    "CATACHE",
+                    "CHANCAYBAÑOS",
+                    "LA ESPERANZA",
+                    "NINABAMBA",
+                    "PULÁN",
+                    "SANTA CRUZ",
+                    "SAUCEPAMPA",
+                    "SEXI",
+                    "UTICYACU",
+                    "YAUYUCAN"
+                ],
+                "ruta_archivo_local": "PERÚ\\CAJAMARCA\\SANTA CRUZ\\060900.json"
+            }
+        },
+        "CALLAO": {
+            "SANTA CRUZ": {
+                "codigo_json": "240000.json",
+                "nombre_ubicacion": "SANTA CRUZ",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\CALLAO\\SANTA CRUZ\\240000.json"
+            },
+            "CALLAO": {
+                "codigo_json": "240100.json",
+                "nombre_ubicacion": "CALLAO",
+                "sub_ubicaciones": [
+                    "BELLAVISTA",
+                    "CALLAO",
+                    "CARMEN DE LA LEGUA - REYNOSO",
+                    "LA PERLA",
+                    "LA PUNTA",
+                    "MI PERÚ",
+                    "VENTANILLA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CALLAO\\CALLAO\\240100.json"
+            }
+        },
+        "CUSCO": {
+            "CALLAO": {
+                "codigo_json": "070000.json",
+                "nombre_ubicacion": "CALLAO",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CALLAO\\070000.json"
+            },
+            "ACOMAYO": {
+                "codigo_json": "070200.json",
+                "nombre_ubicacion": "ACOMAYO",
+                "sub_ubicaciones": [
+                    "ACOMAYO",
+                    "ACOPIA",
+                    "ACOS",
+                    "MOSOC LLACTA",
+                    "POMACANCHI",
+                    "RONDOCAN",
+                    "SANGARARA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\ACOMAYO\\070200.json"
+            },
+            "ANTA": {
+                "codigo_json": "070300.json",
+                "nombre_ubicacion": "ANTA",
+                "sub_ubicaciones": [
+                    "ANCAHUASI",
+                    "ANTA",
+                    "CACHIMAYO",
+                    "CHINCHAYPUJIO",
+                    "HUAROCONDO",
+                    "LIMATAMBO",
+                    "MOLLEPATA",
+                    "PUCYURA",
+                    "ZURITE"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\ANTA\\070300.json"
+            },
+            "CALCA": {
+                "codigo_json": "070400.json",
+                "nombre_ubicacion": "CALCA",
+                "sub_ubicaciones": [
+                    "CALCA",
+                    "COYA",
+                    "LAMAY",
+                    "LARES",
+                    "PISAC",
+                    "SAN SALVADOR",
+                    "TARAY",
+                    "YANATILE"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CALCA\\070400.json"
+            },
+            "CANAS": {
+                "codigo_json": "070500.json",
+                "nombre_ubicacion": "CANAS",
+                "sub_ubicaciones": [
+                    "CHECCA",
+                    "KUNTURKANKI",
+                    "LANGUI",
+                    "LAYO",
+                    "PAMPAMARCA",
+                    "QUEHUE",
+                    "TÚPAC AMARU",
+                    "YANAOCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CANAS\\070500.json"
+            },
+            "CANCHIS": {
+                "codigo_json": "070600.json",
+                "nombre_ubicacion": "CANCHIS",
+                "sub_ubicaciones": [
+                    "CHECACUPE",
+                    "COMBAPATA",
+                    "MARANGANI",
+                    "PITUMARCA",
+                    "SAN PABLO",
+                    "SAN PEDRO",
+                    "SICUANI",
+                    "TINTA"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CANCHIS\\070600.json"
+            },
+            "CHUMBIVILCAS": {
+                "codigo_json": "070700.json",
+                "nombre_ubicacion": "CHUMBIVILCAS",
+                "sub_ubicaciones": [
+                    "CAPACMARCA",
+                    "CHAMACA",
+                    "COLQUEMARCA",
+                    "LIVITACA",
+                    "LLUSCO",
+                    "QUIÑOTA",
+                    "SANTO TOMÁS",
+                    "VELILLE"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CHUMBIVILCAS\\070700.json"
+            },
+            "CUSCO": {
+                "codigo_json": "070100.json",
+                "nombre_ubicacion": "CUSCO",
+                "sub_ubicaciones": [
+                    "CCORCA",
+                    "CUSCO",
+                    "POROY",
+                    "SAN JERÓNIMO",
+                    "SAN SEBASTIÁN",
+                    "SANTIAGO",
+                    "SAYLLA",
+                    "WANCHAQ"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\CUSCO\\070100.json"
+            },
+            "ESPINAR": {
+                "codigo_json": "070800.json",
+                "nombre_ubicacion": "ESPINAR",
+                "sub_ubicaciones": [
+                    "ALTO PICHIGUA",
+                    "CONDOROMA",
+                    "COPORAQUE",
+                    "ESPINAR",
+                    "OCORURO",
+                    "PALLPATA",
+                    "PICHIGUA",
+                    "SUYCKUTAMBO"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\ESPINAR\\070800.json"
+            },
+            "LA CONVENCIÓN": {
+                "codigo_json": "070900.json",
+                "nombre_ubicacion": "LA CONVENCIÓN",
+                "sub_ubicaciones": [
+                    "CIELO PUNCO",
+                    "ECHARATE",
+                    "HUAYOPATA",
+                    "INKAWASI",
+                    "KIMBIRI",
+                    "KUMPIRUSHIATO",
+                    "MANITEA",
+                    "MARANURA",
+                    "MEGANTONI",
+                    "OCOBAMBA",
+                    "PICHARI",
+                    "QUELLOUNO",
+                    "SANTA ANA",
+                    "SANTA TERESA",
+                    "UNIÓN ASHÁNINKA",
+                    "VILCABAMBA",
+                    "VILLA KINTIARINA",
+                    "VILLA VIRGEN"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\LA CONVENCIÓN\\070900.json"
+            },
+            "PARURO": {
+                "codigo_json": "071000.json",
+                "nombre_ubicacion": "PARURO",
+                "sub_ubicaciones": [
+                    "ACCHA",
+                    "CCAPI",
+                    "COLCHA",
+                    "HUANOQUITE",
+                    "OMACHA",
+                    "PACCARITAMBO",
+                    "PARURO",
+                    "PILLPINTO",
+                    "YAURISQUE"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\PARURO\\071000.json"
+            },
+            "PAUCARTAMBO": {
+                "codigo_json": "071100.json",
+                "nombre_ubicacion": "PAUCARTAMBO",
+                "sub_ubicaciones": [
+                    "CAICAY",
+                    "CHALLABAMBA",
+                    "COLQUEPATA",
+                    "HUANCARANI",
+                    "KOSÑIPATA",
+                    "PAUCARTAMBO"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\PAUCARTAMBO\\071100.json"
+            },
+            "QUISPICANCHI": {
+                "codigo_json": "071200.json",
+                "nombre_ubicacion": "QUISPICANCHI",
+                "sub_ubicaciones": [
+                    "ANDAHUAYLILLAS",
+                    "CAMANTI",
+                    "CCARHUAYO",
+                    "CCATCA",
+                    "CUSIPATA",
+                    "HUARO",
+                    "LUCRE",
+                    "MARCAPATA",
+                    "OCONGATE",
+                    "OROPESA",
+                    "QUIQUIJANA",
+                    "URCOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\QUISPICANCHI\\071200.json"
+            },
+            "URUBAMBA": {
+                "codigo_json": "071300.json",
+                "nombre_ubicacion": "URUBAMBA",
+                "sub_ubicaciones": [
+                    "CHINCHERO",
+                    "HUAYLLABAMBA",
+                    "MACHUPICCHU",
+                    "MARAS",
+                    "OLLANTAYTAMBO",
+                    "URUBAMBA",
+                    "YUCAY"
+                ],
+                "ruta_archivo_local": "PERÚ\\CUSCO\\URUBAMBA\\071300.json"
+            }
+        },
+        "HUANCAVELICA": {
+            "URUBAMBA": {
+                "codigo_json": "080000.json",
+                "nombre_ubicacion": "URUBAMBA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\URUBAMBA\\080000.json"
+            },
+            "ACOBAMBA": {
+                "codigo_json": "080200.json",
+                "nombre_ubicacion": "ACOBAMBA",
+                "sub_ubicaciones": [
+                    "ACOBAMBA",
+                    "ANDABAMBA",
+                    "ANTA",
+                    "CAJA",
+                    "MARCAS",
+                    "PAUCARA",
+                    "POMACOCHA",
+                    "ROSARIO"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\ACOBAMBA\\080200.json"
+            },
+            "ANGARAES": {
+                "codigo_json": "080300.json",
+                "nombre_ubicacion": "ANGARAES",
+                "sub_ubicaciones": [
+                    "ANCHONGA",
+                    "CALLANMARCA",
+                    "CCOCHACCASA",
+                    "CHINCHO",
+                    "CONGALLA",
+                    "HUALLAY - GRANDE",
+                    "HUANCA-HUANCA",
+                    "JULCAMARCA",
+                    "LIRCAY",
+                    "SAN ANTONIO DE ANTAPARCO",
+                    "SANTO TOMÁS DE PATA",
+                    "SECCLLA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\ANGARAES\\080300.json"
+            },
+            "CASTROVIRREYNA": {
+                "codigo_json": "080400.json",
+                "nombre_ubicacion": "CASTROVIRREYNA",
+                "sub_ubicaciones": [
+                    "ARMA",
+                    "AURAHUA",
+                    "CAPILLAS",
+                    "CASTROVIRREYNA",
+                    "CHUPAMARCA",
+                    "COCAS",
+                    "HUACHOS",
+                    "HUAMATAMBO",
+                    "MOLLEPAMPA",
+                    "SAN JUAN",
+                    "SANTA ANA",
+                    "TANTARA",
+                    "TICRAPO"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\CASTROVIRREYNA\\080400.json"
+            },
+            "CHURCAMPA": {
+                "codigo_json": "080700.json",
+                "nombre_ubicacion": "CHURCAMPA",
+                "sub_ubicaciones": [
+                    "ANCO",
+                    "CHINCHIHUASI",
+                    "CHURCAMPA",
+                    "COSME",
+                    "EL CARMEN",
+                    "LA MERCED",
+                    "LOCROJA",
+                    "PACHAMARCA",
+                    "PAUCARBAMBA",
+                    "SAN MIGUEL DE MAYOCC",
+                    "SAN PEDRO DE CORIS"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\CHURCAMPA\\080700.json"
+            },
+            "HUANCAVELICA": {
+                "codigo_json": "080100.json",
+                "nombre_ubicacion": "HUANCAVELICA",
+                "sub_ubicaciones": [
+                    "ACOBAMBILLA",
+                    "ACORIA",
+                    "ASCENSIÓN",
+                    "CONAYCA",
+                    "CUENCA",
+                    "HUACHOCOLPA",
+                    "HUANCAVELICA",
+                    "HUANDO",
+                    "HUAYLLAHUARA",
+                    "IZCUCHACA",
+                    "LARIA",
+                    "MANTA",
+                    "MARISCAL CÁCERES",
+                    "MOYA",
+                    "NUEVO OCCORO",
+                    "PALCA",
+                    "PILCHACA",
+                    "VILCA",
+                    "YAULI"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\HUANCAVELICA\\080100.json"
+            },
+            "HUAYTARA": {
+                "codigo_json": "080600.json",
+                "nombre_ubicacion": "HUAYTARA",
+                "sub_ubicaciones": [
+                    "AYAVI",
+                    "CÓRDOVA",
+                    "HUAYACUNDO ARMA",
+                    "HUAYTARA",
+                    "LARAMARCA",
+                    "OCOYO",
+                    "PILPICHACA",
+                    "QUERCO",
+                    "QUITO-ARMA",
+                    "SAN ANTONIO DE CUSICANCHA",
+                    "SAN FRANCISCO DE SANGAYAICO",
+                    "SAN ISIDRO",
+                    "SANTIAGO DE CHOCORVOS",
+                    "SANTIAGO DE QUIRAHUARA",
+                    "SANTO DOMINGO DE CAPILLAS",
+                    "TAMBO"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\HUAYTARA\\080600.json"
+            },
+            "TAYACAJA": {
+                "codigo_json": "080500.json",
+                "nombre_ubicacion": "TAYACAJA",
+                "sub_ubicaciones": [
+                    "ACOSTAMBO",
+                    "ACRAQUIA",
+                    "AHUAYCHA",
+                    "ANDAYMARCA",
+                    "COCHABAMBA",
+                    "COLCABAMBA",
+                    "DANIEL HERNANDEZ",
+                    "HUACHOCOLPA",
+                    "HUARIBAMBA",
+                    "LAMBRAS",
+                    "ÑAHUIMPUQUIO",
+                    "PAMPAS",
+                    "PAZOS",
+                    "PICHOS",
+                    "QUICHUAS",
+                    "QUISHUAR",
+                    "ROBLE",
+                    "SALCABAMBA",
+                    "SALCAHUASI",
+                    "SAN MARCOS DE ROCCHAC",
+                    "SANTIAGO DE TUCUMA",
+                    "SURCUBAMBA",
+                    "TINTAY PUNCU"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUANCAVELICA\\TAYACAJA\\080500.json"
+            }
+        },
+        "HUÁNUCO": {
+            "TAYACAJA": {
+                "codigo_json": "090000.json",
+                "nombre_ubicacion": "TAYACAJA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\TAYACAJA\\090000.json"
+            },
+            "AMBO": {
+                "codigo_json": "090200.json",
+                "nombre_ubicacion": "AMBO",
+                "sub_ubicaciones": [
+                    "AMBO",
+                    "CAYNA",
+                    "COLPAS",
+                    "CONCHAMARCA",
+                    "HUACAR",
+                    "SAN FRANCISCO",
+                    "SAN RAFAEL",
+                    "TOMAY - KICHWA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\AMBO\\090200.json"
+            },
+            "DOS DE MAYO": {
+                "codigo_json": "090300.json",
+                "nombre_ubicacion": "DOS DE MAYO",
+                "sub_ubicaciones": [
+                    "CHUQUIS",
+                    "LA UNIÓN",
+                    "MARÍAS",
+                    "PACHAS",
+                    "QUIVILLA",
+                    "RIPÁN",
+                    "SHUNQUI",
+                    "SILLAPATA",
+                    "YANAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\DOS DE MAYO\\090300.json"
+            },
+            "HUACAYBAMBA": {
+                "codigo_json": "090900.json",
+                "nombre_ubicacion": "HUACAYBAMBA",
+                "sub_ubicaciones": [
+                    "CANCHABAMBA",
+                    "COCHABAMBA",
+                    "HUACAYBAMBA",
+                    "PINRA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\HUACAYBAMBA\\090900.json"
+            },
+            "HUAMALIES": {
+                "codigo_json": "090400.json",
+                "nombre_ubicacion": "HUAMALIES",
+                "sub_ubicaciones": [
+                    "ARANCAY",
+                    "CHAVÍN DE PARIARCA",
+                    "JACAS GRANDE",
+                    "JIRCÁN",
+                    "LLATA",
+                    "MIRAFLORES",
+                    "MONZÓN",
+                    "PUNCHAO",
+                    "PUÑOS",
+                    "SINGA",
+                    "TANTAMAYO"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\HUAMALIES\\090400.json"
+            },
+            "HUÁNUCO": {
+                "codigo_json": "090100.json",
+                "nombre_ubicacion": "HUÁNUCO",
+                "sub_ubicaciones": [
+                    "AMARILIS",
+                    "CHINCHAO",
+                    "CHURUBAMBA",
+                    "HUÁNUCO",
+                    "MARGOS",
+                    "PILLCO MARCA",
+                    "QUISQUI (KICHKI)",
+                    "SAN FRANCISCO DE CAYRÁN",
+                    "SAN PABLO DE PILLAO",
+                    "SAN PEDRO DE CHAULÁN",
+                    "SANTA MARÍA DEL VALLE",
+                    "YACUS",
+                    "YARUMAYO"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\HUÁNUCO\\090100.json"
+            },
+            "LAURICOCHA": {
+                "codigo_json": "091000.json",
+                "nombre_ubicacion": "LAURICOCHA",
+                "sub_ubicaciones": [
+                    "BAÑOS",
+                    "JESÚS",
+                    "JIVIA",
+                    "QUEROPALCA",
+                    "RONDOS",
+                    "SAN FRANCISCO DE ASÍS",
+                    "SAN MIGUEL DE CAURI"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\LAURICOCHA\\091000.json"
+            },
+            "LEONCIO PRADO": {
+                "codigo_json": "090600.json",
+                "nombre_ubicacion": "LEONCIO PRADO",
+                "sub_ubicaciones": [
+                    "CASTILLO GRANDE",
+                    "DANIEL ALOMÍA ROBLES",
+                    "HERMILIO VALDIZÁN",
+                    "JOSÉ CRESPO Y CASTILLO",
+                    "LUYANDO",
+                    "MARIANO DÁMASO BERAÚN",
+                    "PUCAYACU",
+                    "PUEBLO NUEVO",
+                    "RUPA-RUPA",
+                    "SANTO DOMINGO DE ANDA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\LEONCIO PRADO\\090600.json"
+            },
+            "MARAÑÓN": {
+                "codigo_json": "090500.json",
+                "nombre_ubicacion": "MARAÑÓN",
+                "sub_ubicaciones": [
+                    "CHOLÓN",
+                    "HUACRACHUCO",
+                    "LA MORADA",
+                    "SAN BUENAVENTURA",
+                    "SANTA ROSA DE ALTO YANAJANCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\MARAÑÓN\\090500.json"
+            },
+            "PACHITEA": {
+                "codigo_json": "090700.json",
+                "nombre_ubicacion": "PACHITEA",
+                "sub_ubicaciones": [
+                    "CHAGLLA",
+                    "MOLINO",
+                    "PANAO",
+                    "UMARI"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\PACHITEA\\090700.json"
+            },
+            "PUERTO INCA": {
+                "codigo_json": "090800.json",
+                "nombre_ubicacion": "PUERTO INCA",
+                "sub_ubicaciones": [
+                    "CODO DEL POZUZO",
+                    "HONORIA",
+                    "PUERTO INCA",
+                    "TOURNAVISTA",
+                    "YUYAPICHIS"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\PUERTO INCA\\090800.json"
+            },
+            "YAROWILCA": {
+                "codigo_json": "091100.json",
+                "nombre_ubicacion": "YAROWILCA",
+                "sub_ubicaciones": [
+                    "APARICIO POMARES",
+                    "CAHUAC",
+                    "CHACABAMBA",
+                    "CHAVINILLO",
+                    "CHORAS",
+                    "JACAS CHICO",
+                    "OBAS",
+                    "PAMPAMARCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\HUÁNUCO\\YAROWILCA\\091100.json"
+            }
+        },
+        "ICA": {
+            "YAROWILCA": {
+                "codigo_json": "100000.json",
+                "nombre_ubicacion": "YAROWILCA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\ICA\\YAROWILCA\\100000.json"
+            },
+            "CHINCHA": {
+                "codigo_json": "100200.json",
+                "nombre_ubicacion": "CHINCHA",
+                "sub_ubicaciones": [
+                    "ALTO LARAN",
+                    "CHAVÍN",
+                    "CHINCHA ALTA",
+                    "CHINCHA BAJA",
+                    "EL CARMEN",
+                    "GROCIO PRADO",
+                    "PUEBLO NUEVO",
+                    "SAN JUAN DE YANAC",
+                    "SAN PEDRO DE HUACARPANA",
+                    "SUNAMPE",
+                    "TAMBO DE MORA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ICA\\CHINCHA\\100200.json"
+            },
+            "ICA": {
+                "codigo_json": "100100.json",
+                "nombre_ubicacion": "ICA",
+                "sub_ubicaciones": [
+                    "ICA",
+                    "LA TINGUIÑA",
+                    "LOS AQUIJES",
+                    "OCUCAJE",
+                    "PACHACUTEC",
+                    "PARCONA",
+                    "PUEBLO NUEVO",
+                    "SALAS",
+                    "SAN JOSÉ DE LOS MOLINOS",
+                    "SAN JUAN BAUTISTA",
+                    "SANTIAGO",
+                    "SUBTANJALLA",
+                    "TATE",
+                    "YAUCA DEL ROSARIO"
+                ],
+                "ruta_archivo_local": "PERÚ\\ICA\\ICA\\100100.json"
+            },
+            "NASCA": {
+                "codigo_json": "100300.json",
+                "nombre_ubicacion": "NASCA",
+                "sub_ubicaciones": [
+                    "CHANGUILLO",
+                    "EL INGENIO",
+                    "MARCONA",
+                    "NASCA",
+                    "VISTA ALEGRE"
+                ],
+                "ruta_archivo_local": "PERÚ\\ICA\\NASCA\\100300.json"
+            },
+            "PALPA": {
+                "codigo_json": "100500.json",
+                "nombre_ubicacion": "PALPA",
+                "sub_ubicaciones": [
+                    "LLIPATA",
+                    "PALPA",
+                    "RÍO GRANDE",
+                    "SANTA CRUZ",
+                    "TIBILLO"
+                ],
+                "ruta_archivo_local": "PERÚ\\ICA\\PALPA\\100500.json"
+            },
+            "PISCO": {
+                "codigo_json": "100400.json",
+                "nombre_ubicacion": "PISCO",
+                "sub_ubicaciones": [
+                    "HUANCANO",
+                    "HUMAY",
+                    "INDEPENDENCIA",
+                    "PARACAS",
+                    "PISCO",
+                    "SAN ANDRÉS",
+                    "SAN CLEMENTE",
+                    "TUPAC AMARU INCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\ICA\\PISCO\\100400.json"
+            }
+        },
+        "JUNÍN": {
+            "PISCO": {
+                "codigo_json": "110000.json",
+                "nombre_ubicacion": "PISCO",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\PISCO\\110000.json"
+            },
+            "CHANCHAMAYO": {
+                "codigo_json": "110800.json",
+                "nombre_ubicacion": "CHANCHAMAYO",
+                "sub_ubicaciones": [
+                    "CHANCHAMAYO",
+                    "PERENÉ",
+                    "PICHANAQUI",
+                    "SAN LUIS DE SHUARO",
+                    "SAN RAMÓN",
+                    "VITOC"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\CHANCHAMAYO\\110800.json"
+            },
+            "CHUPACA": {
+                "codigo_json": "110900.json",
+                "nombre_ubicacion": "CHUPACA",
+                "sub_ubicaciones": [
+                    "AHUAC",
+                    "CHONGOS BAJO",
+                    "CHUPACA",
+                    "HUACHAC",
+                    "HUAMANCACA CHICO",
+                    "SAN JUAN DE ISCOS",
+                    "SAN JUAN DE JARPA",
+                    "TRES DE DICIEMBRE",
+                    "YANACANCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\CHUPACA\\110900.json"
+            },
+            "CONCEPCIÓN": {
+                "codigo_json": "110200.json",
+                "nombre_ubicacion": "CONCEPCIÓN",
+                "sub_ubicaciones": [
+                    "ACO",
+                    "ANDAMARCA",
+                    "CHAMBARA",
+                    "COCHAS",
+                    "COMAS",
+                    "CONCEPCIÓN",
+                    "HEROÍNAS TOLEDO",
+                    "MANZANARES",
+                    "MARISCAL CASTILLA",
+                    "MATAHUASI",
+                    "MITO",
+                    "NUEVE DE JULIO",
+                    "ORCOTUNA",
+                    "SAN JOSÉ DE QUERO",
+                    "SANTA ROSA DE OCOPA"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\CONCEPCIÓN\\110200.json"
+            },
+            "HUANCAYO": {
+                "codigo_json": "110100.json",
+                "nombre_ubicacion": "HUANCAYO",
+                "sub_ubicaciones": [
+                    "CARHUACALLANGA",
+                    "CHACAPAMPA",
+                    "CHICCHE",
+                    "CHILCA",
+                    "CHONGOS ALTO",
+                    "CHUPURO",
+                    "COLCA",
+                    "CULLHUAS",
+                    "EL TAMBO",
+                    "HUACRAPUQUIO",
+                    "HUALHUAS",
+                    "HUANCAN",
+                    "HUANCAYO",
+                    "HUASICANCHA",
+                    "HUAYUCACHI",
+                    "INGENIO",
+                    "PARIAHUANCA",
+                    "PILCOMAYO",
+                    "PUCARA",
+                    "QUICHUAY",
+                    "QUILCAS",
+                    "SAN AGUSTÍN",
+                    "SAN JERÓNIMO DE TUNÁN",
+                    "SANTO DOMINGO DE ACOBAMBA",
+                    "SAÑO",
+                    "SAPALLANGA",
+                    "SICAYA",
+                    "VIQUES"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\HUANCAYO\\110100.json"
+            },
+            "JAUJA": {
+                "codigo_json": "110300.json",
+                "nombre_ubicacion": "JAUJA",
+                "sub_ubicaciones": [
+                    "ACOLLA",
+                    "APATA",
+                    "ATAURA",
+                    "CANCHAYLLO",
+                    "CURICACA",
+                    "EL MANTARO",
+                    "HUAMALÍ",
+                    "HUARIPAMPA",
+                    "HUERTAS",
+                    "JANJAILLO",
+                    "JAUJA",
+                    "JULCÁN",
+                    "LEONOR ORDOÑEZ",
+                    "LLOCLLAPAMPA",
+                    "MARCO",
+                    "MASMA",
+                    "MASMA CHICCHE",
+                    "MOLINOS",
+                    "MONOBAMBA",
+                    "MUQUI",
+                    "MUQUIYAUYO",
+                    "PACA",
+                    "PACCHA",
+                    "PANCAN",
+                    "PARCO",
+                    "POMACANCHA",
+                    "RICRAN",
+                    "SAN LORENZO",
+                    "SAN PEDRO DE CHUNAN",
+                    "SAUSA",
+                    "SINCOS",
+                    "TUNAN MARCA",
+                    "YAULI",
+                    "YAUYOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\JAUJA\\110300.json"
+            },
+            "JUNÍN": {
+                "codigo_json": "110400.json",
+                "nombre_ubicacion": "JUNÍN",
+                "sub_ubicaciones": [
+                    "CARHUAMAYO",
+                    "JUNÍN",
+                    "ONDORES",
+                    "ULCUMAYO"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\JUNÍN\\110400.json"
+            },
+            "SATIPO": {
+                "codigo_json": "110700.json",
+                "nombre_ubicacion": "SATIPO",
+                "sub_ubicaciones": [
+                    "COVIRIALI",
+                    "LLAYLLA",
+                    "MAZAMARI",
+                    "PAMPA HERMOSA",
+                    "PANGOA",
+                    "RÍO NEGRO",
+                    "RÍO TAMBO",
+                    "SATIPO",
+                    "VIZCATÁN DEL ENE"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\SATIPO\\110700.json"
+            },
+            "TARMA": {
+                "codigo_json": "110500.json",
+                "nombre_ubicacion": "TARMA",
+                "sub_ubicaciones": [
+                    "ACOBAMBA",
+                    "HUARICOLCA",
+                    "HUASAHUASI",
+                    "LA UNIÓN",
+                    "PALCA",
+                    "PALCAMAYO",
+                    "SAN PEDRO DE CAJAS",
+                    "TAPO",
+                    "TARMA"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\TARMA\\110500.json"
+            },
+            "YAULI": {
+                "codigo_json": "110600.json",
+                "nombre_ubicacion": "YAULI",
+                "sub_ubicaciones": [
+                    "CHACAPALPA",
+                    "HUAY-HUAY",
+                    "LA OROYA",
+                    "MARCAPOMACOCHA",
+                    "MOROCOCHA",
+                    "PACCHA",
+                    "SANTA BÁRBARA DE CARHUACAYÁN",
+                    "SANTA ROSA DE SACCO",
+                    "SUITUCANCHA",
+                    "YAULI"
+                ],
+                "ruta_archivo_local": "PERÚ\\JUNÍN\\YAULI\\110600.json"
+            }
+        },
+        "LA LIBERTAD": {
+            "YAULI": {
+                "codigo_json": "120000.json",
+                "nombre_ubicacion": "YAULI",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\YAULI\\120000.json"
+            },
+            "ASCOPE": {
+                "codigo_json": "120800.json",
+                "nombre_ubicacion": "ASCOPE",
+                "sub_ubicaciones": [
+                    "ASCOPE",
+                    "CASA GRANDE",
+                    "CHICAMA",
+                    "CHOCOPE",
+                    "MAGDALENA DE CAO",
+                    "PAIJÁN",
+                    "RÁZURI",
+                    "SANTIAGO DE CAO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\ASCOPE\\120800.json"
+            },
+            "BOLÍVAR": {
+                "codigo_json": "120200.json",
+                "nombre_ubicacion": "BOLÍVAR",
+                "sub_ubicaciones": [
+                    "BAMBAMARCA",
+                    "BOLÍVAR",
+                    "CONDORMARCA",
+                    "LONGOTEA",
+                    "UCHUMARCA",
+                    "UCUNCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\BOLÍVAR\\120200.json"
+            },
+            "CHEPÉN": {
+                "codigo_json": "120900.json",
+                "nombre_ubicacion": "CHEPÉN",
+                "sub_ubicaciones": [
+                    "CHEPÉN",
+                    "PACANGA",
+                    "PUEBLO NUEVO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\CHEPÉN\\120900.json"
+            },
+            "GRAN CHIMÚ": {
+                "codigo_json": "121100.json",
+                "nombre_ubicacion": "GRAN CHIMÚ",
+                "sub_ubicaciones": [
+                    "CASCAS",
+                    "LUCMA",
+                    "MARMOT",
+                    "SAYAPULLO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\GRAN CHIMÚ\\121100.json"
+            },
+            "JULCÁN": {
+                "codigo_json": "121000.json",
+                "nombre_ubicacion": "JULCÁN",
+                "sub_ubicaciones": [
+                    "CALAMARCA",
+                    "CARABAMBA",
+                    "HUASO",
+                    "JULCÁN"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\JULCÁN\\121000.json"
+            },
+            "OTUZCO": {
+                "codigo_json": "120400.json",
+                "nombre_ubicacion": "OTUZCO",
+                "sub_ubicaciones": [
+                    "AGALLPAMPA",
+                    "CHARAT",
+                    "HUARANCHAL",
+                    "LA CUESTA",
+                    "MACHE",
+                    "OTUZCO",
+                    "PARANDAY",
+                    "SALPO",
+                    "SINSICAP",
+                    "USQUIL"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\OTUZCO\\120400.json"
+            },
+            "PACASMAYO": {
+                "codigo_json": "120500.json",
+                "nombre_ubicacion": "PACASMAYO",
+                "sub_ubicaciones": [
+                    "GUADALUPE",
+                    "JEQUETEPEQUE",
+                    "PACASMAYO",
+                    "SAN JOSÉ",
+                    "SAN PEDRO DE LLOC"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\PACASMAYO\\120500.json"
+            },
+            "PATAZ": {
+                "codigo_json": "120600.json",
+                "nombre_ubicacion": "PATAZ",
+                "sub_ubicaciones": [
+                    "BULDIBUYO",
+                    "CHILLIA",
+                    "HUANCASPATA",
+                    "HUAYLILLAS",
+                    "HUAYO",
+                    "ONGON",
+                    "PARCOY",
+                    "PATAZ",
+                    "PIÁS",
+                    "SANTIAGO DE CHALLAS",
+                    "TAURIJA",
+                    "TAYABAMBA",
+                    "URPAY"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\PATAZ\\120600.json"
+            },
+            "SÁNCHEZ CARRIÓN": {
+                "codigo_json": "120300.json",
+                "nombre_ubicacion": "SÁNCHEZ CARRIÓN",
+                "sub_ubicaciones": [
+                    "CHUGAY",
+                    "COCHORCO",
+                    "CURGOS",
+                    "HUAMACHUCO",
+                    "MARCABAL",
+                    "SANAGORÁN",
+                    "SARÍN",
+                    "SARTIMBAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\SÁNCHEZ CARRIÓN\\120300.json"
+            },
+            "SANTIAGO DE CHUCO": {
+                "codigo_json": "120700.json",
+                "nombre_ubicacion": "SANTIAGO DE CHUCO",
+                "sub_ubicaciones": [
+                    "ANGASMARCA",
+                    "CACHICADAN",
+                    "MOLLEBAMBA",
+                    "MOLLEPATA",
+                    "QUIRUVILCA",
+                    "SANTA CRUZ DE CHUCA",
+                    "SANTIAGO DE CHUCO",
+                    "SITABAMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\SANTIAGO DE CHUCO\\120700.json"
+            },
+            "TRUJILLO": {
+                "codigo_json": "120100.json",
+                "nombre_ubicacion": "TRUJILLO",
+                "sub_ubicaciones": [
+                    "ALTO TRUJILLO",
+                    "EL PORVENIR",
+                    "FLORENCIA DE MORA",
+                    "HUANCHACO",
+                    "LA ESPERANZA",
+                    "LAREDO",
+                    "MOCHE",
+                    "POROTO",
+                    "SALAVERRY",
+                    "SIMBAL",
+                    "TRUJILLO",
+                    "VÍCTOR LARCO HERRERA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\TRUJILLO\\120100.json"
+            },
+            "VIRÚ": {
+                "codigo_json": "121200.json",
+                "nombre_ubicacion": "VIRÚ",
+                "sub_ubicaciones": [
+                    "CHAO",
+                    "GUADALUPITO",
+                    "VIRÚ"
+                ],
+                "ruta_archivo_local": "PERÚ\\LA LIBERTAD\\VIRÚ\\121200.json"
+            }
+        },
+        "LAMBAYEQUE": {
+            "VIRÚ": {
+                "codigo_json": "130000.json",
+                "nombre_ubicacion": "VIRÚ",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\LAMBAYEQUE\\VIRÚ\\130000.json"
+            },
+            "CHICLAYO": {
+                "codigo_json": "130100.json",
+                "nombre_ubicacion": "CHICLAYO",
+                "sub_ubicaciones": [
+                    "CAYALTÍ",
+                    "CHICLAYO",
+                    "CHONGOYAPE",
+                    "ETEN",
+                    "ETEN PUERTO",
+                    "JOSÉ LEONARDO ORTIZ",
+                    "LAGUNAS",
+                    "LA VICTORIA",
+                    "MONSEFÚ",
+                    "NUEVA ARICA",
+                    "OYOTÚN",
+                    "PÁTAPO",
+                    "PICSÍ",
+                    "PIMENTEL",
+                    "POMALCA",
+                    "PUCALÁ",
+                    "REQUE",
+                    "SANTA ROSA",
+                    "SAÑA",
+                    "TUMÁN"
+                ],
+                "ruta_archivo_local": "PERÚ\\LAMBAYEQUE\\CHICLAYO\\130100.json"
+            },
+            "FERREÑAFE": {
+                "codigo_json": "130200.json",
+                "nombre_ubicacion": "FERREÑAFE",
+                "sub_ubicaciones": [
+                    "CAÑARIS",
+                    "FERREÑAFE",
+                    "INCAHUASI",
+                    "MANUEL ANTONIO MESONES MURO",
+                    "PITIPO",
+                    "PUEBLO NUEVO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LAMBAYEQUE\\FERREÑAFE\\130200.json"
+            },
+            "LAMBAYEQUE": {
+                "codigo_json": "130300.json",
+                "nombre_ubicacion": "LAMBAYEQUE",
+                "sub_ubicaciones": [
+                    "CHOCHOPE",
+                    "ÍLLIMO",
+                    "JAYANCA",
+                    "LAMBAYEQUE",
+                    "MOCHUMÍ",
+                    "MÓRROPE",
+                    "MOTUPE",
+                    "OLMOS",
+                    "PACORA",
+                    "SALAS",
+                    "SAN JOSÉ",
+                    "TÚCUME"
+                ],
+                "ruta_archivo_local": "PERÚ\\LAMBAYEQUE\\LAMBAYEQUE\\130300.json"
+            }
+        },
+        "LIMA": {
+            "LAMBAYEQUE": {
+                "codigo_json": "140000.json",
+                "nombre_ubicacion": "LAMBAYEQUE",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\LIMA\\LAMBAYEQUE\\140000.json"
+            },
+            "BARRANCA": {
+                "codigo_json": "140900.json",
+                "nombre_ubicacion": "BARRANCA",
+                "sub_ubicaciones": [
+                    "BARRANCA",
+                    "PARAMONGA",
+                    "PATIVILCA",
+                    "SUPE",
+                    "SUPE PUERTO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\BARRANCA\\140900.json"
+            },
+            "CAJATAMBO": {
+                "codigo_json": "140200.json",
+                "nombre_ubicacion": "CAJATAMBO",
+                "sub_ubicaciones": [
+                    "CAJATAMBO",
+                    "COPA",
+                    "GORGOR",
+                    "HUANCAPON",
+                    "MANAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\CAJATAMBO\\140200.json"
+            },
+            "CANTA": {
+                "codigo_json": "140300.json",
+                "nombre_ubicacion": "CANTA",
+                "sub_ubicaciones": [
+                    "ARAHUAY",
+                    "CANTA",
+                    "HUAMANTANGA",
+                    "HUAROS",
+                    "LACHAQUI",
+                    "SAN BUENAVENTURA",
+                    "SANTA ROSA DE QUIVES"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\CANTA\\140300.json"
+            },
+            "CAÑETE": {
+                "codigo_json": "140400.json",
+                "nombre_ubicacion": "CAÑETE",
+                "sub_ubicaciones": [
+                    "ASIA",
+                    "CALANGO",
+                    "CERRO AZUL",
+                    "CHILCA",
+                    "COAYLLO",
+                    "IMPERIAL",
+                    "LUNAHUANA",
+                    "MALA",
+                    "NUEVO IMPERIAL",
+                    "PACARAN",
+                    "QUILMANA",
+                    "SAN ANTONIO",
+                    "SAN LUIS",
+                    "SANTA CRUZ DE FLORES",
+                    "SAN VICENTE DE CAÑETE",
+                    "ZUÑIGA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\CAÑETE\\140400.json"
+            },
+            "HUARAL": {
+                "codigo_json": "140800.json",
+                "nombre_ubicacion": "HUARAL",
+                "sub_ubicaciones": [
+                    "ATAVILLOS ALTO",
+                    "ATAVILLOS BAJO",
+                    "AUCALLAMA",
+                    "CHANCAY",
+                    "HUARAL",
+                    "IHUARI",
+                    "LAMPIAN",
+                    "PACARAOS",
+                    "SAN MIGUEL DE ACOS",
+                    "SANTA CRUZ DE ANDAMARCA",
+                    "SUMBILCA",
+                    "VEINTISIETE DE NOVIEMBRE"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\HUARAL\\140800.json"
+            },
+            "HUAROCHIRÍ": {
+                "codigo_json": "140600.json",
+                "nombre_ubicacion": "HUAROCHIRÍ",
+                "sub_ubicaciones": [
+                    "ANTIOQUIA",
+                    "CALLAHUANCA",
+                    "CARAMPOMA",
+                    "CHICLA",
+                    "CUENCA",
+                    "HUACHUPAMPA",
+                    "HUANZA",
+                    "HUAROCHIRÍ",
+                    "LAHUAYTAMBO",
+                    "LANGA",
+                    "MARIATANA",
+                    "MATUCANA",
+                    "RICARDO PALMA",
+                    "SAN ANDRÉS DE TUPICOCHA",
+                    "SAN ANTONIO",
+                    "SAN BARTOLOMÉ",
+                    "SAN DAMIÁN",
+                    "SANGALLAYA",
+                    "SAN JUAN DE IRIS",
+                    "SAN JUAN DE TANTARANCHE",
+                    "SAN LORENZO DE QUINTI",
+                    "SAN MATEO",
+                    "SAN MATEO DE OTAO",
+                    "SAN PEDRO DE CASTA",
+                    "SAN PEDRO DE HUANCAYRE",
+                    "SAN PEDRO DE LARAOS",
+                    "SANTA CRUZ DE COCACHACRA",
+                    "SANTA EULALIA",
+                    "SANTIAGO DE ANCHUCAYA",
+                    "SANTIAGO DE TUNA",
+                    "SANTO DOMINGO DE LOS OLLEROS",
+                    "SURCO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\HUAROCHIRÍ\\140600.json"
+            },
+            "HUAURA": {
+                "codigo_json": "140500.json",
+                "nombre_ubicacion": "HUAURA",
+                "sub_ubicaciones": [
+                    "AMBAR",
+                    "CALETA DE CARQUIN",
+                    "CHECRAS",
+                    "HUACHO",
+                    "HUALMAY",
+                    "HUAURA",
+                    "LEONCIO PRADO",
+                    "PACCHO",
+                    "SANTA LEONOR",
+                    "SANTA MARÍA",
+                    "SAYAN",
+                    "VEGUETA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\HUAURA\\140500.json"
+            },
+            "LIMA": {
+                "codigo_json": "140100.json",
+                "nombre_ubicacion": "LIMA",
+                "sub_ubicaciones": [
+                    "ANCÓN",
+                    "ATE",
+                    "BARRANCO",
+                    "BREÑA",
+                    "CARABAYLLO",
+                    "CHACLACAYO",
+                    "CHORRILLOS",
+                    "CIENEGUILLA",
+                    "COMAS",
+                    "EL AGUSTINO",
+                    "INDEPENDENCIA",
+                    "JESÚS MARÍA",
+                    "LA MOLINA",
+                    "LA VICTORIA",
+                    "LIMA",
+                    "LINCE",
+                    "LOS OLIVOS",
+                    "LURIGANCHO",
+                    "LURÍN",
+                    "MAGDALENA DEL MAR",
+                    "MIRAFLORES",
+                    "PACHACÁMAC",
+                    "PUCUSANA",
+                    "PUEBLO LIBRE",
+                    "PUENTE PIEDRA",
+                    "PUNTA HERMOSA",
+                    "PUNTA NEGRA",
+                    "RÍMAC",
+                    "SAN BARTOLO",
+                    "SAN BORJA",
+                    "SAN ISIDRO",
+                    "SAN JUAN DE LURIGANCHO",
+                    "SAN JUAN DE MIRAFLORES",
+                    "SAN LUIS",
+                    "SAN MARTÍN DE PORRES",
+                    "SAN MIGUEL",
+                    "SANTA ANITA",
+                    "SANTA MARÍA DEL MAR",
+                    "SANTA ROSA",
+                    "SANTIAGO DE SURCO",
+                    "SURQUILLO",
+                    "VILLA EL SALVADOR",
+                    "VILLA MARÍA DEL TRIUNFO"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\LIMA\\140100.json"
+            },
+            "OYÓN": {
+                "codigo_json": "141000.json",
+                "nombre_ubicacion": "OYÓN",
+                "sub_ubicaciones": [
+                    "ANDAJES",
+                    "CAUJUL",
+                    "COCHAMARCA",
+                    "NAVAN",
+                    "OYÓN",
+                    "PACHANGARA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\OYÓN\\141000.json"
+            },
+            "YAUYOS": {
+                "codigo_json": "140700.json",
+                "nombre_ubicacion": "YAUYOS",
+                "sub_ubicaciones": [
+                    "ALIS",
+                    "ALLAUCA",
+                    "AYAVIRI",
+                    "AZÁNGARO",
+                    "CACRA",
+                    "CARANIA",
+                    "CATAHUASI",
+                    "CHOCOS",
+                    "COCHAS",
+                    "COLONIA",
+                    "HONGOS",
+                    "HUAMPARA",
+                    "HUANCAYA",
+                    "HUANGASCAR",
+                    "HUANTAN",
+                    "HUAÑEC",
+                    "LARAOS",
+                    "LINCHA",
+                    "MADEAN",
+                    "MIRAFLORES",
+                    "OMAS",
+                    "PUTINZA",
+                    "QUINCHES",
+                    "QUINOCAY",
+                    "SAN JOAQUÍN",
+                    "SAN PEDRO DE PILAS",
+                    "TANTA",
+                    "TAURIPAMPA",
+                    "TOMÁS",
+                    "TUPE",
+                    "VIÑAC",
+                    "VITIS",
+                    "YAUYOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\LIMA\\YAUYOS\\140700.json"
+            }
+        },
+        "LORETO": {
+            "YAUYOS": {
+                "codigo_json": "150000.json",
+                "nombre_ubicacion": "YAUYOS",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\LORETO\\YAUYOS\\150000.json"
+            },
+            "ALTO AMAZONAS": {
+                "codigo_json": "150200.json",
+                "nombre_ubicacion": "ALTO AMAZONAS",
+                "sub_ubicaciones": [
+                    "BALSAPUERTO",
+                    "JEBEROS",
+                    "LAGUNAS",
+                    "SANTA CRUZ",
+                    "TENIENTE CÉSAR LÓPEZ ROJAS",
+                    "YURIMAGUAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\ALTO AMAZONAS\\150200.json"
+            },
+            "DATEM DEL MARAÑÓN": {
+                "codigo_json": "150700.json",
+                "nombre_ubicacion": "DATEM DEL MARAÑÓN",
+                "sub_ubicaciones": [
+                    "ANDOAS",
+                    "BARRANCA",
+                    "CAHUAPANAS",
+                    "MANSERICHE",
+                    "MORONA",
+                    "PASTAZA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\DATEM DEL MARAÑÓN\\150700.json"
+            },
+            "LORETO": {
+                "codigo_json": "150300.json",
+                "nombre_ubicacion": "LORETO",
+                "sub_ubicaciones": [
+                    "NAUTA",
+                    "PARINARI",
+                    "TIGRE",
+                    "TROMPETEROS",
+                    "URARINAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\LORETO\\150300.json"
+            },
+            "MARISCAL RAMÓN CASTILLA": {
+                "codigo_json": "150600.json",
+                "nombre_ubicacion": "MARISCAL RAMÓN CASTILLA",
+                "sub_ubicaciones": [
+                    "PEBAS",
+                    "RAMÓN CASTILLA",
+                    "SAN PABLO",
+                    "SANTA ROSA DE LORETO",
+                    "YAVARI"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\MARISCAL RAMÓN CASTILLA\\150600.json"
+            },
+            "MAYNAS": {
+                "codigo_json": "150100.json",
+                "nombre_ubicacion": "MAYNAS",
+                "sub_ubicaciones": [
+                    "ALTO NANAY",
+                    "BELÉN",
+                    "FERNANDO LORES",
+                    "INDIANA",
+                    "IQUITOS",
+                    "LAS AMAZONAS",
+                    "MAZAN",
+                    "NAPO",
+                    "PUNCHANA",
+                    "SAN JUAN BAUTISTA",
+                    "TORRES CAUSANA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\MAYNAS\\150100.json"
+            },
+            "PUTUMAYO": {
+                "codigo_json": "150900.json",
+                "nombre_ubicacion": "PUTUMAYO",
+                "sub_ubicaciones": [
+                    "PUTUMAYO",
+                    "ROSA PANDURO",
+                    "TENIENTE MANUEL CLAVERO",
+                    "YAGUAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\PUTUMAYO\\150900.json"
+            },
+            "REQUENA": {
+                "codigo_json": "150400.json",
+                "nombre_ubicacion": "REQUENA",
+                "sub_ubicaciones": [
+                    "ALTO TAPICHE",
+                    "CAPELO",
+                    "EMILIO SAN MARTÍN",
+                    "JENARO HERRERA",
+                    "MAQUIA",
+                    "PUINAHUA",
+                    "REQUENA",
+                    "SAQUENA",
+                    "SOPLIN",
+                    "TAPICHE",
+                    "YAQUERANA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\REQUENA\\150400.json"
+            },
+            "UCAYALI": {
+                "codigo_json": "150500.json",
+                "nombre_ubicacion": "UCAYALI",
+                "sub_ubicaciones": [
+                    "CONTAMANA",
+                    "INAHUAYA",
+                    "PADRE MÁRQUEZ",
+                    "PAMPA HERMOSA",
+                    "SARAYACU",
+                    "VARGAS GUERRA"
+                ],
+                "ruta_archivo_local": "PERÚ\\LORETO\\UCAYALI\\150500.json"
+            }
+        },
+        "MADRE DE DIOS": {
+            "UCAYALI": {
+                "codigo_json": "160000.json",
+                "nombre_ubicacion": "UCAYALI",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\MADRE DE DIOS\\UCAYALI\\160000.json"
+            },
+            "MANÚ": {
+                "codigo_json": "160200.json",
+                "nombre_ubicacion": "MANÚ",
+                "sub_ubicaciones": [
+                    "FITZCARRALD",
+                    "HUEPETUHE",
+                    "MADRE DE DIOS",
+                    "MANÚ"
+                ],
+                "ruta_archivo_local": "PERÚ\\MADRE DE DIOS\\MANÚ\\160200.json"
+            },
+            "TAHUAMANÚ": {
+                "codigo_json": "160300.json",
+                "nombre_ubicacion": "TAHUAMANÚ",
+                "sub_ubicaciones": [
+                    "IBERIA",
+                    "IÑAPARÍ",
+                    "TAHUAMANÚ"
+                ],
+                "ruta_archivo_local": "PERÚ\\MADRE DE DIOS\\TAHUAMANÚ\\160300.json"
+            },
+            "TAMBOPATA": {
+                "codigo_json": "160100.json",
+                "nombre_ubicacion": "TAMBOPATA",
+                "sub_ubicaciones": [
+                    "INAMBARI",
+                    "LABERINTO",
+                    "LAS PIEDRAS",
+                    "TAMBOPATA"
+                ],
+                "ruta_archivo_local": "PERÚ\\MADRE DE DIOS\\TAMBOPATA\\160100.json"
+            }
+        },
+        "MOQUEGUA": {
+            "TAMBOPATA": {
+                "codigo_json": "170000.json",
+                "nombre_ubicacion": "TAMBOPATA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\MOQUEGUA\\TAMBOPATA\\170000.json"
+            },
+            "GENERAL SÁNCHEZ CERRO": {
+                "codigo_json": "170200.json",
+                "nombre_ubicacion": "GENERAL SÁNCHEZ CERRO",
+                "sub_ubicaciones": [
+                    "CHOJATA",
+                    "COALAQUE",
+                    "ICHUÑA",
+                    "LA CAPILLA",
+                    "LLOQUE",
+                    "MATALAQUE",
+                    "OMATE",
+                    "PUQUINA",
+                    "QUINISTAQUILLAS",
+                    "UBINAS",
+                    "YUNGA"
+                ],
+                "ruta_archivo_local": "PERÚ\\MOQUEGUA\\GENERAL SÁNCHEZ CERRO\\170200.json"
+            },
+            "ILO": {
+                "codigo_json": "170300.json",
+                "nombre_ubicacion": "ILO",
+                "sub_ubicaciones": [
+                    "EL ALGARROBAL",
+                    "ILO",
+                    "PACOCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\MOQUEGUA\\ILO\\170300.json"
+            },
+            "MARISCAL NIETO": {
+                "codigo_json": "170100.json",
+                "nombre_ubicacion": "MARISCAL NIETO",
+                "sub_ubicaciones": [
+                    "CARUMAS",
+                    "CUCHUMBAYA",
+                    "MOQUEGUA",
+                    "SAMEGUA",
+                    "SAN ANTONIO",
+                    "SAN CRISTÓBAL",
+                    "TORATA"
+                ],
+                "ruta_archivo_local": "PERÚ\\MOQUEGUA\\MARISCAL NIETO\\170100.json"
+            }
+        },
+        "PASCO": {
+            "MARISCAL NIETO": {
+                "codigo_json": "180000.json",
+                "nombre_ubicacion": "MARISCAL NIETO",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\PASCO\\MARISCAL NIETO\\180000.json"
+            },
+            "DANIEL ALCIDES CARRIÓN": {
+                "codigo_json": "180200.json",
+                "nombre_ubicacion": "DANIEL ALCIDES CARRIÓN",
+                "sub_ubicaciones": [
+                    "CHACAYÁN",
+                    "GOYLLARISQUIZGA",
+                    "PAUCAR",
+                    "SAN PEDRO DE PILLAO",
+                    "SANTA ANA DE TUSI",
+                    "TAPUC",
+                    "VILCABAMBA",
+                    "YANAHUANCA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PASCO\\DANIEL ALCIDES CARRIÓN\\180200.json"
+            },
+            "OXAPAMPA": {
+                "codigo_json": "180300.json",
+                "nombre_ubicacion": "OXAPAMPA",
+                "sub_ubicaciones": [
+                    "CHONTABAMBA",
+                    "CONSTITUCIÓN",
+                    "HUANCABAMBA",
+                    "OXAPAMPA",
+                    "PALCAZU",
+                    "POZUZO",
+                    "PUERTO BERMÚDEZ",
+                    "VILLA RICA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PASCO\\OXAPAMPA\\180300.json"
+            },
+            "PASCO": {
+                "codigo_json": "180100.json",
+                "nombre_ubicacion": "PASCO",
+                "sub_ubicaciones": [
+                    "CHAUPIMARCA",
+                    "HUACHÓN",
+                    "HUARIACA",
+                    "HUAYLLAY",
+                    "NINACACA",
+                    "PALLANCHACRA",
+                    "PAUCARTAMBO",
+                    "SAN FRANCISCO DE ASÍS DE YARUSYACÁN",
+                    "SIMÓN BOLÍVAR",
+                    "TICLACAYÁN",
+                    "TINYAHUARCO",
+                    "VICCO",
+                    "YANACANCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PASCO\\PASCO\\180100.json"
+            }
+        },
+        "PIURA": {
+            "PASCO": {
+                "codigo_json": "190000.json",
+                "nombre_ubicacion": "PASCO",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\PIURA\\PASCO\\190000.json"
+            },
+            "AYABACA": {
+                "codigo_json": "190200.json",
+                "nombre_ubicacion": "AYABACA",
+                "sub_ubicaciones": [
+                    "AYABACA",
+                    "FRÍAS",
+                    "JILILÍ",
+                    "LAGUNAS",
+                    "MONTERO",
+                    "PACAIPAMPA",
+                    "PAIMAS",
+                    "SAPILLICA",
+                    "SICCHEZ",
+                    "SUYO"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\AYABACA\\190200.json"
+            },
+            "HUANCABAMBA": {
+                "codigo_json": "190300.json",
+                "nombre_ubicacion": "HUANCABAMBA",
+                "sub_ubicaciones": [
+                    "CANCHAQUE",
+                    "EL CARMEN DE LA FRONTERA",
+                    "HUANCABAMBA",
+                    "HUARMACA",
+                    "LALAQUIZ",
+                    "SAN MIGUEL DE EL FAIQUE",
+                    "SONDOR",
+                    "SONDORILLO"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\HUANCABAMBA\\190300.json"
+            },
+            "MORROPÓN": {
+                "codigo_json": "190400.json",
+                "nombre_ubicacion": "MORROPÓN",
+                "sub_ubicaciones": [
+                    "BUENOS AIRES",
+                    "CHALACO",
+                    "CHULUCANAS",
+                    "LA MATANZA",
+                    "MORROPÓN",
+                    "SALITRAL",
+                    "SAN JUAN DE BIGOTE",
+                    "SANTA CATALINA DE MOSSA",
+                    "SANTO DOMINGO",
+                    "YAMANGO"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\MORROPÓN\\190400.json"
+            },
+            "PAITA": {
+                "codigo_json": "190500.json",
+                "nombre_ubicacion": "PAITA",
+                "sub_ubicaciones": [
+                    "AMOTAPE",
+                    "ARENAL",
+                    "COLÁN",
+                    "LA HUACA",
+                    "PAITA",
+                    "TAMARINDO",
+                    "VICHAYAL"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\PAITA\\190500.json"
+            },
+            "PIURA": {
+                "codigo_json": "190100.json",
+                "nombre_ubicacion": "PIURA",
+                "sub_ubicaciones": [
+                    "CASTILLA",
+                    "CATACAOS",
+                    "CURA MORI",
+                    "EL TALLÁN",
+                    "LA ARENA",
+                    "LAS LOMAS",
+                    "LA UNIÓN",
+                    "PIURA",
+                    "TAMBO GRANDE",
+                    "VEINTISÉIS DE OCTUBRE"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\PIURA\\190100.json"
+            },
+            "SECHURA": {
+                "codigo_json": "190800.json",
+                "nombre_ubicacion": "SECHURA",
+                "sub_ubicaciones": [
+                    "BELLAVISTA DE LA UNIÓN",
+                    "BERNAL",
+                    "CRISTO NOS VALGA",
+                    "RINCONADA LLICUAR",
+                    "SECHURA",
+                    "VICE"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\SECHURA\\190800.json"
+            },
+            "SULLANA": {
+                "codigo_json": "190600.json",
+                "nombre_ubicacion": "SULLANA",
+                "sub_ubicaciones": [
+                    "BELLAVISTA",
+                    "IGNACIO ESCUDERO",
+                    "LANCONES",
+                    "MARCAVELICA",
+                    "MIGUEL CHECA",
+                    "QUERECOTILLO",
+                    "SALITRAL",
+                    "SULLANA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\SULLANA\\190600.json"
+            },
+            "TALARA": {
+                "codigo_json": "190700.json",
+                "nombre_ubicacion": "TALARA",
+                "sub_ubicaciones": [
+                    "EL ALTO",
+                    "LA BREA",
+                    "LOBITOS",
+                    "LOS ÓRGANOS",
+                    "MÁNCORA",
+                    "PARIÑAS"
+                ],
+                "ruta_archivo_local": "PERÚ\\PIURA\\TALARA\\190700.json"
+            }
+        },
+        "PUNO": {
+            "TALARA": {
+                "codigo_json": "200000.json",
+                "nombre_ubicacion": "TALARA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\PUNO\\TALARA\\200000.json"
+            },
+            "AZÁNGARO": {
+                "codigo_json": "200200.json",
+                "nombre_ubicacion": "AZÁNGARO",
+                "sub_ubicaciones": [
+                    "ACHAYA",
+                    "ARAPA",
+                    "ASILLO",
+                    "AZÁNGARO",
+                    "CAMINACA",
+                    "CHUPA",
+                    "JOSÉ DOMINGO CHOQUEHUANCA",
+                    "MUÑANI",
+                    "POTONI",
+                    "SAMAN",
+                    "SAN ANTON",
+                    "SAN JOSÉ",
+                    "SAN JUAN DE SALINAS",
+                    "SANTIAGO DE PUPUJA",
+                    "TIRAPATA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\AZÁNGARO\\200200.json"
+            },
+            "CARABAYA": {
+                "codigo_json": "200300.json",
+                "nombre_ubicacion": "CARABAYA",
+                "sub_ubicaciones": [
+                    "AJOYANI",
+                    "AYAPATA",
+                    "COASA",
+                    "CORANI",
+                    "CRUCERO",
+                    "ITUATA",
+                    "MACUSANI",
+                    "OLLACHEA",
+                    "SAN GABÁN",
+                    "USICAYOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\CARABAYA\\200300.json"
+            },
+            "CHUCUITO": {
+                "codigo_json": "200400.json",
+                "nombre_ubicacion": "CHUCUITO",
+                "sub_ubicaciones": [
+                    "DESAGUADERO",
+                    "HUACULLANI",
+                    "JULI",
+                    "KELLUYO",
+                    "PISACOMA",
+                    "POMATA",
+                    "ZEPITA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\CHUCUITO\\200400.json"
+            },
+            "EL COLLAO": {
+                "codigo_json": "201200.json",
+                "nombre_ubicacion": "EL COLLAO",
+                "sub_ubicaciones": [
+                    "CAPASO",
+                    "CONDURIRI",
+                    "ILAVE",
+                    "PILCUYO",
+                    "SANTA ROSA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\EL COLLAO\\201200.json"
+            },
+            "HUANCANÉ": {
+                "codigo_json": "200500.json",
+                "nombre_ubicacion": "HUANCANÉ",
+                "sub_ubicaciones": [
+                    "COJATA",
+                    "HUANCANÉ",
+                    "HUATASANI",
+                    "INCHUPALLA",
+                    "PUSI",
+                    "ROSASPATA",
+                    "TARACO",
+                    "VILQUE CHICO"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\HUANCANÉ\\200500.json"
+            },
+            "LAMPA": {
+                "codigo_json": "200600.json",
+                "nombre_ubicacion": "LAMPA",
+                "sub_ubicaciones": [
+                    "CABANILLA",
+                    "CALAPUJA",
+                    "LAMPA",
+                    "NICASIO",
+                    "OCUVIRI",
+                    "PALCA",
+                    "PARATIA",
+                    "PUCARA",
+                    "SANTA LUCÍA",
+                    "VILAVILA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\LAMPA\\200600.json"
+            },
+            "MELGAR": {
+                "codigo_json": "200700.json",
+                "nombre_ubicacion": "MELGAR",
+                "sub_ubicaciones": [
+                    "ANTAUTA",
+                    "AYAVIRI",
+                    "CUPI",
+                    "LLALLI",
+                    "MACARI",
+                    "NUÑOA",
+                    "ORURILLO",
+                    "SANTA ROSA",
+                    "UMACHIRI"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\MELGAR\\200700.json"
+            },
+            "MOHO": {
+                "codigo_json": "201300.json",
+                "nombre_ubicacion": "MOHO",
+                "sub_ubicaciones": [
+                    "CONIMA",
+                    "HUAYRAPATA",
+                    "MOHO",
+                    "TILALI"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\MOHO\\201300.json"
+            },
+            "PUNO": {
+                "codigo_json": "200100.json",
+                "nombre_ubicacion": "PUNO",
+                "sub_ubicaciones": [
+                    "ACORA",
+                    "AMANTANI",
+                    "ATUNCOLLA",
+                    "CAPACHICA",
+                    "CHUCUITO",
+                    "COATA",
+                    "HUATA",
+                    "MAÑAZO",
+                    "PAUCARCOLLA",
+                    "PICHACANI",
+                    "PLATERIA",
+                    "PUNO",
+                    "SAN ANTONIO",
+                    "TIQUILLACA",
+                    "VILQUE"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\PUNO\\200100.json"
+            },
+            "SAN ANTONIO DE PUTINA": {
+                "codigo_json": "201100.json",
+                "nombre_ubicacion": "SAN ANTONIO DE PUTINA",
+                "sub_ubicaciones": [
+                    "ANANEA",
+                    "PEDRO VILCA APAZA",
+                    "PUTINA",
+                    "QUILCAPUNCU",
+                    "SINA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\SAN ANTONIO DE PUTINA\\201100.json"
+            },
+            "SANDIA": {
+                "codigo_json": "200800.json",
+                "nombre_ubicacion": "SANDIA",
+                "sub_ubicaciones": [
+                    "ALTO INAMBARI",
+                    "CUYOCUYO",
+                    "LIMBANI",
+                    "PATAMBUCO",
+                    "PHARA",
+                    "QUIACA",
+                    "SANDIA",
+                    "SAN JUAN DEL ORO",
+                    "SAN PEDRO DE PUTINA PUNCO",
+                    "YANAHUAYA"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\SANDIA\\200800.json"
+            },
+            "SAN ROMÁN": {
+                "codigo_json": "200900.json",
+                "nombre_ubicacion": "SAN ROMÁN",
+                "sub_ubicaciones": [
+                    "CABANA",
+                    "CABANILLAS",
+                    "CARACOTO",
+                    "JULIACA",
+                    "SAN MIGUEL"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\SAN ROMÁN\\200900.json"
+            },
+            "YUNGUYO": {
+                "codigo_json": "201000.json",
+                "nombre_ubicacion": "YUNGUYO",
+                "sub_ubicaciones": [
+                    "ANAPIA",
+                    "COPANI",
+                    "CUTURAPI",
+                    "OLLARAYA",
+                    "TINICACHI",
+                    "UNICACHI",
+                    "YUNGUYO"
+                ],
+                "ruta_archivo_local": "PERÚ\\PUNO\\YUNGUYO\\201000.json"
+            }
+        },
+        "SAN MARTÍN": {
+            "YUNGUYO": {
+                "codigo_json": "210000.json",
+                "nombre_ubicacion": "YUNGUYO",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\YUNGUYO\\210000.json"
+            },
+            "BELLAVISTA": {
+                "codigo_json": "210700.json",
+                "nombre_ubicacion": "BELLAVISTA",
+                "sub_ubicaciones": [
+                    "ALTO BIAVO",
+                    "BAJO BIAVO",
+                    "BELLAVISTA",
+                    "HUALLAGA",
+                    "SAN PABLO",
+                    "SAN RAFAEL"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\BELLAVISTA\\210700.json"
+            },
+            "EL DORADO": {
+                "codigo_json": "211000.json",
+                "nombre_ubicacion": "EL DORADO",
+                "sub_ubicaciones": [
+                    "AGUA BLANCA",
+                    "SAN JOSÉ DE SISA",
+                    "SAN MARTÍN",
+                    "SANTA ROSA",
+                    "SHATOJA"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\EL DORADO\\211000.json"
+            },
+            "HUALLAGA": {
+                "codigo_json": "210200.json",
+                "nombre_ubicacion": "HUALLAGA",
+                "sub_ubicaciones": [
+                    "ALTO SAPOSOA",
+                    "EL ESLABÓN",
+                    "PISCOYACU",
+                    "SACANCHE",
+                    "SAPOSOA",
+                    "TINGO DE SAPOSOA"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\HUALLAGA\\210200.json"
+            },
+            "LAMAS": {
+                "codigo_json": "210300.json",
+                "nombre_ubicacion": "LAMAS",
+                "sub_ubicaciones": [
+                    "ALONSO DE ALVARADO",
+                    "BARRANQUITA",
+                    "CAYNARACHI",
+                    "CUÑUMBUQUI",
+                    "LAMAS",
+                    "PINTO RECODO",
+                    "RUMISAPA",
+                    "SAN ROQUE DE CUMBAZA",
+                    "SHANAO",
+                    "TABALOSOS",
+                    "ZAPATERO"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\LAMAS\\210300.json"
+            },
+            "MARISCAL CÁCERES": {
+                "codigo_json": "210400.json",
+                "nombre_ubicacion": "MARISCAL CÁCERES",
+                "sub_ubicaciones": [
+                    "CAMPANILLA",
+                    "HUICUNGO",
+                    "JUANJUI",
+                    "PACHIZA",
+                    "PAJARILLO"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\MARISCAL CÁCERES\\210400.json"
+            },
+            "MOYOBAMBA": {
+                "codigo_json": "210100.json",
+                "nombre_ubicacion": "MOYOBAMBA",
+                "sub_ubicaciones": [
+                    "CALZADA",
+                    "HABANA",
+                    "JEPELACIO",
+                    "MOYOBAMBA",
+                    "SORITOR",
+                    "YANTALÓ"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\MOYOBAMBA\\210100.json"
+            },
+            "PICOTA": {
+                "codigo_json": "210900.json",
+                "nombre_ubicacion": "PICOTA",
+                "sub_ubicaciones": [
+                    "BUENOS AIRES",
+                    "CASPISAPA",
+                    "PICOTA",
+                    "PILLUANA",
+                    "PUCACACA",
+                    "SAN CRISTÓBAL",
+                    "SAN HILARIÓN",
+                    "SHAMBOYACU",
+                    "TINGO DE PONASA",
+                    "TRES UNIDOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\PICOTA\\210900.json"
+            },
+            "RIOJA": {
+                "codigo_json": "210500.json",
+                "nombre_ubicacion": "RIOJA",
+                "sub_ubicaciones": [
+                    "AWAJUN",
+                    "ELÍAS SOPLÍN VARGAS",
+                    "NUEVA CAJAMARCA",
+                    "PARDO MIGUEL",
+                    "POSIC",
+                    "RIOJA",
+                    "SAN FERNANDO",
+                    "YORONGOS",
+                    "YURACYACU"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\RIOJA\\210500.json"
+            },
+            "SAN MARTÍN": {
+                "codigo_json": "210600.json",
+                "nombre_ubicacion": "SAN MARTÍN",
+                "sub_ubicaciones": [
+                    "ALBERTO LEVEAU",
+                    "CACATACHI",
+                    "CHAZUTA",
+                    "CHIPURANA",
+                    "EL PORVENIR",
+                    "HUIMBAYOC",
+                    "JUAN GUERRA",
+                    "LA BANDA DE SHILCAYO",
+                    "MORALES",
+                    "PAPAPLAYA",
+                    "SAN ANTONIO",
+                    "SAUCE",
+                    "SHAPAJA",
+                    "TARAPOTO"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\SAN MARTÍN\\210600.json"
+            },
+            "TOCACHE": {
+                "codigo_json": "210800.json",
+                "nombre_ubicacion": "TOCACHE",
+                "sub_ubicaciones": [
+                    "NUEVO PROGRESO",
+                    "PÓLVORA",
+                    "SANTA LUCÍA",
+                    "SHUNTE",
+                    "TOCACHE",
+                    "UCHIZA"
+                ],
+                "ruta_archivo_local": "PERÚ\\SAN MARTÍN\\TOCACHE\\210800.json"
+            }
+        },
+        "TACNA": {
+            "TOCACHE": {
+                "codigo_json": "220000.json",
+                "nombre_ubicacion": "TOCACHE",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\TACNA\\TOCACHE\\220000.json"
+            },
+            "CANDARAVE": {
+                "codigo_json": "220400.json",
+                "nombre_ubicacion": "CANDARAVE",
+                "sub_ubicaciones": [
+                    "CAIRANI",
+                    "CAMILACA",
+                    "CANDARAVE",
+                    "CURIBAYA",
+                    "HUANUARA",
+                    "QUILAHUANI"
+                ],
+                "ruta_archivo_local": "PERÚ\\TACNA\\CANDARAVE\\220400.json"
+            },
+            "JORGE BASADRE": {
+                "codigo_json": "220300.json",
+                "nombre_ubicacion": "JORGE BASADRE",
+                "sub_ubicaciones": [
+                    "ILABAYA",
+                    "ITE",
+                    "LOCUMBA"
+                ],
+                "ruta_archivo_local": "PERÚ\\TACNA\\JORGE BASADRE\\220300.json"
+            },
+            "TACNA": {
+                "codigo_json": "220100.json",
+                "nombre_ubicacion": "TACNA",
+                "sub_ubicaciones": [
+                    "ALTO DE LA ALIANZA",
+                    "CALANA",
+                    "CIUDAD NUEVA",
+                    "CORONEL GREGORIO ALBARRACÍN LANCHIPA",
+                    "INCLÁN",
+                    "LA YARADA LOS PALOS",
+                    "PACHIA",
+                    "PALCA",
+                    "POCOLLAY",
+                    "SAMA",
+                    "TACNA"
+                ],
+                "ruta_archivo_local": "PERÚ\\TACNA\\TACNA\\220100.json"
+            },
+            "TARATA": {
+                "codigo_json": "220200.json",
+                "nombre_ubicacion": "TARATA",
+                "sub_ubicaciones": [
+                    "ESTIQUE",
+                    "ESTIQUE PAMPA",
+                    "HÉROES ALBARRACÍN",
+                    "SITAJARA",
+                    "SUSAPAYA",
+                    "TARATA",
+                    "TARUCACHI",
+                    "TICACO"
+                ],
+                "ruta_archivo_local": "PERÚ\\TACNA\\TARATA\\220200.json"
+            }
+        },
+        "TUMBES": {
+            "TARATA": {
+                "codigo_json": "230000.json",
+                "nombre_ubicacion": "TARATA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\TUMBES\\TARATA\\230000.json"
+            },
+            "CONTRALMIRANTE VILLAR": {
+                "codigo_json": "230200.json",
+                "nombre_ubicacion": "CONTRALMIRANTE VILLAR",
+                "sub_ubicaciones": [
+                    "CANOAS DE PUNTA SAL",
+                    "CASITAS",
+                    "ZORRITOS"
+                ],
+                "ruta_archivo_local": "PERÚ\\TUMBES\\CONTRALMIRANTE VILLAR\\230200.json"
+            },
+            "TUMBES": {
+                "codigo_json": "230100.json",
+                "nombre_ubicacion": "TUMBES",
+                "sub_ubicaciones": [
+                    "CORRALES",
+                    "LA CRUZ",
+                    "PAMPAS DE HOSPITAL",
+                    "SAN JACINTO",
+                    "SAN JUAN DE LA VIRGEN",
+                    "TUMBES"
+                ],
+                "ruta_archivo_local": "PERÚ\\TUMBES\\TUMBES\\230100.json"
+            },
+            "ZARUMILLA": {
+                "codigo_json": "230300.json",
+                "nombre_ubicacion": "ZARUMILLA",
+                "sub_ubicaciones": [
+                    "AGUAS VERDES",
+                    "MATAPALO",
+                    "PAPAYAL",
+                    "ZARUMILLA"
+                ],
+                "ruta_archivo_local": "PERÚ\\TUMBES\\ZARUMILLA\\230300.json"
+            }
+        },
+        "UCAYALI": {
+            "ZARUMILLA": {
+                "codigo_json": "250000.json",
+                "nombre_ubicacion": "ZARUMILLA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "PERÚ\\UCAYALI\\ZARUMILLA\\250000.json"
+            },
+            "ATALAYA": {
+                "codigo_json": "250300.json",
+                "nombre_ubicacion": "ATALAYA",
+                "sub_ubicaciones": [
+                    "RAIMONDI",
+                    "SEPAHUA",
+                    "TAHUANIA",
+                    "YURÚA"
+                ],
+                "ruta_archivo_local": "PERÚ\\UCAYALI\\ATALAYA\\250300.json"
+            },
+            "CORONEL PORTILLO": {
+                "codigo_json": "250100.json",
+                "nombre_ubicacion": "CORONEL PORTILLO",
+                "sub_ubicaciones": [
+                    "CALLERIA",
+                    "CAMPOVERDE",
+                    "IPARÍA",
+                    "MANANTAY",
+                    "MASISEA",
+                    "NUEVA REQUENA",
+                    "YARINACOCHA"
+                ],
+                "ruta_archivo_local": "PERÚ\\UCAYALI\\CORONEL PORTILLO\\250100.json"
+            },
+            "PADRE ABAD": {
+                "codigo_json": "250200.json",
+                "nombre_ubicacion": "PADRE ABAD",
+                "sub_ubicaciones": [
+                    "ALEXANDER VON HUMBOLDT",
+                    "BOQUERÓN",
+                    "CURIMANÁ",
+                    "HUIPOCA",
+                    "IRAZOLA",
+                    "NESHUYA",
+                    "PADRE ABAD"
+                ],
+                "ruta_archivo_local": "PERÚ\\UCAYALI\\PADRE ABAD\\250200.json"
+            },
+            "PURÚS": {
+                "codigo_json": "250400.json",
+                "nombre_ubicacion": "PURÚS",
+                "sub_ubicaciones": [
+                    "PURÚS"
+                ],
+                "ruta_archivo_local": "PERÚ\\UCAYALI\\PURÚS\\250400.json"
+            }
+        }
+    },
+    "EXTRANJERO": {
+        "ÁFRICA": {
+            "PURÚS": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "PURÚS",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\PURÚS\\910000.json"
+            },
+            "ARGELIA": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "ARGELIA",
+                "sub_ubicaciones": [
+                    "ARGEL"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\ARGELIA\\910000.json"
+            },
+            "GHANA": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "GHANA",
+                "sub_ubicaciones": [
+                    "ACRA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\GHANA\\910000.json"
+            },
+            "KENIA": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "KENIA",
+                "sub_ubicaciones": [
+                    "NAIROBI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\KENIA\\910000.json"
+            },
+            "MARRUECOS": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "MARRUECOS",
+                "sub_ubicaciones": [
+                    "RABAT"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\MARRUECOS\\910000.json"
+            },
+            "REPÚBLICA ÁRABE DE EGIPTO": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "REPÚBLICA ÁRABE DE EGIPTO",
+                "sub_ubicaciones": [
+                    "EL CAIRO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\REPÚBLICA ÁRABE DE EGIPTO\\910000.json"
+            },
+            "SUDÁFRICA": {
+                "codigo_json": "910000.json",
+                "nombre_ubicacion": "SUDÁFRICA",
+                "sub_ubicaciones": [
+                    "PRETORIA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ÁFRICA\\SUDÁFRICA\\910000.json"
+            }
+        },
+        "AMÉRICA": {
+            "SUDÁFRICA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "SUDÁFRICA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\SUDÁFRICA\\920000.json"
+            },
+            "ANTILLAS HOLANDESAS": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "ANTILLAS HOLANDESAS",
+                "sub_ubicaciones": [
+                    "ARUBA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\ANTILLAS HOLANDESAS\\920000.json"
+            },
+            "ARGENTINA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "ARGENTINA",
+                "sub_ubicaciones": [
+                    "BUENOS AIRES",
+                    "CATAMARCA",
+                    "CÓRDOBA",
+                    "CORRIENTES",
+                    "LA PLATA",
+                    "LA RIOJA",
+                    "MENDOZA",
+                    "ROSARIO DE SANTA FE",
+                    "SALTA",
+                    "SAN JUAN",
+                    "SAN LUIS"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\ARGENTINA\\920000.json"
+            },
+            "BOLIVIA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "BOLIVIA",
+                "sub_ubicaciones": [
+                    "COCHABAMBA",
+                    "LA PAZ",
+                    "SANTA CRUZ"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\BOLIVIA\\920000.json"
+            },
+            "BRASIL": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "BRASIL",
+                "sub_ubicaciones": [
+                    "BELO HORIZONTE",
+                    "BRASILIA",
+                    "CURITIBA",
+                    "FORTALEZA",
+                    "GOIANIA",
+                    "MANAOS",
+                    "PORTO ALEGRE",
+                    "RÍO BRANCO",
+                    "RÍO DE JANEIRO",
+                    "SALVADOR",
+                    "SAO PAULO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\BRASIL\\920000.json"
+            },
+            "CANADÁ": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "CANADÁ",
+                "sub_ubicaciones": [
+                    "ALBERTA",
+                    "MONTREAL",
+                    "OTTAWA",
+                    "TORONTO",
+                    "VANCOUVER",
+                    "WINNIPEG"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\CANADÁ\\920000.json"
+            },
+            "CHILE": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "CHILE",
+                "sub_ubicaciones": [
+                    "ANTOFAGASTA",
+                    "ARICA",
+                    "CONCEPCIÓN",
+                    "COPIAPÓ",
+                    "IQUIQUE",
+                    "SANTIAGO",
+                    "VALPARAISO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\CHILE\\920000.json"
+            },
+            "COLOMBIA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "COLOMBIA",
+                "sub_ubicaciones": [
+                    "BARRANQUILLA",
+                    "BOGOTÁ",
+                    "BUCARAMANGA",
+                    "CALI",
+                    "CARTAGENA",
+                    "LETICIA",
+                    "MEDELLÍN",
+                    "PASTO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\COLOMBIA\\920000.json"
+            },
+            "COSTA RICA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "COSTA RICA",
+                "sub_ubicaciones": [
+                    "SAN JOSÉ"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\COSTA RICA\\920000.json"
+            },
+            "CUBA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "CUBA",
+                "sub_ubicaciones": [
+                    "LA HABANA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\CUBA\\920000.json"
+            },
+            "ECUADOR": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "ECUADOR",
+                "sub_ubicaciones": [
+                    "AZUAY",
+                    "GUAYAQUIL",
+                    "LOJA",
+                    "MACHALA",
+                    "QUITO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\ECUADOR\\920000.json"
+            },
+            "EL SALVADOR": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "EL SALVADOR",
+                "sub_ubicaciones": [
+                    "SAN SALVADOR"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\EL SALVADOR\\920000.json"
+            },
+            "ESTADOS UNIDOS DE ÁMERICA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "ESTADOS UNIDOS DE ÁMERICA",
+                "sub_ubicaciones": [
+                    "ATLANTA",
+                    "BOSTON",
+                    "CAROLINA DEL NORTE",
+                    "CHICAGO",
+                    "DALLAS",
+                    "DENVER",
+                    "HARTFORD",
+                    "HOUSTON",
+                    "LOS ÁNGELES",
+                    "MIAMI",
+                    "NUEVA JERSEY",
+                    "NUEVA ORLEANS",
+                    "NUEVA YORK",
+                    "OKLAHOMA",
+                    "ORLANDO",
+                    "PHOENIX",
+                    "SALT LAKE CITY",
+                    "SAN ANTONIO",
+                    "SAN DIEGO",
+                    "SAN FRANCISCO",
+                    "SEATTLE",
+                    "WASHINGTON D. C."
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\ESTADOS UNIDOS DE ÁMERICA\\920000.json"
+            },
+            "GUATEMALA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "GUATEMALA",
+                "sub_ubicaciones": [
+                    "GUATEMALA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\GUATEMALA\\920000.json"
+            },
+            "GUAYANA FRANCESA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "GUAYANA FRANCESA",
+                "sub_ubicaciones": [
+                    "CAYENA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\GUAYANA FRANCESA\\920000.json"
+            },
+            "HONDURAS": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "HONDURAS",
+                "sub_ubicaciones": [
+                    "TEGUCIGALPA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\HONDURAS\\920000.json"
+            },
+            "MÉXICO": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "MÉXICO",
+                "sub_ubicaciones": [
+                    "CIUDAD DE MÉXICO",
+                    "GUADALAJARA",
+                    "MONTERREY"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\MÉXICO\\920000.json"
+            },
+            "NICARAGUA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "NICARAGUA",
+                "sub_ubicaciones": [
+                    "MANAGUA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\NICARAGUA\\920000.json"
+            },
+            "PANAMÁ": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "PANAMÁ",
+                "sub_ubicaciones": [
+                    "COLON",
+                    "DAVID",
+                    "PANAMÁ",
+                    "VERAGUAS"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\PANAMÁ\\920000.json"
+            },
+            "PARAGUAY": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "PARAGUAY",
+                "sub_ubicaciones": [
+                    "ASUNCIÓN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\PARAGUAY\\920000.json"
+            },
+            "PUERTO RICO": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "PUERTO RICO",
+                "sub_ubicaciones": [
+                    "SAN JUAN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\PUERTO RICO\\920000.json"
+            },
+            "REPÚBLICA DOMINICANA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "REPÚBLICA DOMINICANA",
+                "sub_ubicaciones": [
+                    "SANTIAGO DE LOS CABALLEROS",
+                    "SANTO DOMINGO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\REPÚBLICA DOMINICANA\\920000.json"
+            },
+            "TRINIDAD Y TOBAGO": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "TRINIDAD Y TOBAGO",
+                "sub_ubicaciones": [
+                    "PUERTO ESPAÑA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\TRINIDAD Y TOBAGO\\920000.json"
+            },
+            "URUGUAY": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "URUGUAY",
+                "sub_ubicaciones": [
+                    "MONTEVIDEO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\URUGUAY\\920000.json"
+            },
+            "VENEZUELA": {
+                "codigo_json": "920000.json",
+                "nombre_ubicacion": "VENEZUELA",
+                "sub_ubicaciones": [
+                    "CARACAS"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\AMÉRICA\\VENEZUELA\\920000.json"
+            }
+        },
+        "ASIA": {
+            "VENEZUELA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "VENEZUELA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\VENEZUELA\\930000.json"
+            },
+            "ARABIA SAUDITA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "ARABIA SAUDITA",
+                "sub_ubicaciones": [
+                    "RIAD"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\ARABIA SAUDITA\\930000.json"
+            },
+            "CATAR": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "CATAR",
+                "sub_ubicaciones": [
+                    "DOHA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\CATAR\\930000.json"
+            },
+            "EMIRATOS ÁRABES UNIDOS": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "EMIRATOS ÁRABES UNIDOS",
+                "sub_ubicaciones": [
+                    "ABU DABI",
+                    "DUBÁI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\EMIRATOS ÁRABES UNIDOS\\930000.json"
+            },
+            "FILIPINAS": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "FILIPINAS",
+                "sub_ubicaciones": [
+                    "MANILA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\FILIPINAS\\930000.json"
+            },
+            "INDIA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "INDIA",
+                "sub_ubicaciones": [
+                    "NUEVA DELHI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\INDIA\\930000.json"
+            },
+            "INDONESIA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "INDONESIA",
+                "sub_ubicaciones": [
+                    "JAKARTA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\INDONESIA\\930000.json"
+            },
+            "IRÁN": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "IRÁN",
+                "sub_ubicaciones": [
+                    "TEHERAN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\IRÁN\\930000.json"
+            },
+            "ISRAEL": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "ISRAEL",
+                "sub_ubicaciones": [
+                    "RAMLA",
+                    "TEL AVIV"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\ISRAEL\\930000.json"
+            },
+            "JAPÓN": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "JAPÓN",
+                "sub_ubicaciones": [
+                    "FUKUOKA",
+                    "GUNMA",
+                    "HIROSHIMA",
+                    "KOBE",
+                    "MIE",
+                    "NAGOYA",
+                    "OKINAWA",
+                    "SAITAMA",
+                    "SHIGA",
+                    "SHIZUOKA",
+                    "TOKIO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\JAPÓN\\930000.json"
+            },
+            "JORDANIA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "JORDANIA",
+                "sub_ubicaciones": [
+                    "AMMAN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\JORDANIA\\930000.json"
+            },
+            "KUWAIT": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "KUWAIT",
+                "sub_ubicaciones": [
+                    "AL - KUWAIT"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\KUWAIT\\930000.json"
+            },
+            "LÍBANO": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "LÍBANO",
+                "sub_ubicaciones": [
+                    "BEIRUT"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\LÍBANO\\930000.json"
+            },
+            "MALASIA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "MALASIA",
+                "sub_ubicaciones": [
+                    "KUALA LUMPUR"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\MALASIA\\930000.json"
+            },
+            "REPUBLICA DE COREA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "REPUBLICA DE COREA",
+                "sub_ubicaciones": [
+                    "SEÚL"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\REPUBLICA DE COREA\\930000.json"
+            },
+            "REPÚBLICA POPULAR CHINA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "REPÚBLICA POPULAR CHINA",
+                "sub_ubicaciones": [
+                    "BEIJING (PEKIN)",
+                    "GUANGZHOU",
+                    "REGION ADMINISTRATIVA ESPECIAL HONG KONG",
+                    "SHANGHÁI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\REPÚBLICA POPULAR CHINA\\930000.json"
+            },
+            "SINGAPUR": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "SINGAPUR",
+                "sub_ubicaciones": [
+                    "SINGAPUR"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\SINGAPUR\\930000.json"
+            },
+            "TAILANDIA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "TAILANDIA",
+                "sub_ubicaciones": [
+                    "BANGKOK"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\TAILANDIA\\930000.json"
+            },
+            "TURQUÍA": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "TURQUÍA",
+                "sub_ubicaciones": [
+                    "ANKARA",
+                    "ESTAMBUL"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\TURQUÍA\\930000.json"
+            },
+            "VIETNAM": {
+                "codigo_json": "930000.json",
+                "nombre_ubicacion": "VIETNAM",
+                "sub_ubicaciones": [
+                    "HANÓI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\ASIA\\VIETNAM\\930000.json"
+            }
+        },
+        "EUROPA": {
+            "VIETNAM": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "VIETNAM",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\VIETNAM\\940000.json"
+            },
+            "ALEMANIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "ALEMANIA",
+                "sub_ubicaciones": [
+                    "BERLÍN",
+                    "BREMEN",
+                    "COLONIA",
+                    "FRANKFURT",
+                    "HAMBURGO",
+                    "MÚNICH"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\ALEMANIA\\940000.json"
+            },
+            "AUSTRIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "AUSTRIA",
+                "sub_ubicaciones": [
+                    "VIENA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\AUSTRIA\\940000.json"
+            },
+            "BÉLGICA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "BÉLGICA",
+                "sub_ubicaciones": [
+                    "AMBERES",
+                    "BRUSELAS",
+                    "GANTE",
+                    "LIEJA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\BÉLGICA\\940000.json"
+            },
+            "BIELORRUSIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "BIELORRUSIA",
+                "sub_ubicaciones": [
+                    "MINSK"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\BIELORRUSIA\\940000.json"
+            },
+            "DINAMARCA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "DINAMARCA",
+                "sub_ubicaciones": [
+                    "COPENHAGUE"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\DINAMARCA\\940000.json"
+            },
+            "ESPAÑA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "ESPAÑA",
+                "sub_ubicaciones": [
+                    "ALMERÍA",
+                    "BARCELONA",
+                    "BILBAO",
+                    "LAS PALMAS",
+                    "MADRID",
+                    "MÁLAGA",
+                    "MALLORCA",
+                    "OVIEDO",
+                    "SALAMANCA",
+                    "SEVILLA",
+                    "TENERIFE",
+                    "VALENCIA",
+                    "VIGO",
+                    "ZARAGOZA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\ESPAÑA\\940000.json"
+            },
+            "FINLANDIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "FINLANDIA",
+                "sub_ubicaciones": [
+                    "HELSINKI"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\FINLANDIA\\940000.json"
+            },
+            "FRANCIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "FRANCIA",
+                "sub_ubicaciones": [
+                    "BURDEOS",
+                    "ESTRASBURGO",
+                    "LYON",
+                    "MARSELLA",
+                    "NIZA",
+                    "PARÍS",
+                    "TOULOUSE"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\FRANCIA\\940000.json"
+            },
+            "GRAN BRETAÑA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "GRAN BRETAÑA",
+                "sub_ubicaciones": [
+                    "LONDRES"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\GRAN BRETAÑA\\940000.json"
+            },
+            "GRAN DUCADO DE LUXEMBURGO": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "GRAN DUCADO DE LUXEMBURGO",
+                "sub_ubicaciones": [
+                    "LUXEMBURGO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\GRAN DUCADO DE LUXEMBURGO\\940000.json"
+            },
+            "GRECIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "GRECIA",
+                "sub_ubicaciones": [
+                    "ATENAS"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\GRECIA\\940000.json"
+            },
+            "HOLANDA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "HOLANDA",
+                "sub_ubicaciones": [
+                    "ÁMSTERDAM"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\HOLANDA\\940000.json"
+            },
+            "HUNGRÍA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "HUNGRÍA",
+                "sub_ubicaciones": [
+                    "BUDAPEST"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\HUNGRÍA\\940000.json"
+            },
+            "IRLANDA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "IRLANDA",
+                "sub_ubicaciones": [
+                    "DUBLÍN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\IRLANDA\\940000.json"
+            },
+            "ITALIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "ITALIA",
+                "sub_ubicaciones": [
+                    "BOLONIA",
+                    "BOLZANO",
+                    "FLORENCIA",
+                    "GÉNOVA",
+                    "MARCAS",
+                    "MILÁN",
+                    "NÁPOLES",
+                    "PERUGIA",
+                    "ROMA",
+                    "TRIESTE",
+                    "TURÍN"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\ITALIA\\940000.json"
+            },
+            "MACEDONIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "MACEDONIA",
+                "sub_ubicaciones": [
+                    "SKOPIE"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\MACEDONIA\\940000.json"
+            },
+            "MALTA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "MALTA",
+                "sub_ubicaciones": [
+                    "LA VALETTA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\MALTA\\940000.json"
+            },
+            "NORUEGA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "NORUEGA",
+                "sub_ubicaciones": [
+                    "OSLO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\NORUEGA\\940000.json"
+            },
+            "POLONIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "POLONIA",
+                "sub_ubicaciones": [
+                    "VARSOVIA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\POLONIA\\940000.json"
+            },
+            "PORTUGAL": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "PORTUGAL",
+                "sub_ubicaciones": [
+                    "LISBOA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\PORTUGAL\\940000.json"
+            },
+            "PRINCIPADO DE ANDORRA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "PRINCIPADO DE ANDORRA",
+                "sub_ubicaciones": [
+                    "ANDORRA LA VELLA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\PRINCIPADO DE ANDORRA\\940000.json"
+            },
+            "REPÚBLICA CHECA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "REPÚBLICA CHECA",
+                "sub_ubicaciones": [
+                    "PRAGA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\REPÚBLICA CHECA\\940000.json"
+            },
+            "RUMANÍA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "RUMANÍA",
+                "sub_ubicaciones": [
+                    "BUCAREST",
+                    "TIMISOARA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\RUMANÍA\\940000.json"
+            },
+            "RUSIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "RUSIA",
+                "sub_ubicaciones": [
+                    "MOSCÚ",
+                    "SAN PETERSBURGO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\RUSIA\\940000.json"
+            },
+            "SUECIA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "SUECIA",
+                "sub_ubicaciones": [
+                    "ESTOCOLMO",
+                    "MALMO"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\SUECIA\\940000.json"
+            },
+            "SUIZA": {
+                "codigo_json": "940000.json",
+                "nombre_ubicacion": "SUIZA",
+                "sub_ubicaciones": [
+                    "BERNA",
+                    "GINEBRA"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\EUROPA\\SUIZA\\940000.json"
+            }
+        },
+        "OCEANÍA": {
+            "SUIZA": {
+                "codigo_json": "950000.json",
+                "nombre_ubicacion": "SUIZA",
+                "sub_ubicaciones": [],
+                "ruta_archivo_local": "EXTRANJERO\\OCEANÍA\\SUIZA\\950000.json"
+            },
+            "AUSTRALIA": {
+                "codigo_json": "950000.json",
+                "nombre_ubicacion": "AUSTRALIA",
+                "sub_ubicaciones": [
+                    "BRISBANE",
+                    "CAMBERRA",
+                    "MELBOURNE",
+                    "PERTH",
+                    "SÍDNEY"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\OCEANÍA\\AUSTRALIA\\950000.json"
+            },
+            "NUEVA ZELANDA": {
+                "codigo_json": "950000.json",
+                "nombre_ubicacion": "NUEVA ZELANDA",
+                "sub_ubicaciones": [
+                    "AUCKLAND",
+                    "WELLINGTON"
+                ],
+                "ruta_archivo_local": "EXTRANJERO\\OCEANÍA\\NUEVA ZELANDA\\950000.json"
+            }
+        }
+    }
+}
