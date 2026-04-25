@@ -217,9 +217,65 @@
             document.getElementById('loading').style.display = show ? 'flex' : 'none'; 
         }
 
+        function updateURL() {
+            const params = new URLSearchParams();
+            params.set('view', state.view);
+            if (state.view === 'PERU') {
+                if (state.hierarchy[0]) params.set('region', state.hierarchy[0].name);
+                if (state.hierarchy[1]) params.set('province', state.hierarchy[1].name);
+                const dist = document.getElementById('select-district').value;
+                if (dist) params.set('district', dist);
+            } else if (state.view === 'EXTRANJERO') {
+                if (state.hierarchy[0]) params.set('continent', state.hierarchy[0].name);
+                const country = document.getElementById('select-country').value;
+                if (country) params.set('country', country);
+                const city = document.getElementById('select-city').value;
+                if (city) params.set('city', city);
+            }
+            const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + params.toString();
+            window.history.replaceState({path: newurl}, '', newurl);
+        }
+
         async function init() {
             state.mapping = await safeFetch('GLOBAL/mapeo_general_ubicaciones.json');
-            handleViewChange('TODOS');
+            
+            const params = new URLSearchParams(window.location.search);
+            const view = params.get('view');
+            
+            if (view === 'PERU') {
+                const region = params.get('region');
+                const province = params.get('province');
+                const district = params.get('district');
+                
+                await handleViewChange('PERU');
+                if (region) {
+                    await drillDownPeru(region, 'region');
+                    if (province) {
+                        await drillDownPeru(province, 'province', region);
+                        if (district) {
+                            setTimeout(() => {
+                                const normD = normalize(district);
+                                state.currentLayer.eachLayer(l => {
+                                    if (normalize(l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id) === normD) {
+                                        l.setStyle(styles.selected);
+                                        map.flyToBounds(l.getBounds(), { padding: [40, 40], duration: 0.8 });
+                                        document.getElementById('select-district').value = district;
+                                        updateURL();
+                                    }
+                                });
+                            }, 500);
+                        }
+                    }
+                }
+            } else if (view === 'EXTRANJERO') {
+                const continent = params.get('continent');
+                const country = params.get('country');
+                if (continent) {
+                    await switchToExtranjero(continent, country || "");
+                } else handleViewChange('TODOS');
+            } else {
+                handleViewChange('TODOS');
+            }
         }
 
         async function handleViewChange(view) {
@@ -230,14 +286,16 @@
             document.getElementById('peru-controls').classList.toggle('hidden', view !== 'PERU');
             document.getElementById('extranjero-controls').classList.toggle('hidden', view !== 'EXTRANJERO');
             
-            if (view === 'TODOS' || view === 'EXTRANJERO') {
-                await loadLayer('GLOBAL/mundo.json', (f, l) => {
-                    const name = f.properties.name || f.id;
-                    l.bindTooltip(name, { sticky: true, direction: 'top' });
-                    l.on('click', () => detectAndSwitch(name));
-                });
+            if (view === 'TODOS' || view !== 'PERU') {
+                if (view !== 'EXTRANJERO') {
+                    await loadLayer('GLOBAL/mundo.json', (f, l) => {
+                        const name = f.properties.name || f.id;
+                        l.bindTooltip(name, { sticky: true, direction: 'top' });
+                        l.on('click', () => detectAndSwitch(name));
+                    });
+                    map.flyTo([20, 0], 2, { animate: true, duration: 0.8 });
+                }
                 if (view === 'EXTRANJERO') populateContinents();
-                map.flyTo([20, 0], 2, { animate: true, duration: 0.8 });
             } else if (view === 'PERU') {
                 showLoading(true);
                 await loadLayer('GLOBAL/peruLow.json', (f, l) => {
@@ -249,12 +307,11 @@
                 setTimeout(() => showLoading(false), 300);
             }
             updateBreadcrumb();
+            updateURL();
         }
 
         async function detectAndSwitch(name) {
             const normName = normalize(name);
-            console.log("Detecting Click:", name, "->", normName);
-            
             if (normName === 'PERU') {
                 handleViewChange('PERU');
             } else {
@@ -271,6 +328,7 @@
                 }
                 if (!found && ext[name.toUpperCase()]) drillDownExtranjero(name);
             }
+            updateURL();
         }
 
         async function switchToExtranjero(continent, country) {
@@ -279,7 +337,8 @@
             document.getElementById('peru-controls').classList.add('hidden');
             populateContinents();
             await drillDownExtranjero(continent);
-            selectCountry(continent, country);
+            if (country) selectCountry(continent, country);
+            updateURL();
         }
 
         async function loadLayer(url, onEachFeature) {
@@ -330,6 +389,7 @@
             else if (item.type === 'province') drillDownPeru(item.name, 'province', state.hierarchy[index-1].name);
             else if (item.type === 'continent') drillDownExtranjero(item.name);
             updateBreadcrumb();
+            updateURL();
         }
 
         function populateRegions() {
@@ -381,12 +441,14 @@
                         state.currentLayer.eachLayer(il => il.setStyle(styles.default));
                         l.setStyle(styles.selected);
                         document.getElementById('select-district').value = distName;
+                        updateURL();
                     });
                 });
                 populateDistrictsFromGeo();
                 document.getElementById('select-province').value = Object.keys(regData).find(k => normalize(k) === normalize(name));
             }
             updateBreadcrumb();
+            updateURL();
         }
 
         function populateProvinces(regionName) {
@@ -434,6 +496,7 @@
                 await detectAndSwitch(name);
             }
             updateBreadcrumb();
+            updateURL();
         }
 
         function populateCountries(continent) {
@@ -465,6 +528,7 @@
                 document.getElementById('select-country').value = Object.keys(contData).find(k => normalize(k) === normalize(country));
                 populateCities(continent, country);
             }
+            updateURL();
         }
 
         function populateCities(continent, country) {
@@ -492,10 +556,16 @@
                 } else l.setStyle(styles.default);
             });
             if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
+            updateURL();
         });
         document.getElementById('select-continent').addEventListener('change', (e) => { if(e.target.value) drillDownExtranjero(e.target.value); });
         document.getElementById('select-country').addEventListener('change', (e) => { if(e.target.value) selectCountry(state.hierarchy[0].name, e.target.value); });
-        document.getElementById('btn-clear').addEventListener('click', () => handleViewChange(state.view));
+        document.getElementById('select-city').addEventListener('change', () => updateURL());
+        document.getElementById('btn-clear').addEventListener('click', () => {
+            handleViewChange(state.view);
+            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
+            window.history.replaceState({path: cleanUrl}, '', cleanUrl);
+        });
 
         init();
     </script>
