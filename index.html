@@ -308,7 +308,11 @@
             container.classList.remove('hidden');
             
             let html = `<span class="breadcrumb-item" onclick="handleViewChange('TODOS')">MUNDO</span>`;
-            if (state.view !== 'TODOS' && state.hierarchy.length === 0) {
+            
+            if (state.view === 'PERU') {
+                const isPeruActive = state.hierarchy.length === 0;
+                html += ` <span class="separator">></span> <span class="breadcrumb-item ${isPeruActive ? 'active' : ''}" onclick="${isPeruActive ? '' : "handleViewChange('PERU')"}">PERÚ</span>`;
+            } else if (state.view !== 'TODOS' && state.hierarchy.length === 0) {
                  html += ` <span class="separator">></span> <span class="breadcrumb-item active">${state.view}</span>`;
             }
 
