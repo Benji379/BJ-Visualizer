@@ -8,6 +8,12 @@ Este documento detalla la organización de los archivos y carpetas del proyecto 
 
 El proyecto está organizado para separar la lógica de visualización (HTML/JS) de los datos geográficos (JSON).
 
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/3b4b4de5-7419-4e86-9d13-3275a5913f8e" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/0b279d5d-0959-4f81-beb6-edb1188ab065" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b6e8e01e-27e6-44b8-8a03-ca4547822096" />
+
+
+
 ### 📍 Directorio Raíz
 - **index.html**: El corazón de la aplicación. Contiene la estructura, los estilos (CSS) y la lógica (JavaScript) para renderizar los mapas usando Leaflet.
 - **DOCUMENTACION.md**: Este archivo explicativo.
