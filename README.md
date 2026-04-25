@@ -2,6 +2,10 @@
 
 Este proyecto es un visualizador dinámico de mapas jerárquicos (Mundo y Perú) construido con Leaflet. Este recurso le puede servir a cualquier persona que quiera integrar mapas interactivos, navegación geográfica por niveles o manejo de datos GeoJSON en sus proyectos.
 
+### 🌐 Demo en Vivo
+Puedes ver la aplicación funcionando aquí: **[https://benji379.github.io/BJ-Visualizer/](https://benji379.github.io/BJ-Visualizer/)**
+
+
 Este documento detalla la organización de los archivos y carpetas del proyecto para asegurar un funcionamiento fluido del visualizador de mapas.
 
 ## 📂 Estructura Principal
