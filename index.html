@@ -630,7 +630,7 @@
                 await loadLayer('GLOBAL/mundo.json', (f, l) => {
                     const name = f.properties.name || f.id;
                     l.bindTooltip(name, { sticky: true, direction: 'top' });
-                    l.on('click', () => detectAndSwitch(name));
+                    l.on('click', (e) => detectAndSwitch(name, e.target));
                 });
                 map.flyTo([20, 0], 2, { animate: true, duration: 1.2 });
             } else if (view === 'PERU') {
@@ -665,7 +665,7 @@
             return fallbacks[normName] || "EXTRANJERO";
         }
 
-        async function detectAndSwitch(name) {
+        async function detectAndSwitch(name, clickedLayer) {
             const normName = normalize(name);
             if (normName === 'PERU') {
                 await handleViewChange('PERU');
@@ -733,32 +733,48 @@
                 // Update UI Controls to show the country
                 if (isMobile()) {
                     const select = document.getElementById('select-view');
-                    let foundOpt = Array.from(select.options).find(o => normalize(o.value) === normName);
-                    if (!foundOpt) {
-                        const o = document.createElement('option');
-                        o.value = name; o.textContent = name.toUpperCase(); o.dataset.isCountry = "true";
-                        select.appendChild(o);
-                        select.value = name;
-                    } else select.value = foundOpt.value;
-                    refreshCustomSelect('select-view');
+                    if (select) {
+                        let foundOpt = Array.from(select.options).find(o => normalize(o.value) === normName);
+                        if (!foundOpt) {
+                            const o = document.createElement('option');
+                            o.value = name; o.textContent = name.toUpperCase(); o.dataset.isCountry = "true";
+                            select.appendChild(o);
+                            select.value = name;
+                        } else select.value = foundOpt.value;
+                        refreshCustomSelect('select-view');
+                    }
                 } else {
-                    document.getElementById('select-continent').value = continentFallback;
-                    refreshCustomSelect('select-continent');
+                    const selView = document.getElementById('select-view');
+                    if (selView) {
+                        selView.value = continentFallback;
+                        refreshCustomSelect('select-view');
+                    }
+                    
                     populateCountries(continentFallback);
-                    document.getElementById('select-country').value = name;
-                    refreshCustomSelect('select-country');
+                    const selCountry = document.getElementById('select-country');
+                    if (selCountry) {
+                        selCountry.value = name;
+                        refreshCustomSelect('select-country');
+                    }
                     updateDesktopControls();
                 }
 
-                let foundLayer = null;
-                state.currentLayer.eachLayer(l => {
-                    const props = l.feature.properties;
-                    const layerName = normalize(props.name || props.NAME || props.country || props.COUNTRY || props.name_es || props.name_en || l.feature.id);
-                    if (layerName === normName || normName.includes(layerName) || layerName.includes(normName)) {
-                        l.setStyle(styles.selected); foundLayer = l;
-                    } else l.setStyle(styles.default);
-                });
-                if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
+                let foundLayer = clickedLayer;
+                if (!foundLayer) {
+                    state.currentLayer.eachLayer(l => {
+                        const props = l.feature.properties;
+                        const layerName = normalize(props.name || props.NAME || props.country || props.COUNTRY || props.name_es || props.name_en || l.feature.id);
+                        if (layerName === normName || normName.includes(layerName) || layerName.includes(normName)) {
+                            foundLayer = l;
+                        }
+                    });
+                }
+
+                if (foundLayer) {
+                    state.currentLayer.eachLayer(il => il.setStyle(styles.default));
+                    foundLayer.setStyle(styles.selected);
+                    map.flyToBounds(foundLayer.getBounds(), { padding: [50, 50], duration: 1.2 });
+                }
             }
         }
 
@@ -1067,7 +1083,7 @@
                 await loadLayer(finalPath, (f, l) => { 
                     const cName = f.properties.name || f.id;
                     l.bindTooltip(cName, { sticky: true, direction: 'top' });
-                    l.on('click', () => detectAndSwitch(cName)); 
+                    l.on('click', (e) => detectAndSwitch(cName, e.target)); 
                 });
                 if (!isMobile()) populateCountries(name);
                 const selectView = document.getElementById('select-view');
