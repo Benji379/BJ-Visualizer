@@ -24,18 +24,32 @@
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-color); height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+        .hidden { display: none !important; }
 
         header {
+            position: relative;
             background: #ffffff;
             padding: 8px 24px;
             color: var(--primary-color);
+            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+            z-index: 1000;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header-top {
             display: grid;
             grid-template-columns: 200px 1fr 150px;
             align-items: center;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-            z-index: 1000;
-            height: 64px;
-            border-bottom: 1px solid var(--border-color);
+            height: 56px;
+        }
+
+        .header-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 8px;
+            border-top: 1px solid #f1f5f9;
+            min-height: 40px;
         }
 
         .logo-group { display: flex; align-items: center; gap: 12px; }
@@ -44,35 +58,9 @@
 
         .nav-controls { display: flex; gap: 10px; align-items: center; justify-content: center; }
         
-        select {
-            appearance: none;
-            padding: 10px 36px 10px 16px; 
-            border-radius: 12px; 
-            border: 1px solid #e5e7eb;
-            background: #f8fafc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236b7280'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E") no-repeat right 12px center;
-            background-size: 16px;
-            color: #4b5563; 
-            font-family: inherit; 
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer; 
-            outline: none; 
-            transition: all 0.2s;
-            min-width: 140px;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
-        select:hover { border-color: var(--secondary-color); background-color: #ffffff; }
-
         .dropdown-group { display: flex; gap: 8px; align-items: center; }
 
         .actions { display: flex; justify-content: flex-end; }
-        .btn-clear {
-            padding: 10px 20px; border-radius: 12px; border: 1.5px solid var(--secondary-color);
-            background: transparent; color: var(--secondary-color); font-weight: 700;
-            cursor: pointer; transition: all 0.2s; font-size: 0.8rem;
-            text-transform: uppercase; letter-spacing: 0.5px;
-        }
-        .btn-clear:hover { background: var(--secondary-color); color: white; }
 
         main { flex: 1; position: relative; display: flex; flex-direction: column; overflow: hidden; }
         
@@ -93,81 +81,189 @@
         .loading-text { margin-top: 15px; font-weight: 600; color: var(--primary-color); font-size: 0.9rem; letter-spacing: 1px; }
 
         .breadcrumb {
-            position: absolute; top: 20px; left: 60px; z-index: 1000;
-            background: rgba(255,255,255,0.95); padding: 10px 20px; border-radius: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; gap: 10px;
-            font-size: 0.85rem; font-weight: 600; color: var(--primary-color); border: 1px solid var(--border-color);
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 8px 18px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            z-index: 1000;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px 12px;
+            border: 1.5px solid #e2e8f0;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: calc(100% - 40px);
+            line-height: 1.4;
         }
-        .breadcrumb-item { cursor: pointer; color: var(--secondary-color); }
+        .breadcrumb.hidden { display: none; }
+        .breadcrumb-item { cursor: pointer; color: var(--primary-color); white-space: nowrap; transition: color 0.2s; }
+        .breadcrumb-item:hover { color: var(--secondary-color); text-decoration: underline; }
+        .breadcrumb-item.active { color: #475569; cursor: default; text-decoration: none; }
+        .separator { color: var(--primary-color); font-weight: bold; }
+
+        .zoom-controls { display: flex; gap: 8px; }
+        .zoom-btn {
+            width: 30px; height: 30px; border-radius: 8px; border: 1px solid var(--border-color);
+            background: white; color: var(--primary-color); font-size: 1.1rem; font-weight: bold;
+            cursor: pointer; display: flex; align-items: center; justify-content: center;
+            transition: all 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .zoom-btn:hover { background: #f8fafc; border-color: var(--secondary-color); color: var(--secondary-color); }
+        .zoom-btn:active { transform: translateY(1px); }
+        
+        .breadcrumb {
+            position: absolute; top: 20px; left: 20px; z-index: 500;
+            background: rgba(255,255,255,0.95); padding: 8px 16px; border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; gap: 8px;
+            font-size: 0.75rem; font-weight: 600; color: var(--primary-color); border: 1px solid var(--border-color);
+            backdrop-filter: blur(4px);
+        }
+        .breadcrumb-item { cursor: pointer; color: var(--secondary-color); transition: color 0.2s; }
         .breadcrumb-item:hover { color: var(--accent-color); }
-        .breadcrumb-item.active { color: var(--text-color); cursor: default; }
+        .breadcrumb-item.active { color: #64748b; cursor: default; }
 
-        /* Estilo para los tooltips */
-        .leaflet-tooltip {
-            background-color: rgba(255, 255, 255, 0.9);
-            border: 1px solid var(--primary-color);
-            border-radius: 6px;
-            padding: 4px 8px;
-            font-weight: 700;
-            font-size: 0.8rem;
-            color: var(--primary-color);
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-
-        .leaflet-control-attribution { display: none !important; }
-        .hidden { display: none !important; }
-
-        .leaflet-top { top: 80px !important; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-
-        /* ELIMINAR EL BORDE NEGRO RECTANGULAR */
+        /* ELIMINAR MARCO NEGRO DE ENFOQUE */
         .leaflet-container,
         .leaflet-container *,
         .leaflet-interactive,
-        path,
-        svg,
-        g,
-        div:focus {
+        path, svg, g, div:focus {
             outline: none !important;
             box-shadow: none !important;
             -webkit-tap-highlight-color: transparent;
         }
+        *:focus { outline: none !important; }
 
-        *:focus {
-            outline: none !important;
+        /* Custom Dropdown Styles */
+        @keyframes selectFadeIn {
+            from { opacity: 0; transform: translateY(8px) scale(0.98); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        .custom-select-container { 
+            position: relative; min-width: 150px; user-select: none; z-index: 2000;
+            animation: selectFadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .custom-select-trigger {
+            display: flex; align-items: center; justify-content: space-between; padding: 10px 16px;
+            background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; cursor: pointer;
+            font-size: 0.85rem; font-weight: 600; color: #334155; transition: all 0.2s;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05); min-width: fit-content; white-space: nowrap; gap: 8px;
+        }
+        .custom-select-trigger:hover { border-color: var(--secondary-color); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .custom-select-trigger.active { border-color: var(--primary-color); box-shadow: 0 0 0 4px rgba(0, 85, 170, 0.1); }
+        .custom-select-trigger span { flex: 1; }
+        .custom-select-trigger .arrow { font-size: 0.8rem; margin-left: 8px; color: #94a3b8; transition: transform 0.2s; }
+        .custom-select-trigger.active .arrow { transform: rotate(180deg); }
+
+        .custom-select-options {
+            position: absolute; top: calc(100% + 10px); left: 0; right: 0; background: #ffffff;
+            border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            z-index: 2000; max-height: 350px; overflow-y: auto; opacity: 0; visibility: hidden;
+            transform: translateY(10px); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .custom-select-options.show { opacity: 1; visibility: visible; transform: translateY(0); }
+
+        .custom-select-search {
+            padding: 12px 14px; background: #ffffff; position: sticky; top: 0; z-index: 10;
+            border-top-left-radius: 16px; border-top-right-radius: 16px;
+        }
+        .custom-select-search input {
+            width: 100%; padding: 10px 14px; border: none; border-radius: 10px;
+            font-size: 0.85rem; outline: none; background: #f1f5f9; color: #1e293b;
+            transition: all 0.2s;
+        }
+        .custom-select-search input:focus { background: #e2e8f0; box-shadow: 0 0 0 2px rgba(0, 85, 170, 0.05); }
+
+        .custom-option {
+            padding: 10px 16px; cursor: pointer; font-size: 0.85rem; color: #475569;
+            transition: all 0.15s; display: flex; align-items: center; justify-content: space-between;
+            white-space: nowrap;
+        }
+        .custom-option:hover { background: #f1f5f9; color: var(--secondary-color); padding-left: 20px; }
+        .custom-option.selected { background: #f0f7ff; color: var(--secondary-color); font-weight: 700; }
+        .custom-option.selected::after { content: "✓"; font-size: 0.8rem; }
+        .custom-option.hidden { display: none; }
+        .custom-option.is-country:not(.searching) { display: none; }
+
+        .native-select { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
+
+        /* Responsive Mobile Styles */
+        @media (max-width: 768px) {
+            header { padding: 8px 10px; }
+            .header-top {
+                display: flex !important;
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                align-items: center !important;
+                gap: 10px;
+                width: 100%;
+            }
+            .logo-group { 
+                display: flex !important; 
+                width: auto !important;
+                margin: 0 !important;
+                flex-shrink: 0;
+            }
+            .logo-text { display: none !important; }
+            .nav-controls {
+                flex: 1 !important;
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+            }
+            .nav-controls > .custom-select-container { 
+                display: block !important;
+                width: 100% !important;
+                max-width: none;
+            }
+            .dropdown-group { display: none !important; }
+            .actions { display: none; }
+            .breadcrumb {
+                top: 20px; 
+                left: 10px;
+                font-size: 0.85rem;
+                padding: 8px 18px;
+                z-index: 500;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <a href="https://benjicode.com" target="_blank" class="logo-group" style="text-decoration: none;">
-            <img src="GLOBAL/favicon.ico" alt="Logo" class="logo-img">
-            <div class="logo-text">BJ Visualizer</div>
-        </a>
+        <div class="header-top">
+            <a href="https://benjicode.com" target="_blank" class="logo-group" style="text-decoration: none;">
+                <img src="GLOBAL/favicon.ico" alt="Logo" class="logo-img">
+                <div class="logo-text">BJ Visualizer</div>
+            </a>
+    
+            <div class="nav-controls">
+                <select id="select-view" class="native-select">
+                    <option value="TODOS">MUNDO</option>
+                    <option value="PERU">PERÚ</option>
+                </select>
 
-        <div class="nav-controls">
-            <select id="select-view">
-                <option value="TODOS">TODOS</option>
-                <option value="PERU">PERÚ</option>
-            </select>
-
-            <div id="peru-controls" class="dropdown-group hidden">
-                <select id="select-region"><option value="">REGIÓN</option></select>
-                <select id="select-province"><option value="">PROVINCIA</option></select>
-                <select id="select-district"><option value="">DISTRITO</option></select>
+                <div class="dropdown-group">
+                    <select id="select-country" class="native-select"><option value="">PAÍS</option></select>
+                    <select id="select-region" class="native-select"><option value="">REGIÓN</option></select>
+                    <select id="select-province" class="native-select"><option value="">PROVINCIA</option></select>
+                    <select id="select-district" class="native-select"><option value="">DISTRITO</option></select>
+                    <select id="select-city" class="native-select"><option value="">CIUDAD</option></select>
+                </div>
             </div>
-
-            <div id="extranjero-controls" class="dropdown-group hidden">
-                <select id="select-continent"><option value="">CONTINENTE</option></select>
-                <select id="select-country"><option value="">PAÍS</option></select>
-                <select id="select-city"><option value="">CIUDAD</option></select>
+    
+            <div class="actions">
+                <div class="zoom-controls">
+                    <button class="zoom-btn" id="zoom-in" title="Acercar">+</button>
+                    <button class="zoom-btn" id="zoom-out" title="Alejar">−</button>
+                </div>
             </div>
         </div>
 
-        <div class="actions">
-            <button class="btn-clear" id="btn-clear">LIMPIAR</button>
-        </div>
     </header>
 
     <main>
@@ -181,6 +277,173 @@
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script>
+        class CustomSelect {
+            constructor(selectId) {
+                this.select = document.getElementById(selectId);
+                if (!this.select) return;
+                this.id = selectId;
+                this.container = null;
+                this.trigger = null;
+                this.optionsList = null;
+                this.searchInput = null;
+                this.init();
+                if (!window.customSelects) window.customSelects = {};
+                window.customSelects[selectId] = this;
+            }
+
+            init() {
+                this.container = document.createElement('div');
+                this.container.className = 'custom-select-container';
+                this.select.parentNode.insertBefore(this.container, this.select);
+                this.container.appendChild(this.select);
+                this.select.classList.add('native-select');
+
+                this.trigger = document.createElement('div');
+                this.trigger.className = 'custom-select-trigger';
+                this.container.appendChild(this.trigger);
+
+                this.optionsList = document.createElement('div');
+                this.optionsList.className = 'custom-select-options';
+                this.container.appendChild(this.optionsList);
+
+                this.updateTriggerText();
+                this.renderOptions();
+                this.bindEvents();
+            }
+
+            updateTriggerText() {
+                if (typeof isMobile === 'function' && isMobile() && this.id === 'select-view' && typeof state !== 'undefined' && state.hierarchy && state.hierarchy.length > 0) {
+                    const current = state.hierarchy[state.hierarchy.length - 1];
+                    this.trigger.innerHTML = `<span>${current.name}</span><span class="arrow">▾</span>`;
+                    return;
+                }
+                const selected = this.select.options[this.select.selectedIndex];
+                this.trigger.innerHTML = `<span>${selected ? selected.textContent : ''}</span><span class="arrow">▾</span>`;
+            }
+
+            toggleSearchVisibility() {
+                if (this.select.options.length > 8) {
+                    if (!this.searchInput) {
+                        const container = document.createElement('div');
+                        container.className = 'custom-select-search';
+                        this.searchInput = document.createElement('input');
+                        this.searchInput.type = 'text';
+                        this.searchInput.placeholder = 'Buscar...';
+                        this.searchInput.addEventListener('input', (e) => this.filterOptions(e.target.value));
+                        this.searchInput.addEventListener('click', (e) => e.stopPropagation());
+                        container.appendChild(this.searchInput);
+                        this.optionsList.prepend(container);
+                    }
+                    this.searchInput.closest('.custom-select-search').classList.remove('hidden');
+                } else if (this.searchInput) {
+                    this.searchInput.closest('.custom-select-search').classList.add('hidden');
+                }
+            }
+
+            filterOptions(query) {
+                const q = query.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+                const options = this.optionsList.querySelectorAll('.custom-option');
+                options.forEach(opt => {
+                    const txt = opt.textContent.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase();
+                    const matches = txt.includes(q);
+                    
+                    if (q === "") {
+                        opt.classList.remove('searching');
+                        opt.classList.toggle('hidden', false);
+                    } else {
+                        opt.classList.add('searching');
+                        opt.classList.toggle('hidden', !matches);
+                    }
+                });
+            }
+
+            renderOptions() {
+                const searchVal = this.searchInput ? this.searchInput.value : '';
+                this.optionsList.innerHTML = '';
+                this.searchInput = null;
+                this.toggleSearchVisibility();
+                
+                Array.from(this.select.options).forEach((opt, index) => {
+                    const div = document.createElement('div');
+                    if (opt.disabled) {
+                        div.className = 'custom-option-header';
+                        div.textContent = opt.textContent;
+                        this.optionsList.appendChild(div);
+                        return;
+                    }
+                    div.className = 'custom-option';
+                    if (opt.dataset.isCountry === "true") div.classList.add('is-country');
+                    if (index === this.select.selectedIndex) div.classList.add('selected');
+                    div.textContent = opt.textContent;
+                    div.dataset.value = opt.value;
+                    div.dataset.index = index;
+                    
+                    div.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const val = opt.value;
+                        this.select.selectedIndex = index;
+                        this.select.dispatchEvent(new Event('change'));
+                        if (val && !val.includes('BACK')) {
+                            this.close();
+                        }
+                        this.update();
+                    });
+                    
+                    this.optionsList.appendChild(div);
+                });
+                
+                this.filterOptions(searchVal || "");
+            }
+
+            bindEvents() {
+                this.trigger.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.toggle();
+                });
+                
+                document.addEventListener('click', (e) => {
+                    if (!this.container.contains(e.target)) this.close();
+                });
+            }
+
+            toggle() {
+                const isOpen = this.optionsList.classList.contains('show');
+                document.querySelectorAll('.custom-select-options.show').forEach(el => el.classList.remove('show'));
+                document.querySelectorAll('.custom-select-trigger.active').forEach(el => el.classList.remove('active'));
+                
+                if (!isOpen) {
+                    this.optionsList.classList.add('show');
+                    this.trigger.classList.add('active');
+                }
+            }
+
+            close() {
+                this.optionsList.classList.remove('show');
+                this.trigger.classList.remove('active');
+            }
+
+            update() {
+                this.updateTriggerText();
+                this.renderOptions();
+            }
+        }
+
+        const customSelects = {};
+        function initCustomSelects() {
+            const selects = ['select-view', 'select-country', 'select-region', 'select-province', 'select-district', 'select-city'];
+            selects.forEach(id => {
+                if (document.getElementById(id)) {
+                    customSelects[id] = new CustomSelect(id);
+                }
+            });
+        }
+
+        function refreshCustomSelect(id) {
+            if (customSelects[id]) {
+                customSelects[id].update();
+            }
+        }
+
         const state = {
             mapping: null,
             geoData: {}, 
@@ -189,7 +452,10 @@
             hierarchy: []
         };
 
-        const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([20, 0], 2);
+        const map = L.map('map', { zoomControl: false, attributionControl: false }).setView([20, 0], 2);
+        
+        document.getElementById('zoom-in').onclick = () => map.zoomIn();
+        document.getElementById('zoom-out').onclick = () => map.zoomOut();
 
         const styles = {
             default: { fillColor: '#5b92cb', weight: 1.2, opacity: 1, color: 'white', fillOpacity: 1.0 },
@@ -220,82 +486,153 @@
         function updateURL() {
             const params = new URLSearchParams();
             params.set('view', state.view);
-            if (state.view === 'PERU') {
-                if (state.hierarchy[0]) params.set('region', state.hierarchy[0].name);
-                if (state.hierarchy[1]) params.set('province', state.hierarchy[1].name);
-                const dist = document.getElementById('select-district').value;
-                if (dist) params.set('district', dist);
-            } else if (state.view === 'EXTRANJERO') {
-                if (state.hierarchy[0]) params.set('continent', state.hierarchy[0].name);
-                const country = document.getElementById('select-country').value;
-                if (country) params.set('country', country);
-                const city = document.getElementById('select-city').value;
-                if (city) params.set('city', city);
+            if (state.hierarchy && state.hierarchy.length > 0) {
+                params.set('path', state.hierarchy.map(h => h.name).join('/'));
             }
-            const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + params.toString();
-            window.history.replaceState({path: newurl}, '', newurl);
+            const search = params.toString();
+            const newURL = window.location.pathname + (search ? '?' + search : '');
+            window.history.pushState({}, '', newURL);
         }
+
+        const isMobile = () => window.innerWidth <= 768;
+
+        function populateMainSelect(activeItem = null) {
+            const select = document.getElementById('select-view');
+            select.innerHTML = '';
+            
+            const options = [
+                { value: 'TODOS', text: 'TODOS' }
+            ];
+            
+            const ext = state.mapping["EXTRANJERO"];
+            const continents = Object.keys(ext).sort().map(c => ({ value: c, text: c.toUpperCase() }));
+            
+            const allCountries = [];
+            Object.keys(ext).forEach(cont => {
+                Object.keys(ext[cont]).forEach(country => {
+                    allCountries.push({ value: country, text: country.toUpperCase(), type: 'country' });
+                });
+            });
+            const countries = allCountries.sort((a, b) => a.text.localeCompare(b.text));
+
+            // TODOS y PERÚ: SIEMPRE VISIBLES
+            options.forEach(opt => {
+                const o = document.createElement('option');
+                o.value = opt.value;
+                o.textContent = opt.text;
+                select.appendChild(o);
+            });
+
+            // Continentes: SIEMPRE VISIBLES
+            continents.forEach(opt => {
+                const o = document.createElement('option');
+                o.value = opt.value;
+                o.textContent = opt.text;
+                select.appendChild(o);
+            });
+
+            // Países: OCULTOS POR DEFECTO
+            countries.forEach(opt => {
+                const o = document.createElement('option');
+                o.value = opt.value;
+                o.textContent = opt.text;
+                o.dataset.isCountry = "true";
+                select.appendChild(o);
+            });
+
+            if (activeItem) {
+                const normActive = normalize(activeItem);
+                const foundOpt = Array.from(select.options).find(o => normalize(o.value) === normActive || normalize(o.textContent) === normActive);
+                if (foundOpt) select.value = foundOpt.value;
+            }
+
+            refreshCustomSelect('select-view');
+        }
+
+
 
         async function init() {
             state.mapping = await safeFetch('GLOBAL/mapeo_general_ubicaciones.json');
+            initCustomSelects();
+            populateMainSelect();
             
             const params = new URLSearchParams(window.location.search);
             const view = params.get('view');
+            const path = params.get('path');
             
-            if (view === 'PERU') {
-                const region = params.get('region');
-                const province = params.get('province');
-                const district = params.get('district');
-                
+            if (!view || view === 'TODOS') {
+                await handleViewChange('TODOS');
+            } else if (view === 'PERU') {
                 await handleViewChange('PERU');
-                if (region) {
-                    await drillDownPeru(region, 'region');
-                    if (province) {
-                        await drillDownPeru(province, 'province', region);
-                        if (district) {
-                            setTimeout(() => {
-                                const normD = normalize(district);
-                                state.currentLayer.eachLayer(l => {
-                                    if (normalize(l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id) === normD) {
-                                        l.setStyle(styles.selected);
-                                        map.flyToBounds(l.getBounds(), { padding: [40, 40], duration: 0.8 });
-                                        document.getElementById('select-district').value = district;
-                                        updateURL();
-                                    }
-                                });
-                            }, 500);
-                        }
-                    }
+                if (path) {
+                    const steps = path.split('/');
+                    if (steps[0]) await drillDownPeru(steps[0], 'region');
+                    if (steps[1]) await drillDownPeru(steps[1], 'province', steps[0]);
                 }
             } else if (view === 'EXTRANJERO') {
-                const continent = params.get('continent');
-                const country = params.get('country');
-                if (continent) {
-                    await switchToExtranjero(continent, country || "");
-                } else handleViewChange('TODOS');
-            } else {
-                handleViewChange('TODOS');
+                if (path) {
+                    const steps = path.split('/');
+                    if (steps[0] && steps[1]) await switchToExtranjero(steps[0], steps[1]);
+                    else if (steps[0]) await drillDownExtranjero(steps[0]);
+                } else {
+                    await handleViewChange('TODOS');
+                }
             }
+            
+            if (isMobile()) updateMobileNavigator();
+        }
+
+        function updateDesktopControls() {
+            if (isMobile()) return;
+            const view = document.getElementById('select-view');
+            const country = document.getElementById('select-country');
+            const region = document.getElementById('select-region');
+            const province = document.getElementById('select-province');
+            const district = document.getElementById('select-district');
+            const city = document.getElementById('select-city');
+
+            const toggleSelect = (el, show) => {
+                if (!el) return;
+                const container = el.closest('.custom-select-container');
+                if (container) container.style.display = show ? 'block' : 'none';
+            };
+
+            const hasView = view.value && view.value !== 'TODOS';
+            const isPeru = country.value === 'PERÚ' || country.value === 'PERU';
+
+            toggleSelect(country, hasView);
+            toggleSelect(region, hasView && isPeru);
+            toggleSelect(province, hasView && isPeru && region.value);
+            toggleSelect(district, hasView && isPeru && province.value);
+            toggleSelect(city, hasView && !isPeru && country.value);
         }
 
         async function handleViewChange(view) {
+            const previousView = state.view;
             state.view = view;
             state.hierarchy = [];
             
-            document.getElementById('select-view').value = view === 'EXTRANJERO' ? 'TODOS' : view;
-            document.getElementById('peru-controls').classList.toggle('hidden', view !== 'PERU');
-            document.getElementById('extranjero-controls').classList.toggle('hidden', view !== 'EXTRANJERO');
+            const selectView = document.getElementById('select-view');
+            if (selectView) {
+                if (view === 'TODOS') selectView.value = 'TODOS';
+                else if (view === 'PERU') selectView.value = 'PERU';
+            }
             
-            if (view === 'TODOS' || view !== 'PERU') {
-                if (view !== 'EXTRANJERO') {
-                    await loadLayer('GLOBAL/mundo.json', (f, l) => {
-                        const name = f.properties.name || f.id;
-                        l.bindTooltip(name, { sticky: true, direction: 'top' });
-                        l.on('click', () => detectAndSwitch(name));
-                    });
-                    map.flyTo([20, 0], 2, { animate: true, duration: 0.8 });
-                }
-                if (view === 'EXTRANJERO') populateContinents();
+            if (isMobile()) {
+                if (view !== 'TODOS') updateMobileNavigator(previousView === 'TODOS' ? 'MUNDO' : (previousView === 'PERU' ? 'PERÚ' : previousView));
+                else populateMainSelect(previousView === 'PERU' ? 'PERÚ' : null);
+            } else {
+                refreshCustomSelect('select-view');
+                updateDesktopControls();
+            }
+            
+            if (view === 'TODOS' || (view !== 'PERU' && view !== 'EXTRANJERO')) {
+                await loadLayer('GLOBAL/mundo.json', (f, l) => {
+                    const name = f.properties.name || f.id;
+                    l.bindTooltip(name, { sticky: true, direction: 'top' });
+                    l.on('click', () => detectAndSwitch(name));
+                });
+                map.flyTo([20, 0], 2, { animate: true, duration: 1.2 });
             } else if (view === 'PERU') {
                 showLoading(true);
                 await loadLayer('GLOBAL/peruLow.json', (f, l) => {
@@ -303,41 +640,138 @@
                     l.bindTooltip(name, { sticky: true, direction: 'top' });
                     l.on('click', () => drillDownPeru(name, 'region'));
                 });
-                populateRegions();
-                setTimeout(() => showLoading(false), 300);
+                map.flyTo([-9.19, -75.015], 5, { animate: true, duration: 1.2 });
+                if (!isMobile()) populateRegions();
+            } else if (view === 'EXTRANJERO') {
+                // No populateContinents needed here, handled by populateMainSelect
             }
             updateBreadcrumb();
             updateURL();
         }
 
+        function findContinentForCountry(countryName) {
+            const normName = normalize(countryName);
+            const ext = state.mapping["EXTRANJERO"];
+            for (let cont in ext) {
+                for (let country in ext[cont]) {
+                    if (normalize(country) === normName) return cont;
+                }
+            }
+            const fallbacks = {
+                "GROENLANDIA": "AMÉRICA", "GREENLAND": "AMÉRICA",
+                "RUSIA": "EUROPA", "CHINA": "ASIA", "INDIA": "ASIA",
+                "AUSTRALIA": "OCEANÍA", "SUDÁFRICA": "ÁFRICA"
+            };
+            return fallbacks[normName] || "EXTRANJERO";
+        }
+
         async function detectAndSwitch(name) {
             const normName = normalize(name);
             if (normName === 'PERU') {
-                handleViewChange('PERU');
-            } else {
-                const ext = state.mapping["EXTRANJERO"];
-                let found = false;
-                for (let cont in ext) {
-                    for (let country in ext[cont]) {
-                        if (normalize(country) === normName || normName.includes(normalize(country)) || normalize(country).includes(normName)) {
-                            await switchToExtranjero(cont, country);
-                            found = true; break;
-                        }
-                    }
-                    if (found) break;
-                }
-                if (!found && ext[name.toUpperCase()]) drillDownExtranjero(name);
+                await handleViewChange('PERU');
+                return;
             }
-            updateURL();
+            
+            const ext = state.mapping["EXTRANJERO"];
+            
+            // 1. Exact Continent
+            for (let cont in ext) {
+                if (normalize(cont) === normName) {
+                    await drillDownExtranjero(cont);
+                    return;
+                }
+            }
+
+            // 2. Exact Country
+            for (let cont in ext) {
+                for (let country in ext[cont]) {
+                    if (normalize(country) === normName) {
+                        await switchToExtranjero(cont, country);
+                        return;
+                    }
+                }
+            }
+
+            // 3. Partial Country Match
+            let found = false;
+            for (let cont in ext) {
+                for (let country in ext[cont]) {
+                    if (normName.includes(normalize(country)) || normalize(country).includes(normName)) {
+                        await switchToExtranjero(cont, country);
+                        found = true; break;
+                    }
+                }
+                if (found) break;
+            }
+
+            if (!found) {
+                // 4. Peru Region
+                const key = Object.keys(state.mapping).find(k => k.includes('PER'));
+                const perData = state.mapping[key];
+                const foundRegion = Object.keys(perData).find(k => normalize(k) === normName);
+                if (foundRegion) {
+                    const selectView = document.getElementById('select-view');
+                    if (selectView) {
+                        selectView.value = 'PERU';
+                        refreshCustomSelect('select-view');
+                    }
+                    await handleViewChange('PERU');
+                    await drillDownPeru(foundRegion, 'region');
+                    return;
+                }
+
+                // 5. Fallback: Country NOT in mapping
+                const continentFallback = findContinentForCountry(name);
+                state.view = 'EXTRANJERO';
+                state.hierarchy = [
+                    { name: continentFallback, type: 'continent' },
+                    { name: name, type: 'country' }
+                ];
+                updateBreadcrumb();
+                updateURL();
+
+                // Update UI Controls to show the country
+                if (isMobile()) {
+                    const select = document.getElementById('select-view');
+                    let foundOpt = Array.from(select.options).find(o => normalize(o.value) === normName);
+                    if (!foundOpt) {
+                        const o = document.createElement('option');
+                        o.value = name; o.textContent = name.toUpperCase(); o.dataset.isCountry = "true";
+                        select.appendChild(o);
+                        select.value = name;
+                    } else select.value = foundOpt.value;
+                    refreshCustomSelect('select-view');
+                } else {
+                    document.getElementById('select-continent').value = continentFallback;
+                    refreshCustomSelect('select-continent');
+                    populateCountries(continentFallback);
+                    document.getElementById('select-country').value = name;
+                    refreshCustomSelect('select-country');
+                    updateDesktopControls();
+                }
+
+                let foundLayer = null;
+                state.currentLayer.eachLayer(l => {
+                    const props = l.feature.properties;
+                    const layerName = normalize(props.name || props.NAME || props.country || props.COUNTRY || props.name_es || props.name_en || l.feature.id);
+                    if (layerName === normName || normName.includes(layerName) || layerName.includes(normName)) {
+                        l.setStyle(styles.selected); foundLayer = l;
+                    } else l.setStyle(styles.default);
+                });
+                if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
+            }
         }
 
         async function switchToExtranjero(continent, country) {
             state.view = 'EXTRANJERO';
-            document.getElementById('extranjero-controls').classList.remove('hidden');
-            document.getElementById('peru-controls').classList.add('hidden');
-            populateContinents();
+            if (!isMobile()) {
+                updateDesktopControls();
+            }
             await drillDownExtranjero(continent);
-            if (country) selectCountry(continent, country);
+            if (country) {
+                selectCountry(continent, country);
+            }
+            if (isMobile()) updateMobileNavigator(country || continent);
             updateURL();
         }
 
@@ -356,19 +790,25 @@
                         if (onEachFeature) onEachFeature(f, l);
                     }
                 }).addTo(map);
-                map.flyToBounds(state.currentLayer.getBounds(), { padding: [20, 20], duration: 0.8 });
+                map.flyToBounds(state.currentLayer.getBounds(), { padding: [20, 20], duration: 1.2 });
             }
             showLoading(false);
         }
 
         function updateBreadcrumb() {
-            const container = document.getElementById('breadcrumb');
-            if (state.view === 'TODOS' && state.hierarchy.length === 0) { container.classList.add('hidden'); return; }
-            container.classList.remove('hidden');
+            const breadcrumb = document.querySelector('.breadcrumb');
+            if (!breadcrumb) return;
             
-            let html = `<span class="breadcrumb-item" onclick="handleViewChange('TODOS')">MUNDO</span>`;
+            if (state.view === 'TODOS' && state.hierarchy.length === 0) {
+                breadcrumb.classList.add('hidden');
+                return;
+            }
+            breadcrumb.classList.remove('hidden');
+            
+            let html = `<span class="breadcrumb-item" onclick="handleViewChange('TODOS')">TODOS</span>`;
             
             if (state.view === 'PERU') {
+                html += ` <span class="separator">></span> <span class="breadcrumb-item" onclick="drillDownExtranjero('AMERICA')">AMÉRICA</span>`;
                 const isPeruActive = state.hierarchy.length === 0;
                 html += ` <span class="separator">></span> <span class="breadcrumb-item ${isPeruActive ? 'active' : ''}" onclick="${isPeruActive ? '' : "handleViewChange('PERU')"}">PERÚ</span>`;
             } else if (state.view !== 'TODOS' && state.hierarchy.length === 0) {
@@ -379,17 +819,118 @@
                 const isActive = index === state.hierarchy.length - 1;
                 html += ` <span class="separator">></span> <span class="breadcrumb-item ${isActive ? 'active' : ''}" onclick="${isActive ? '' : `goBack(${index})`}">${item.name}</span>`;
             });
-            container.innerHTML = html;
+            breadcrumb.innerHTML = html;
         }
 
-        function goBack(index) {
-            const item = state.hierarchy[index];
+        async function goBack(index) {
+            const previousItem = state.hierarchy[index] ? state.hierarchy[index].name : (state.view === 'PERU' ? 'PERÚ' : 'TODOS');
             state.hierarchy = state.hierarchy.slice(0, index);
-            if (item.type === 'region') drillDownPeru(item.name, 'region');
-            else if (item.type === 'province') drillDownPeru(item.name, 'province', state.hierarchy[index-1].name);
-            else if (item.type === 'continent') drillDownExtranjero(item.name);
+            const target = state.hierarchy[state.hierarchy.length - 1];
+            
+            if (!target) {
+                if (state.view === 'PERU') {
+                    await drillDownExtranjero('AMERICA');
+                    if (isMobile()) updateMobileNavigator('PERÚ');
+                } else {
+                    await handleViewChange('TODOS');
+                }
+            } else {
+                if (target.type === 'region') await drillDownPeru(target.name, 'region');
+                else if (target.type === 'province') await drillDownPeru(target.name, 'province', state.hierarchy[0].name);
+                else if (target.type === 'continent') await drillDownExtranjero(target.name);
+            }
+            
             updateBreadcrumb();
             updateURL();
+            if (isMobile()) updateMobileNavigator(previousItem);
+        }
+
+        function updateMobileNavigator(activeItem = null) {
+            if (!isMobile()) return;
+            const select = document.getElementById('select-view');
+            select.innerHTML = '';
+            
+            let backText = "";
+            if (state.hierarchy.length > 0) {
+                if (state.hierarchy.length === 1) backText = "CONTINENTES";
+                else backText = state.hierarchy[state.hierarchy.length - 2].name;
+            } else if (state.view === 'PERU') {
+                backText = "PAÍSES";
+            } else if (state.view !== 'TODOS') {
+                backText = "CONTINENTES";
+            }
+
+            if (backText) {
+                const back = document.createElement('option');
+                back.value = 'BACK'; back.textContent = `← VOLVER A ${backText}`;
+                select.appendChild(back);
+            } else {
+                populateMainSelect(activeItem);
+                return;
+            }
+
+            const current = state.hierarchy[state.hierarchy.length - 1];
+            if (state.view === 'PERU') {
+                const key = Object.keys(state.mapping).find(k => k.includes('PER'));
+                if (!current) {
+                    Object.keys(state.mapping[key]).sort().forEach(r => {
+                        const o = document.createElement('option'); o.value = r; o.textContent = r; o.dataset.type = 'region';
+                        select.appendChild(o);
+                    });
+                } else if (current.type === 'region') {
+                    const regData = findInMapping(state.mapping[key], current.name);
+                    Object.keys(regData).sort().forEach(p => {
+                        if (p !== "Sin_Provincia") {
+                            const o = document.createElement('option'); o.value = p; o.textContent = p; o.dataset.type = 'province';
+                            select.appendChild(o);
+                        }
+                    });
+                } else if (current.type === 'province') {
+                    const regData = findInMapping(state.mapping[key], state.hierarchy[0].name);
+                    const provData = findInMapping(regData, current.name);
+                    if (provData && provData.sub_ubicaciones) {
+                        provData.sub_ubicaciones.sort().forEach(d => {
+                            const o = document.createElement('option'); o.value = d; o.textContent = d; o.dataset.type = 'district';
+                            select.appendChild(o);
+                        });
+                    }
+                }
+            } else if (state.view === 'EXTRANJERO') {
+                if (!current) {
+                    Object.keys(state.mapping["EXTRANJERO"]).sort().forEach(cont => {
+                        const o = document.createElement('option'); o.value = cont; o.textContent = cont; o.dataset.type = 'continent';
+                        select.appendChild(o);
+                    });
+                } else if (current.type === 'continent') {
+                    const contData = findInMapping(state.mapping["EXTRANJERO"], current.name);
+                    const countries = Object.keys(contData).sort();
+                    let list = countries;
+                    if (normalize(current.name) === 'AMERICA') {
+                        list = ['PERÚ', ...countries.filter(c => normalize(c) !== 'PERU')];
+                    }
+                    list.forEach(c => {
+                        const o = document.createElement('option'); o.value = c; o.textContent = c; o.dataset.type = 'country';
+                        select.appendChild(o);
+                    });
+                } else if (current.type === 'country') {
+                     const contData = findInMapping(state.mapping["EXTRANJERO"], state.hierarchy[0].name);
+                     const countryData = findInMapping(contData, current.name);
+                     if (countryData && countryData.sub_ubicaciones) {
+                         countryData.sub_ubicaciones.sort().forEach(city => {
+                             const o = document.createElement('option'); o.value = city; o.textContent = city; o.dataset.type = 'city';
+                             select.appendChild(o);
+                         });
+                     }
+                }
+            }
+            
+            if (activeItem) {
+                const normActive = normalize(activeItem);
+                const foundOpt = Array.from(select.options).find(o => normalize(o.value) === normActive);
+                if (foundOpt) select.value = foundOpt.value;
+            }
+
+            refreshCustomSelect('select-view');
         }
 
         function populateRegions() {
@@ -400,6 +941,7 @@
                 const o = document.createElement('option'); o.value = r; o.textContent = r;
                 select.appendChild(o);
             });
+            refreshCustomSelect('select-region');
         }
 
         function findInMapping(obj, name) {
@@ -425,8 +967,9 @@
                     l.bindTooltip(provName, { sticky: true, direction: 'top' });
                     l.on('click', () => drillDownPeru(provName, 'province', name)); 
                 });
-                populateProvinces(name);
+                if (!isMobile()) populateProvinces(name);
                 document.getElementById('select-region').value = Object.keys(state.mapping[key]).find(k => normalize(k) === normalize(name));
+                refreshCustomSelect('select-region');
             } else if (type === 'province') {
                 const regData = findInMapping(state.mapping[key], parentName);
                 const provData = findInMapping(regData, name);
@@ -441,12 +984,15 @@
                         state.currentLayer.eachLayer(il => il.setStyle(styles.default));
                         l.setStyle(styles.selected);
                         document.getElementById('select-district').value = distName;
+                        refreshCustomSelect('select-district');
                         updateURL();
                     });
                 });
-                populateDistrictsFromGeo();
+                if (!isMobile()) populateDistrictsFromGeo();
                 document.getElementById('select-province').value = Object.keys(regData).find(k => normalize(k) === normalize(name));
+                refreshCustomSelect('select-province');
             }
+            if (isMobile()) updateMobileNavigator(name);
             updateBreadcrumb();
             updateURL();
         }
@@ -460,6 +1006,8 @@
                 Object.keys(regData).sort().forEach(p => { if (p !== "Sin_Provincia") { const o = document.createElement('option'); o.value = p; o.textContent = p; select.appendChild(o); } });
             }
             document.getElementById('select-district').innerHTML = '<option value="">DISTRITO</option>';
+            refreshCustomSelect('select-province');
+            refreshCustomSelect('select-district');
         }
 
         function populateDistrictsFromGeo() {
@@ -467,6 +1015,7 @@
             select.innerHTML = '<option value="">DISTRITO</option>';
             const dists = [...new Set(state.currentLayer.getLayers().map(l => l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id))].sort();
             dists.forEach(d => { if(d) { const o = document.createElement('option'); o.value = d; o.textContent = d; select.appendChild(o); } });
+            refreshCustomSelect('select-district');
         }
 
         function populateContinents() {
@@ -476,13 +1025,43 @@
                 const o = document.createElement('option'); o.value = c; o.textContent = c;
                 select.appendChild(o);
             });
+            refreshCustomSelect('select-continent');
+        }
+
+        function populateCountries(continentName) {
+            const select = document.getElementById('select-country');
+            select.innerHTML = '<option value="">PAÍS</option>';
+            const contData = findInMapping(state.mapping["EXTRANJERO"], continentName);
+            if (contData) {
+                const countries = Object.keys(contData).sort();
+                if (normalize(continentName) === "AMERICA") {
+                    const pIndex = countries.findIndex(c => normalize(c) === "PERU");
+                    const list = ["PERÚ", ...countries.filter(c => normalize(c) !== "PERU")];
+                    list.forEach(c => {
+                        const o = document.createElement('option'); o.value = c; o.textContent = c;
+                        select.appendChild(o);
+                    });
+                } else {
+                    countries.forEach(c => {
+                        const o = document.createElement('option'); o.value = c; o.textContent = c;
+                        select.appendChild(o);
+                    });
+                }
+            }
+            refreshCustomSelect('select-country');
         }
 
         async function drillDownExtranjero(name) {
             const ext = state.mapping["EXTRANJERO"];
             const contData = findInMapping(ext, name);
             if (contData) {
+                state.view = 'EXTRANJERO';
                 state.hierarchy = [{ name: name.toUpperCase(), type: 'continent' }];
+                
+                if (!isMobile()) {
+                    updateDesktopControls();
+                    populateCountries(name);
+                }
                 const firstCountry = Object.values(contData)[0];
                 const finalPath = firstCountry.ruta_archivo_local.replace(/\\/g, '/').split('Resultados_ONPE/').pop();
                 await loadLayer(finalPath, (f, l) => { 
@@ -490,11 +1069,17 @@
                     l.bindTooltip(cName, { sticky: true, direction: 'top' });
                     l.on('click', () => detectAndSwitch(cName)); 
                 });
-                populateCountries(name);
-                document.getElementById('select-continent').value = Object.keys(ext).find(k => normalize(k) === normalize(name));
+                if (!isMobile()) populateCountries(name);
+                const selectView = document.getElementById('select-view');
+                if (selectView) {
+                    selectView.value = Object.keys(ext).find(k => normalize(k) === normalize(name)) || "TODOS";
+                    refreshCustomSelect('select-view');
+                }
             } else {
                 await detectAndSwitch(name);
             }
+            if (isMobile()) updateMobileNavigator(name);
+            else updateDesktopControls();
             updateBreadcrumb();
             updateURL();
         }
@@ -503,31 +1088,66 @@
             const select = document.getElementById('select-country');
             select.innerHTML = '<option value="">PAÍS</option>';
             const contData = findInMapping(state.mapping["EXTRANJERO"], continent);
+            
+            let countries = [];
             if (contData) {
-                Object.keys(contData).sort().forEach(c => {
-                    const o = document.createElement('option'); o.value = c; o.textContent = c;
-                    select.appendChild(o);
-                });
+                countries = Object.keys(contData).sort();
             }
+
+            // Check if current country in hierarchy belongs to this continent but is NOT in mapping
+            const currentCountry = state.hierarchy.find(h => h.type === 'country');
+            const currentContinent = state.hierarchy.find(h => h.type === 'continent');
+            if (currentCountry && currentContinent && normalize(currentContinent.name) === normalize(continent)) {
+                if (!countries.some(c => normalize(c) === normalize(currentCountry.name))) {
+                    countries.push(currentCountry.name);
+                    countries.sort();
+                }
+            }
+
+            let list = countries;
+            if (normalize(continent) === 'AMERICA') {
+                list = ['PERÚ', ...countries.filter(c => normalize(c) !== 'PERU')];
+            }
+            list.forEach(c => {
+                const o = document.createElement('option'); o.value = c; o.textContent = c;
+                select.appendChild(o);
+            });
+
             document.getElementById('select-city').innerHTML = '<option value="">CIUDAD</option>';
+            refreshCustomSelect('select-country');
+            refreshCustomSelect('select-city');
         }
 
         function selectCountry(continent, country) {
             const normC = normalize(country);
             let foundLayer = null;
             state.currentLayer.eachLayer(l => {
-                const layerName = normalize(l.feature.properties.name || l.feature.id);
+                const props = l.feature.properties;
+                const layerName = normalize(props.name || props.NAME || props.country || props.COUNTRY || props.name_es || props.name_en || l.feature.id);
                 if (layerName === normC || normC.includes(layerName) || layerName.includes(normC)) {
                     l.setStyle(styles.selected); foundLayer = l;
                 } else l.setStyle(styles.default);
             });
-            if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
+            
+            if (foundLayer) {
+                map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 1.0 });
+            }
 
+            state.hierarchy = [{ name: continent.toUpperCase(), type: 'continent' }, { name: country.toUpperCase(), type: 'country' }];
             const contData = findInMapping(state.mapping["EXTRANJERO"], continent);
             if (contData) {
-                document.getElementById('select-country').value = Object.keys(contData).find(k => normalize(k) === normalize(country));
-                populateCities(continent, country);
+                const foundKey = Object.keys(contData).find(k => normalize(k) === normalize(country));
+                if (foundKey) {
+                    document.getElementById('select-country').value = foundKey;
+                    refreshCustomSelect('select-country');
+                }
+                if (!isMobile()) {
+                    populateCities(continent, country);
+                    updateDesktopControls();
+                }
             }
+            if (isMobile()) updateMobileNavigator(country);
+            updateBreadcrumb();
             updateURL();
         }
 
@@ -542,11 +1162,76 @@
                     select.appendChild(o);
                 });
             }
+            refreshCustomSelect('select-city');
         }
 
-        document.getElementById('select-view').addEventListener('change', (e) => handleViewChange(e.target.value));
-        document.getElementById('select-region').addEventListener('change', (e) => { if(e.target.value) drillDownPeru(e.target.value, 'region'); });
-        document.getElementById('select-province').addEventListener('change', (e) => { if(e.target.value) drillDownPeru(e.target.value, 'province', state.hierarchy[0].name); });
+        document.getElementById('select-view').addEventListener('change', (e) => {
+            const val = e.target.value;
+            
+            // 1. Handle Back Navigation first
+            if (val === 'BACK') {
+                e.target.value = "";
+                goBack(state.hierarchy.length - 1);
+                return;
+            }
+            if (val.startsWith('BACK_')) {
+                if (val === 'BACK_TO_WORLD') handleViewChange('TODOS');
+                else if (val === 'BACK_TO_ROOT') handleViewChange(state.view);
+                else if (val === 'BACK_TO_PARENT') goBack(state.hierarchy.length - 1);
+                return;
+            }
+
+            // 2. Mobile Drill-down Logic
+            if (isMobile() && state.view !== 'TODOS') {
+                const opt = e.target.options[e.target.selectedIndex];
+                const type = opt ? opt.dataset.type : null;
+                
+                if (type === 'region') drillDownPeru(val, 'region');
+                else if (type === 'province') drillDownPeru(val, 'province', state.hierarchy[0].name);
+                else if (type === 'district') {
+                    const normD = normalize(val);
+                    let foundLayer = null;
+                    state.currentLayer.eachLayer(l => {
+                        if (normalize(l.feature.properties.DISTRITO || l.feature.properties.name || l.feature.id) === normD) {
+                            l.setStyle(styles.selected); foundLayer = l;
+                        } else l.setStyle(styles.default);
+                    });
+                    if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
+                } else if (type === 'continent') drillDownExtranjero(val);
+                else if (type === 'country') selectCountry(state.hierarchy[0].name, val);
+                
+                if (val !== 'TODOS' && val !== 'PERU' && type) return;
+            }
+
+            // 3. Generic/Desktop Logic
+            if (isMobile()) {
+                const current = state.hierarchy[state.hierarchy.length - 1];
+                if (val === 'TODOS' || val === 'PERU') {
+                    handleViewChange(val);
+                } else if (state.view === 'PERU') {
+                    if (!current) drillDownPeru(val, 'region');
+                    else if (current.type === 'region') drillDownPeru(val, 'province', current.name);
+                    else if (current.type === 'province') drillDownPeru(val, 'district', state.hierarchy[0].name);
+                } else if (state.view === 'EXTRANJERO' || state.view === 'TODOS') {
+                    if (!current) detectAndSwitch(val);
+                    else if (current.type === 'continent') selectCountry(current.name, val);
+                }
+                updateMobileNavigator();
+            } else {
+                if (val === 'TODOS' || val === 'PERU') handleViewChange(val);
+                else detectAndSwitch(val);
+                updateDesktopControls();
+            }
+        });
+
+        document.getElementById('select-region').addEventListener('change', (e) => { 
+            if(e.target.value) drillDownPeru(e.target.value, 'region');
+            updateDesktopControls();
+        });
+        document.getElementById('select-province').addEventListener('change', (e) => { 
+            if(e.target.value && state.hierarchy[0]) drillDownPeru(e.target.value, 'province', state.hierarchy[0].name);
+            updateDesktopControls();
+        });
         document.getElementById('select-district').addEventListener('change', (e) => {
             const normD = normalize(e.target.value);
             let foundLayer = null;
@@ -557,17 +1242,23 @@
             });
             if (foundLayer) map.flyToBounds(foundLayer.getBounds(), { padding: [40, 40], duration: 0.8 });
             updateURL();
+            updateDesktopControls();
         });
-        document.getElementById('select-continent').addEventListener('change', (e) => { if(e.target.value) drillDownExtranjero(e.target.value); });
-        document.getElementById('select-country').addEventListener('change', (e) => { if(e.target.value) selectCountry(state.hierarchy[0].name, e.target.value); });
-        document.getElementById('select-city').addEventListener('change', () => updateURL());
-        document.getElementById('btn-clear').addEventListener('click', () => {
-            handleViewChange(state.view);
-            const cleanUrl = window.location.protocol + "//" + window.location.host + window.location.pathname;
-            window.history.replaceState({path: cleanUrl}, '', cleanUrl);
+        document.getElementById('select-country').addEventListener('change', (e) => { 
+            if(e.target.value && state.hierarchy[0]) selectCountry(state.hierarchy[0].name, e.target.value);
+            updateDesktopControls();
+        });
+        document.getElementById('select-city').addEventListener('change', () => {
+            updateURL();
+            updateDesktopControls();
         });
 
         init();
+
+        window.addEventListener('resize', () => {
+            populateMainSelect();
+            updateDesktopControls();
+        });
     </script>
 </body>
 </html>
